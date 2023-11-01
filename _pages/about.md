@@ -1,139 +1,116 @@
 ---
 permalink: /about/
-title: "About me"
+title: "Sobre mim"
 ---
 
-## Hello world!
+## Olá Mundo!
 
-My name is Ricardo Martins, and this blog is my memory dump. I call it that because it's my memory assistant. It's frustrating when I spend hours learning something cool that, in about three months, maybe even less, I can't remember anymore.
+Meu nome é Ricardo Martins e este blog é o meu memory dump. Chamo esse blog assim porque ele é meu ajudante de memória. É frustrante quando eu passo horas para aprender alguma coisa legal, que, em cerca de três meses, talvez menos, não consigo me lembrar mais.
 
-Inspired by the article "[Do things, write about it]((http://mdswanson.com/blog/2013/08/11/write-things-tell-people.html))" it's just another way to write a bit about my everyday life. This is how I've been maintaining [my blog in Brazilian Portuguese](https://ricardomartins.com.br) since 2007.
-
-
-### Who is Ricardo?
-
-Ricardo was born in Niterói, Brazil, on December 31, 1984.
-
-* He is a reservedly conventional, multitasker, father of three amazing children, and a lucky husband.
-* He is able to work consistently, meticulously, and deliberately, and has the persistence to follow through on a task until it is completed.
-* He is also cooperative, cautious, detailed, and organized.
-
-### How does he do it?
-
-Ricardo is a multitasker, but he is also single-focused. He takes one thing at a time, in its own time. He is not afraid of what he does not know, and he enjoys challenges. In fact, he needs them, because money is not worth dedicating 1/3 of his day to something that does not have emotion.
-
-### What does he do in life?
-
-In short, Ricardo is a IT professional with over 20 years of experience. He has a special interest in:
-
-* Cloud computing
-* DevOps
-* Cloud Operations
-* Reliability engineering
-* Infrastructure as code
-* Content development
-
-He is also passionate about communities, technical presentations, and is an evangelist for the DevOps culture. He believes that this is the path that everyone from IT Infrastructure should follow, being closer to software development, not necessarily as a developer, but as someone from the infrastructure who understands what a developer really needs and has the ability to deliver it in a simple, autonomous, and fast way.
-
-### Career overview
-
-- **January 2023 - Present:** Senior Managed OpenShift Black Belt at Red Hat, where he helps customers with the implementation and use of Managed OpenShift in public clouds (Azure, AWS, and GCP). He also collaborates with product and SRE teams to document, test, and improve managed services offerings. (Winter Garden, FL, USA)
-
-- **December 2019 - January 2023:** Senior Customer Engineer on the Azure Infrastructure FastTrack team at Microsoft, where he accelerated and reduced the risks of large-scale Azure deployments, while also collaborating with product teams to improve Azure. He helped Microsoft customers create and deploy solutions in Azure in a quick and reliable way, providing personalized guidance. (Winter Garden, FL, USA)
-
-- **June 2019 - December 2019:** Azure Technical Trainer at Microsoft, providing training on Azure fundamentals, administration, and architecture for developers, system administrators, and cloud architects for Microsoft strategic customers. (Redmond, WA, USA)
-
-- **December 2015 - June 2019:** Cloud Solution Architect at Microsoft, responsible for converting technical requirements into cloud architecture projects. He essentially bridged the gap between complex business problems and cloud solutions. (Rio de Janeiro, RJ, Brazil)
-
-- **April 2003 - December 2015:** Ricardo began his career in IT and worked at companies of different sizes and industries as a systems engineer. In 2012, he began working with cloud-based architecture environments, where he has been automating, designing systems, and developing architecture reliability efforts, including monitoring, alerts, automated deployment pipelines, fault tolerance, and capacity management. (Rio de Janeiro, RJ, Brazil)
+Inspirado no artigo [Do things, write about it](http://mdswanson.com/blog/2013/08/11/write-things-tell-people.html), é só mais uma forma de escrever um pouco sobre coisas do meu dia-a-dia. É assim que venho mantendo este blog desde 2007 quando eu migrei tudo que tinha publicado em um blog na plataforma WordPress para cá.
 
 
-### Education
+**Quem é Ricardo**:  Nasci em Niterói (no último dia de 1984), sou reservadamente convencional, multitarefa monofoco, command line heavy-user, interneteiro curioso, [pai de três filhos incríveis](http://paisdetres.com.br) e um marido sortudo.
 
-* Incomplete Master's degree in Electronic Engineering (Computer Networks and Distributed Systems) from "Universidade Estadual do Rio de Janeiro)
-* BTech degree in Computer Networking from "Faculdade de Tecnologia Senac/RJ"
-* Technical degree in Clectronics from "Escola Técnica Estadual Henrique Lage"
+Alguém perfeccionista, com um desejo de fazer as coisas de maneira certa. Capaz de trabalhar de modo constante, meticuloso e deliberado, possuo persistência para acompanhar uma tarefa até a sua conclusão. Sou  cocooperativo, cauteloso, detalhista e organizado.
 
-### Active Professional Certifications
+**Como faz**: Sou multitarefa, porém monofoco. Cada coisa de uma vez, na sua vez. Não tenho receios sobre o que desconheço e gosto de desafios. Aliás, PRECISO deles, porque só o dinheiro não vale a dedicação de 1/3 do meu dia, tem que ter EMOÇÃO.
 
-- Red Hat Certified OpenShift Administrator
-- Red Hat Certified Specialist in Containers
-- AWS Certified Cloud Practitioner
-- Kubernetes and Cloud Native Associate
-- Linux Foundation Certified Systems Administrator
-- Azure Solutions Architect Expert
-- Azure DevOps Engineer Expert
-- Azure Security Engineer Associate
-- Azure Administrator Associate
-- Azure Fundamentals
-- [List of other certifications on Credly](https://www.credly.com/users/rmmartins/badges)
+**Faz o quê da vida?**: Em resumo, sou um IT Pro com 20+ anos de experiência. Tenho um interesse especial em Tecnologias em Nuvem, DevOps, CloudOps, Engenharia de Confiabilidade, Infraestrutura como Código e Desenvolvimento de Conteúdo. Além disso, sou apaixonado por comunidades, palestras técnicas e um evangelista da cultura DevOps, porque entendo que este é o caminho que todos devemos seguir, aproximando-nos cada vez mais do desenvolvimento de software, não necessariamente como desenvolvedor, mas como alguém da infraestrutura que compreende o que um desenvolvedor realmente precisa e tem a habilidade de entregá-lo de forma simples, autônoma e rápida.
 
+Aqui um pouco da minha trajetória:
 
-## Some Fun Facts
+* Janeiro/2023 - Atualmente: **Senior Managed OpenShift Black Belt na Red Hat** onde eu auxilio na capacitação de clientes para implementação e uso em projetos complexos do OpenShift gerenciado nas nuvens públicas (Azure, AWS e GCP) além de colaborar com os times de produto e de SREs para documentar, testar e trazer mel;horias nas ofertas dos serviços gerenciados.
 
-1. In 2002, at the age of 17, I took my first course about computer repair
-2. In 2003, at the age of 18, I got my first job as a technical intern.
-3. In 2004, I decided to start delving into Linux. I took an official course and got my first professional certification in Conectiva Linux.
-4. In 2005, I enrolled in college in the Computer Science course at Universidade Plinio Leite. I dropped out before the end of the semester.
-5. From 2005 to 2011, I worked on a shift basis, on Saturdays, Sundays, holidays, and overnight.
-6. In 2006, I started taking preparatory courses for Windows Server 2003 certification exams.
-7. In 2007, I got married at the age of 22 and returned to college in a BTech of Computer Netwroking at Universidade Estácio de Sá. I ended up dropping out again.
-8. From 2009 to 2011, I worked up to 3 jobs (I had my contract job, a part-time job as IT Consultant in a Civil Engineering company and I also worked as a Microsoft Technical Trainer on Saturdays).
-9. In 2010, I returned to college again, this time in a Computing Engineering course at Universidade Veiga de Almeida. Again, it was dropped out.
-10. In 2011, at the age of 26, I became a father for the first time! In the same year, I decided that I needed to finish a university degree. So I started again a BTech in Computer Networking, this time at Senac/RJ.
-11. In 2012, I started working with Cloud Computing in a startup. And in the same year, I discovered what a layoff is :D
-12. In 2013, at the age of 28, I became a father for the second time! In the same year, after 8 years of starting and dropping out of universities, I finally managed to complete it! Still in this year, I arranged a remote job for a hosting company in New Zealand, where I did on-call coverage on weekends.
-13. In 2015, I thought I had achieved my life goals, getting a job at a multinational company.
-14. In 2016, I went by plane for the second time in my life and made my first international trip at the age of 31. Was a technical training event, with terrible English skills. Imagine what it was like...
-15. In 2018, at the age of 33, I became a father for the third time!
-16. In 2019, I moved to Redmond/WA in the US with my family, in a internal transfer by the multinational company I was working for. I was going to be a technical instructor in the US with my terrible English skills (a little improved, but still very bad).
-17. In 2020, after 11 months in Redmond, we moved to Winter Garden/FL where I live today.
+* Dezembro/2019 - Janeiro/2023: **Senior Customer Engineer** no Azure Infrastructure FastTrack team da Microsoft, onde eu atuei acelerando e reduzindo os riscos de implantações do Azure em larga escala, ao mesmo tempo em que colaborava com aprimoramentos no Azure junto aos times de produto. Eu auxiliava os clientes da Microsoft a criar e implantar soluções no Azure de forma rápida e confiável, oferecendo orientação personalizada. (Winter Garden/FL - USA)
+
+* Junho/2019 - Dezembro/2019: **Azure Technical Trainer** na Microsoft ministrando treinamento de fundamentos, administração, e arquitetura do Azure para desenvolvedores, administradores de sistema e arquitetos de nuvem para clientes estratégicos da Microsoft. (Redmond/WA - EUA)
+
+* Dezembro/2015 - Junho/2019: **Cloud Solution Architect** na Microsoft responsável por converter os requisitos técnicos de projetos em arquiteturas para nuvem. Basicamente eu fazia a ponte entre problemas complexos de negócios em soluções de nuvem. (Rio de Janeiro/RJ - Brasil)
+
+* Abril/2003 - Dezembro/2015: Iniciei minha jornada na área de TI e trabalhei em empresas de diferentes setores e tamanhos como administrador de sistemas em ambientes híbridos (Windows/Linux). Á partir de 2012, comecei a trabalhar com ambientes com arquiteturas baseadas em nuvem, onde venho automatizando, projetando sistemas e desenvolvendo esforços de confiabilidade de arquitetura, incluindo monitoramento, alertas, pipelines de implantação automatizada, resiliência a falhas e gerenciamento de capacidade. (Rio de Janeiro/RJ - Brasil)
+
+Tenho formação técnica em eletrônica pela [Escola Técnica Estadual Henrique Lage](https://pt.wikipedia.org/wiki/ETE_Henrique_Lage), graduação em [Redes de Computadores pela Faculdade de Tecnologia do Senac/RJ](http://www.rj.senac.br/cursos/tecnologia-da-informacao/graduacao-tecnologica-em-redes-de-computadores) e um mestrado interrompido em [Engenharia Eletrônica na linha de pesquisa de Redes de Computadores e Sistemas Distribuídos na UERJ](https://www.pel.uerj.br/linhas-de-pesquisa/).
+
+**Certificações Profissionais Ativas**
+
+* Red Hat Certified OpenShift Administrator
+* Red Hat Certified Specialist in Containers
+* AWS Certified Cloud Practitioner
+* Kubernetes and Cloud Native Associate
+* Linux Foundation Certified Systems Administrator
+* Azure Solutions Architect Expert
+* Azure DevOps Engineer Expert
+* Azure Security Engineer Associate
+* Azure Administrator Associate
+* Azure Fundamentals
+* [Lista com demais certificações no Credly](https://www.credly.com/users/rmmartins/badges)
 
 
-## Getting into Details
+**Algumas curiosidades**:
 
-Talking about yourself is complicated, especially on the internet where no one is exactly as they appear because we choose our best qualities, the best photos, we all have friends, etc.
+1. Em 2002 aos 17 anos fiz meu primeiro curso de montagem e manutenção de micros com duração de 10 meses, no Cefet/RJ.
+2. Em 2003 aos 18 anos consegui meu primeiro emprego como estagiário técnico. 
+3. Em 2004 eu decidi começar a me aprofundar em Linux. Fiz um curso oficial e consegui minha primeira certificação profissional no Conectiva Linux.
+4. Em 2005 eu ingressei na faculdade no curso de Ciência de Computação, na Universidade Plinio Leite. Abandonei antes do fim do semestre.
+5. De 2005 a 2011 eu trabalhava em regime de escala, aos sábados, domingos, feriados e madrugadas.
+6. Em 2006 eu comecei a fazer cursos preparatórios para exames de certificação de Windows Server 2003.
+7. Em 2007 eu me casei aos 22 anos e retornei à faculdade no curso de Tecnólogo em Redes, desta vez na Estácio. Acabei trancando novamente. 
+8. De 2009 à 2011 eu cheguei a trabalhar em 3 empregos (Eu tinha meu emprego formal de CLT, um trabalho extra como Consultor de TI em uma empresa de Engenharia Civil e também atuava como instrutor Microsoft em um centro de treinamentos aos sábados)
+9. Em 2010 eu retornei mais uma vez à faculdade, desta vez no curso de Engenharia da Comutação na Universidade Veiga de Almeida. Mais uma vez trancada.
+10.  Em 2011 aos 26 anos fui pai pela primeira vez! No mesmo ano eu decidi que precisava terminar um curso universitário. Então comecei novamente um curso de Tecnólogo em Redes, desta vez no Senac/RJ.
+11. Em 2012 eu comecei a trabalhar com Computação em Nuvem em uma startup. E no mesmo ano descobri o que é lay-off :D 
+12. Em 2013, aos 28 anos eu fui pai pela segunda vez! Neste mesmo ano depois de 8 anos começando e trancando matrículas em universidades, finalmente eu consegui concluir! Ainda neste ano eu arranjei um trabalho remoto para uma empresa de hosting na Nova Zelândia, onde eu fazia cobertura de plantão nos finais de semana. 
+13. Em 2015 eu achei que tinha zerado a vida, conseguindo uma vaga em uma multinacional.
+14. Em 2016 eu andei de avião pela segunda vez na vida, e fiz minha primeira viagem internacional aos 31 anos com meu inglês de escola pública para um evento técnico de treinamentos. Imaginem como foi...
+15. Em 2018 aos 33 anos eu fui pai pela terceira vez!
+16. Em 2019 me muudei para Redmond/WA nos EUA com minha família transferido pela multinacional que eu estava trabalhando. Estava indo ser instrutor técnico na gringa com meu inglês de escola pública (um pouco melhorado, mas beeeem ruim ainda)
+17. Em 2020 depois de 11 meses em Redmond nos mudamos para Winter Garden/FL onde moro hoje. 
 
-I'm just one of those you pass by on the street and don't even notice, who sits next to you on the bus, and you don't even remember, but I'm someone... who?
 
-I'm like you: I like many things and don't like some, I know some things and don't know many, I like many and don't like some, I have my feet on the ground and my head in the clouds.
+## Entrando em detalhes...
 
-In short, I'm ordinary, but I'm me, and I'm unique.
+Falar de si mesmo é complicado, ainda mais na internet onde ninguém é exatamente como se parece fora dela, pois escolhemos as melhores qualidades, as melhores fotos, todos temos amigos  etc.
 
-I don't smoke, don't drink, don't play soccer, don't talk about soccer, can't dance. I can't live without my wife, children, and family. The rest, I chase after...
+Sou mais um daqueles com que você cruza na rua e nem nota, que senta ao seu lado no ônibus e você nem lembra, mas sou alguém … quem?
 
-I'm a persistent, focused, detail-oriented, organized, simple, responsible, understanding, peacemaker. I'm also forgetful and a bit slow, absent-minded even...
+Sou como você: Gosto de muitas coisas e não gosto de algumas, sei algumas coisas e não sei muitas, gosto de muitos e não gosto de alguns, tenho os pés no chão e a cabeça nas nuvens.
 
-I'm the kind of person who is compulsive about music, who sings badly, but sings anyway...
+Enfim, sou comum, mas sou eu, e sou único.
 
-I'm the kind of person who finds silent movies boring and doesn't find Charles Chaplin funny. The kind of person who drowns ice cream in syrup, who detests lemons. I'm the type who enters the cinema from the opposite side, sits right in the middle, and spends the entire movie eating popcorn, candy, pizza...
+Não fumo, não bebo, não jogo futebol, não falo de futebol, não sei dançar. Não vivo sem minha esposa, filhos e minha família. O resto eu corro atrás…
 
-I send letters, cards, notes, messages that say "I love you." I'm the type with a dust allergy who avoids hills. I have no patience for hypocrisy, get irritated in traffic, and criticize fanaticism.
+Sou perfeccionista, persistente, concentrado, detalhista, organizado, simples, responsável, compreensivo, pacificador. Também sou esquecido e meio lerdo, desligado mesmo…
 
-I'm the clumsy type who trips over things and spills juice on the table. A good-humored, grateful, and content type of person who calms down with the sunset. I'm the demanding, detail-oriented type.
+Sou do tipo de gente que é compulsiva por música, que canta mal, mas canta assim mesmo…
 
-I'm the type who can't stand to see anyone sad, who loves childhood nostalgia, who's up for anything to make a friend smile. I create a family tree, avoid fights, and only sleep with the lights off.
+Sou do tipo de gente que acha cinema mudo chato e que não acha graça de Charles Chaplin. Do tipo de gente enche o sorvete de calda, que detesta limão. Sou do tipo que entra no cinema pelo lado contrário, que senta lá no meio e leva o filme todo comendo pipoca, doce, pizza…
 
-But I'm also the type who believes in God, who watches the moon rise, who loves thunderstorms, and who can't live without the sea nearby just to admire the waves coming and going and trying to understand how it all works.
+Que manda carta, cartão, bilhete, recado, que diz “eu te amo”. Sou do tipo que aque tem alergia à poeira e que dispensa ladeiras. Que não tem paciência pra hipocrisia, que se irrita no trânsito e que critica fanatismo.
 
-I'm the type of person who always thinks things can get better and who loves a sincere compliment. Someone who seeks recognition, hates complaints, and knows nothing about science. The type who doesn't care about fashion but cares about well-being. The kind who makes a thousand plans for the future, who cares more about learning to like what they do than doing what they like because we can't always do everything we want.
+Sou do tipo de gente desastrada, que tropeça nas coisas e que derruba suco na mesa. Tipo de gente bem humorada, grata e de bem com a vida, que sossega com o pôr-do-sol. Sou do tipo de gente exigente, detalhista.
 
-I manage systems, type without looking at the keyboard, check emails all day, always stay connected, and keep updating.
+Sou do tipo que não suporta ver ninguém triste, que adora nostalgia da infância, que topa qualquer coisa pra ver amigo sorrir. Que faz árvore genealógica da família, que corre de brigas e que só dorme de luz apagada.
 
-That kind of person who isn't the best at what they do but does it with discipline and consistency.
+Mas também do mesmo tipo que acredita em Deus, que fica vendo a lua nascer, que adora trovões, e que também não vive sem o mar por perto pelo simples prazer de admirar as ondas indo e vindo e ficar tentanto entender como será que isso funciona.
 
-But despite all this, I'm just like you, the kind of person who just wants to be happy!
+Sou do tipo de gente que sempre acha que as coisas podem melhorar e que adora um elogio sincero. Gente que quer reconhecimento, que detesta um lamento e que não sabe nada sobre ciências. Do tipo de gente que não liga pra moda e sim pro bem-estar. Daquele tipo que faz mil planos pra o futuro, que se preocupa mais em procurar gostar do que faz, do que fazer o que gosta, afinal, nem sempre podemos fazer tudo que queremos.
 
-But none of what was said matters because after this life, we'll have that meeting with God. And He'll only ask five questions:
+Que administra sistemas, que digita sem olhar pro teclado, que checa e-mails o dia inteiro, que está sempre conectado se atualizando.
 
-- What kind of spouse were you?
-- Did you bring out the best in your spouse or the worst?
-- What kind of mother, father, or child were you?
-- Were you honest in all your dealings with the human race?
-- Did you change the human condition for the better?
+Aquele tipo de gente que não é o melhor no que faz, mas faz com disciplina e consistência. 
 
-Notice that none of these questions are about how much you achieved, whether you had an imported car or a mansion. That won't be asked. What's important are these five questions. Think about it and reflect on your actions.
+Mas apesar disso tudo, é igual a você, o tipo de gente que quer mesmo é ser feliz!
 
+Mas nada do que foi dito importa, porque depois dessa vida, a gente vai ter aquela reunião com Deus. E ele só vai fazer cinco perguntas:
+
+* Que tipo de esposo você foi?
+* Você trouxe o melhor da sua esposa ou o pior?
+* Que tipo de mãe, pai ou filho você foi?
+* Você foi honesto em todos os seus negócios com a raça humana?
+* Você mudou para melhor a condição humana?
+
+Percebeu que nenhuma pergunta é sobre quanto fiz, se tive um carro importado, se tive uma mansão? Isso não vai ser perguntado. O que é importante são essas cinco perguntas. Pense nisso, e reflita em suas ações.
 
 
 
