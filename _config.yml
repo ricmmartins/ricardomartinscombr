@@ -23,6 +23,7 @@ linkedin: ricmmartins
 minimal_mistakes_skin: "air"
 search: true
 locale: "pt-BR"
+search_within_pages: true
 
 # Build settings
 markdown: kramdown
