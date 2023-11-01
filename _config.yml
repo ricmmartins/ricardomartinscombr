@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hello, I'm Ricardo!
+title: Olá, eu sou o Ricardo!
 email:
-description: Do things, write about it. We grow when we share!
+description: Faça coisas, escreva sobre isso. Crescemos quando compartilhamos!
 twitter_username: ricmmartins
 github_username: ricmmartins
 linkedin: ricmmartins
@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Ricardo Martins"
   avatar : "/assets/images/bio-photo.png"
-  bio    : "Cloud and Tech evangelist. Architect of scalable, and  fault-tolerant cloud systems. Mentor and educator."
+  bio    : "Evangelista de Cloud e Tecnologia. Arquiteto de sistemas escaláveis e tolerantes a falhas em cloud. Mentor e educador."
   location: "Winter Garden, FL"
   links:
     - label: "Linkedin"
@@ -73,12 +73,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/ricardommartins"
-    - label: "Publications"
+    - label: "Publicações"
       icon: "fas fa-fw fa-link"
       url: "https://github.com/ricmmartins/activitylog"
-    - label: "Blog in PT-BR"
+    - label: "Blog em Inglês"
       icon: "fas fa-fw fa-link"
-      url: "https://ricardomartins.com.br"
+      url: "https://rmmartins.com"
 
 
 footer:
