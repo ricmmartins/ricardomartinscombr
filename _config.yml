@@ -21,6 +21,7 @@ github_username: ricmmartins
 linkedin: ricmmartins
 minimal_mistakes_skin: "air"
 search: true
+locale: "pt-BR"
 
 # Build settings
 markdown: kramdown
