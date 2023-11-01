@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Olá, eu sou o Ricardo!
-subtitle: Faça coisas, escreva sobre isso. Crescemos quando compartilhamos!
+subtitle: Faça coisas, escreva sobre isso. Crescemos quando compartilhamos.
 email: rmmartins@outlook.com
 description: Faça coisas, escreva sobre isso. Crescemos quando compartilhamos!
 twitter_username: ricmmartins
