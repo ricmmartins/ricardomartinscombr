@@ -1,22 +1,8 @@
 ---
-id: 8618
 title: 'Lista de publicações sobre Azure'
 date: '2017-10-24T20:48:44-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8618'
-permalink: /lista-de-publicacoes-sobre-azure/
-dsq_thread_id:
-    - '6238858516'
-    - '6238858516'
-    - '6238858516'
-    - '6238858516'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
-    - Uncategorized
 ---
 
 Pessoal, consolidei abaixo minhas últimas publicações com assuntos relacionados à Azure e estou compartilhando com vocês:
