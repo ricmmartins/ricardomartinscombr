@@ -9,7 +9,9 @@ tags:
 
 # O que é o DSpace?
 
-[![](/wp-content/uploads/2018/04/dspace-logo.png)](/wp-content/uploads/2018/04/dspace-logo.png)[DSpace](https://wiki.duraspace.org/display/DSDOC6x/Introduction) é um software opensource tipicamente usado para criar repositórios de acesso público para conteúdo digital acadêmico. Enquanto ele possui alguns recursos que se sobrepõem com recursos de sistemas de gerenciamento de conteúdo, ele <span class="" id="result_box" lang="pt"><span class=""> atende a uma necessidade específica de sistema de arquivos digitais, focado no armazenamento de longo prazo, acesso e preservação de conteúdo digital.</span></span>
+[![](/wp-content/uploads/2018/04/dspace-logo.png)](/wp-content/uploads/2018/04/dspace-logo.png)
+
+[DSpace](https://wiki.duraspace.org/display/DSDOC6x/Introduction) é um software opensource tipicamente usado para criar repositórios de acesso público para conteúdo digital acadêmico. Enquanto ele possui alguns recursos que se sobrepõem com recursos de sistemas de gerenciamento de conteúdo, ele <span class="" id="result_box" lang="pt"><span class=""> atende a uma necessidade específica de sistema de arquivos digitais, focado no armazenamento de longo prazo, acesso e preservação de conteúdo digital.</span></span>
 
 Neste artigo, vamos fazer o setup baseado em uma imagem docker [oficial do Ubuntu](https://hub.docker.com/_/ubuntu/) e usando o [Tomcat](http://tomcat.apache.org/) para rodar o DSpace conforme as instruções do [guia de instalação](https://wiki.duraspace.org/display/DSDOC6x/Installing+DSpace).
 
