@@ -7,7 +7,7 @@ tags:
     - windows
 ---
 
-Depois de publicar [este post](http://www.ricardomartins.com.br/instalando-um-dashboard-lindao-para-seu-servidor-linux/ "Instalando um dashboard lindão para seu servidor Linux"), tive o comentário do leitor [Rafael Bernardes](http://barrasbin.wordpress.com/ "BarraSbin") comentando sobre um outro dashboard para servidores, o [Phpsysinfo](http://rk4an.github.io/phpsysinfo/ "Phpsysinfo"). Entrei no site para conhecer e gostei bastante. Aqui tem uma demonstração dele: [http://phpsysinfo.sourceforge.net/phpsysinfo/index.php?disp=dynamic](http://phpsysinfo.sourceforge.net/phpsysinfo/index.php?disp=dynamic "Phpsysinfo")
+Depois de publicar [este post](https://ricardomartins.com.br/dashboard-lindao-para-seu-servidor-linux/), tive o comentário do leitor [Rafael Bernardes](http://barrasbin.wordpress.com/ "BarraSbin") comentando sobre um outro dashboard para servidores, o [Phpsysinfo](http://rk4an.github.io/phpsysinfo/ "Phpsysinfo"). Entrei no site para conhecer e gostei bastante. Aqui tem uma demonstração dele: [http://phpsysinfo.sourceforge.net/phpsysinfo/index.php?disp=dynamic](http://phpsysinfo.sourceforge.net/phpsysinfo/index.php?disp=dynamic "Phpsysinfo")
 
 Então resolvi criar este post, para compartilhar mais informações sobre este dashboard que me pareceu também bastante interessante.
 
