@@ -6,7 +6,7 @@ tags:
     - opsworks
 ---
 
-[![AWS_OpsWorks-512x320](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)
+[![AWS_OpsWorks-512x320](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320-1.png)](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320-1.png)
 
 Continuando o[ post anterior](http://www.ricardomartins.com.br/opsworks-conhecendo-ferramenta-de-gerencia-de-configuracao-da-amazon/) sobre o OpsWorks, vou mostrar neste post como criar uma instância com Nginx hospedando um site estático bem simples, apenas para teste e demonstração.
 
