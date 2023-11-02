@@ -1,5 +1,5 @@
 ---
-title: 'OpsWorks: Conhecendo a ferramenta de gerência de configuração da Amazon &#8211; Parte I/III'
+title: 'OpsWorks: Conhecendo a ferramenta de gerência de configuração da Amazon | Parte I/III'
 date: '2015-01-16T13:38:49-05:00'
 tags:
     - aws
