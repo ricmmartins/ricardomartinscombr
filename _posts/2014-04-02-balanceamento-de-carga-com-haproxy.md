@@ -130,7 +130,7 @@ server node3 192.168.10.30:80 cookie app1inst2 check inter 2000 rise 2 fall 5
 # /sbin/chkconfig httpd on
 ```
 
-### Vídeo Demo o/
+### Vídeo Demo 
 
 Assista ao vídeo com a validação do uso:
 
