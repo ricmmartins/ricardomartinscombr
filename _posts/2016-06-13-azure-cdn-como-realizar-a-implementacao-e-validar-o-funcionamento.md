@@ -4,6 +4,7 @@ date: '2016-06-13T20:27:47-04:00'
 tags:
     - azure
     - cdn
+    - nginx
 ---
 
 O objetivo deste artigo é demonstrar passo-a-passo a criação de um ambiente web hospedando um website utilizando a CDN do Azure.
