@@ -1,22 +1,10 @@
 ---
-id: 8621
 title: 'Criando uma VM Linux e configurando Raid no Azure'
 date: '2017-10-24T22:19:22-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8621'
-permalink: /criando-uma-vm-linux-e-configurando-raid-no-azure/
-dsq_thread_id:
-    - '6238989626'
-    - '6238989626'
-    - '6238989626'
-    - '6238989626'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
-    - Uncategorized
+    - linux
+    - storage
 ---
 
 Neste post vou mostrar como criar uma VM Linux no Azure, associar três discos nesta VM e em seguida configurar um Raid 0 usando estes discos pelo CLI.
