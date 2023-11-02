@@ -24,6 +24,10 @@ minimal_mistakes_skin: "air"
 search: true
 locale: "pt-BR"
 search_within_pages: true
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "rmmartins"
 
 # Build settings
 markdown: kramdown
@@ -108,6 +112,7 @@ defaults:
       comments: true
       share: true
       related: true
+      
   # _pages
   - scope:
       path: "_pages"
