@@ -1,37 +1,9 @@
 ---
-id: 5839
 title: 'Melhores práticas para administradores de sistemas na nuvem da AWS'
 date: '2015-11-18T21:20:30-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5839'
-permalink: /melhores-praticas-para-administradores-de-sistemas-na-nuvem-da-aws/
-views:
-    - '1515'
-    - '1515'
-    - '1515'
-    - '1515'
-    - '1515'
-    - '1515'
-    - '1515'
-    - '1515'
-dsq_thread_id:
-    - '4331273329'
-    - '4331273329'
-    - '4331273329'
-    - '4331273329'
-    - '4331273329'
-    - '4331273329'
-    - '4331273329'
-    - '4331273329'
-categories:
-    - Uncategorized
 tags:
-    - '37'
-    - '52'
     - aws
-    - 'cloud computing'
-    - Uncategorized
+    - bestpractices
 ---
 
 A idéia deste artigo é compartilhar com vocês um pouco das práticas que eu adoto nos ambientes que administro na nuvem da AWS. Se você gostar e concordar com os pontos levantados aqui, compartilhe este artigo e ajude a divulgar estas informações para outras pessoas. Se você tiver mais sugestões, elas são bem vindas!
