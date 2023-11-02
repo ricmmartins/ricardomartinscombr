@@ -1,27 +1,10 @@
 ---
-id: 5783
 title: 'Webinar sobre Computação em Nuvem e AWS'
 date: '2015-07-06T21:13:52-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5783'
-permalink: /webinar-sobre-computacao-em-nuvem-e-aws/
-views:
-    - '1740'
-    - '1740'
-    - '1740'
-    - '1740'
-dsq_thread_id:
-    - '3910839430'
-    - '3910839430'
-    - '3910839430'
-    - '3910839430'
-categories:
-    - Uncategorized
 tags:
-    - '37'
-    - '60'
-    - Webinar
+    - webinar
+    - cloud
+    - aws
 ---
 
 [![treinamento-cloud](/wp-content/uploads/2015/02/Introtoec2vid_2-300x168.jpg)](/wp-content/uploads/2015/02/Introtoec2vid_2.jpg)
