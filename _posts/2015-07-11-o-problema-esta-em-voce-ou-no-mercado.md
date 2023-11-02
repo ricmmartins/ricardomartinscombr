@@ -1,35 +1,8 @@
 ---
-id: 5794
 title: 'O problema está em você ou no mercado?'
 date: '2015-07-11T02:14:41-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5794'
-permalink: /o-problema-esta-em-voce-ou-no-mercado/
-views:
-    - '1512'
-    - '1512'
-    - '1512'
-    - '1512'
-    - '1512'
-    - '1512'
-    - '1512'
-    - '1512'
-dsq_thread_id:
-    - '3923553607'
-    - '3923553607'
-    - '3923553607'
-    - '3923553607'
-    - '3923553607'
-    - '3923553607'
-    - '3923553607'
-    - '3923553607'
-categories:
-    - Uncategorized
 tags:
-    - '44'
-    - Carreira
-    - Uncategorized
+    - carreira
 ---
 
 [![Personal-development-plan-template](/wp-content/uploads/2015/07/Personal-development-plan-template-300x200.jpg)](/wp-content/uploads/2015/07/Personal-development-plan-template.jpg)
