@@ -47,33 +47,33 @@ Para fazer isto, basta você instalar o logstash na máquina via YUM, ou baixand
 # vim conf/shipper.conf  
 input {  
 file {  
-path =&gt; “/home/ricmmart/logs/ricardomartins.com.br/http/access.log”  
-type =&gt; “apache”  
+path => “/home/ricmmart/logs/ricardomartins.com.br/http/access.log”  
+type => “apache”  
 }  
 }  
 filter {  
 if [type] == “apache-access” {  
 grok {  
-add_tag =&gt; [“apache”, “grokked”]  
-match =&gt; {  
-“message” =&gt; “%{COMMONAPACHELOG}”  
+add_tag => [“apache”, “grokked”]  
+match => {  
+“message” => “%{COMMONAPACHELOG}”  
 }  
 }  
 }  
 }  
 output {  
 stdout {  
-codec =&gt; rubydebug  
+codec => rubydebug  
 }  
 redis {  
-host =&gt; “192.168.33.100”  
-data_type =&gt; “list”  
-key =&gt; “logstash”  
+host => “192.168.33.100”  
+data_type => “list”  
+key => “logstash”  
 }  
 }  
 ```
 
-Conforme demonstrado acima, passamos o path do arquivo de log como input, informamos como deverá ser feita a filtragem dos dados, e por fim definimos o output direcionando para o Redis do nosso servidor com a stack instalada. Lembrando de informar a lista **logstash** através do parâmetro: key =&gt; “logstash”
+Conforme demonstrado acima, passamos o path do arquivo de log como input, informamos como deverá ser feita a filtragem dos dados, e por fim definimos o output direcionando para o Redis do nosso servidor com a stack instalada. Lembrando de informar a lista **logstash** através do parâmetro: key => “logstash”
 
 Feito isto, vamos rodar o logstash passando o path do nosso arquivo de configuração:  
 
