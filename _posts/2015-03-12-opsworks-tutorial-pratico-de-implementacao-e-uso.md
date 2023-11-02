@@ -1,37 +1,10 @@
 ---
-id: 5544
-title: 'OpsWorks: Tutorial prático de implementação e uso &#8211; Parte II/III'
+title: 'OpsWorks: Tutorial prático de implementação e uso | Parte II/III'
 date: '2015-03-12T17:27:58-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5544'
-permalink: /opsworks-tutorial-pratico-de-implementacao-e-uso/
-views:
-    - '1810'
-    - '1810'
-    - '1810'
-    - '1810'
-    - '1810'
-    - '1810'
-    - '1810'
-    - '1810'
-dsq_thread_id:
-    - '3590202521'
-    - '3590202521'
-    - '3590202521'
-    - '3590202521'
-    - '3590202521'
-    - '3590202521'
-    - '3590202521'
-    - '3590202521'
-categories:
-    - Uncategorized
+ed
 tags:
-    - '37'
-    - '60'
     - aws
     - opsworks
-    - Uncategorized
 ---
 
 [![AWS_OpsWorks-512x320](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)
@@ -164,16 +137,18 @@ Uma vez que tenha sido realizado deploy com sucesso, vamos ver o conteúdo dispo
 
 Caso você ache interessante, pode conectar na instância e verificar as configurações no Nginx:
 
-\[cc escaped=”true” lang=”bash”\]  
-\[root@web1 /\]# cd /etc/nginx/sites-enabled\[/cc\]
+```bash
+[root@web1 /\]# cd /etc/nginx/sites-enabled
+```
 
-\[cc escaped=”true” lang=”bash”\]  
-\[root@web1 sites-enabled\]# ls -l  
+```bash
+[root@web1 sites-enabled\]# ls -l  
 total 0  
-lrwxrwxrwx 1 root root 34 Mar 12 19:11 ricardo -&gt; /etc/nginx/sites-available/ricardo\[/cc\]
+lrwxrwxrwx 1 root root 34 Mar 12 19:11 ricardo -> /etc/nginx/sites-available/ricardo
+```
 
-\[cc escaped=”true” lang=”bash”\]  
-\[root@web1 sites-enabled\]# cat ricardo  
+```bash
+[root@web1 sites-enabled\]# cat ricardo  
 server {  
 listen 80;  
 server\_name ricardo web1;  
@@ -184,25 +159,25 @@ root /srv/www/ricardo/current/;
 index index.html index.htm index.php;  
 }
 
-\# Block all svn access  
-if ($request\_uri ~\* ^.\*.svn.\*$) {  
+# Block all svn access  
+if ($request_uri ~\* ^.\*.svn.\*$) {  
 return 404;  
 }
 
-\# Block all git access  
-if ($request\_uri ~\* ^.\*.git.\*$) {  
+# Block all git access  
+if ($request_uri ~\* ^.\*.git.\*$) {  
 return 404;  
 }
 
-location /nginx\_status {  
-stub\_status on;  
-access\_log off;  
+location /nginx_status {  
+stub_status on;  
+access_log off;  
 allow 127.0.0.1;  
 deny all;  
 }
 
 }  
-\[/cc\]
+```
 
 ## Finalizando:
 
