@@ -9,7 +9,11 @@ Este é um post rápido com o propósito de mostrar uma forma rápida de listar 
 
 Em seguida você precisará rodar os comandos abaixo:
 
-https://gist.github.com/rmmartins/d6fde9eece94bcded283561921c341b1
+```bash
+Login-AzureRMAccount
+$resources = Get-AzureRmResourceProvider -ProviderNamespace Microsoft.Compute
+Get-AzureRmVmSize -Location "East US" | Sort-Object Name | ft Name, NumberOfCores, MemoryInMB, MaxDataDiskCount -AutoSize
+```
 
 Dependendo da região da sua escolha, basta trocar o -Location “Brazil South” pela região que preferir. Veja:
 
