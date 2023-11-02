@@ -1,28 +1,9 @@
 ---
-id: 6671
 title: 'Perdeu a tão desejada vaga, e agora?'
 date: '2015-11-23T20:14:30-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5851'
-permalink: /perdeu-a-tao-desejada-vaga-e-agora/
-views:
-    - '838'
-    - '838'
-    - '838'
-    - '838'
-dsq_thread_id:
-    - '5288672839'
-    - '5288672839'
-    - '5288672839'
-    - '5288672839'
-categories:
-    - Uncategorized
 tags:
-    - '44'
-    - Carreira
+    - carreira
     - microsoft
-    - Uncategorized
 ---
 
 Chega um momento na carreira de todos nós que por mais que estejamos satisfeitos com a posição que temos, o cargo que ocupamos e as atividades que desempenhamos, desejamos algo maior. Penso que não ná nenhum problema nisso, afinal, evoluir é preciso.
