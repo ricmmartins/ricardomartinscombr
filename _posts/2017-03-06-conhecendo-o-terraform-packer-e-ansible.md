@@ -1,24 +1,12 @@
 ---
-id: 8456
 title: 'Conhecendo o Terraform, Packer e Ansible'
 date: '2017-03-06T10:34:27-05:00'
-author: rmmartins
-layout: post
-guid: 'https://www.ricardomartins.com.br/?p=8456'
-permalink: /conhecendo-o-terraform-packer-e-ansible/
-dsq_thread_id:
-    - '5607637576'
-    - '5607637576'
-    - '5607637576'
-    - '5607637576'
-categories:
-    - Uncategorized
 tags:
-    - '38'
-    - '60'
     - azure
     - devops
-    - Uncategorized
+    - terraform
+    - packer
+    - ansible
 ---
 
 ![](/wp-content/uploads/2017/03/iac.png)
