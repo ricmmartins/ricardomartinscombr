@@ -1,37 +1,11 @@
 ---
-id: 4822
-title: 'Certificação RedHat: Série de Estudos para RHCSA e RHCE &#8211; Parte 1'
+title: 'Certificação RedHat: Série de Estudos para RHCSA e RHCE - Parte 1'
 date: '2014-03-16T12:22:56-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4822'
-permalink: /certificacao-redhat-serie-de-estudos-para-rhcsa-e-rhce-parte-1/
-views:
-    - '5109'
-    - '5109'
-    - '5109'
-    - '5109'
-    - '5109'
-    - '5109'
-    - '5109'
-    - '5109'
-dsq_thread_id:
-    - '2607471458'
-    - '2607471458'
-    - '2607471458'
-    - '2607471458'
-    - '2607471458'
-    - '2607471458'
-    - '2607471458'
-    - '2607471458'
-categories:
-    - Uncategorized
+ed
 tags:
-    - '134'
-    - '47'
     - certificação
     - redhat
-    - Uncategorized
+    - estudo
 ---
 
 Neste primeiro post da série de estudos, eu vou apenas indicar alguns links com referências adicionais para auxiliar no nosso plano de estudos. Acesse, tome nota das informações e vá se preparando para o que vem por aí.
@@ -46,7 +20,7 @@ Neste primeiro post da série de estudos, eu vou apenas indicar alguns links com
 
 Para baixar os repositórios, utilize:
 
-# git clone &lt;url&gt;
+# git clone <url>
 
 ## Dicas de alguns blogs:
 
