@@ -1,9 +1,6 @@
 ---
 title: 'Azure File Sync'
 date: '2018-08-02T11:21:59-04:00'
-categories:
-    - artigos
-    - videos
 tags:
     - azure
 
