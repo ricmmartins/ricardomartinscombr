@@ -10,7 +10,7 @@ Finalizando a série de artigos sobre o OpsWorks, neste post veremos como utiliz
 
 Para começar, entre na console do OpsWorks e vamos criar nossa segunda stack.
 
-[![opsworks1](http://www.ricardomartins.com.br/wp-content/uploads/2015/03/opsworks1-1.png)](http://www.ricardomartins.com.br/wp-content/uploads/2015/03/opsworks1-1.png)
+[![opsworks1](/wp-content/uploads/2015/03/opsworks1-1.png)](/wp-content/uploads/2015/03/opsworks1-1.png)
 
 Clique em Add Stack e preencha os dados necessários:
 
