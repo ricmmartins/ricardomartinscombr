@@ -1,27 +1,9 @@
 ---
-id: 8224
 title: 'Capacitação técnica no Microsoft Azure'
 date: '2016-05-28T21:05:25-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8224'
-permalink: /capacitacao-azure/
-dsq_thread_id:
-    - '5289838640'
-    - '5289838640'
-    - '5289838640'
-    - '5289838640'
-    - '5289838640'
-    - '5289838640'
-    - '5289838640'
-    - '5289838640'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
     - certificação
-    - Uncategorized
 ---
 
 Quer saber por onde começar a estudar sobre a plataforma e os serviços de computação em nuvem da Microsoft? Quais as certificações disponíveis, qual caminho à seguir, onde encontrar material de estudo gratuito e como se manter atualizado?
