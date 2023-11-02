@@ -15,21 +15,37 @@ Eu segui as orientações [deste link](https://docs.microsoft.com/en-us/azure/mo
 
 ### Criando o Resource Group
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-01-create-rg-sh
+```bash
+rmartins@jarvis:~$ az group create --name rg-grafana --location eastus
+```
 
 ### Criando a VM
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-02-create-vm-sh
+```bash
+rmartins@jarvis:~$ az vm create --resource-group rg-grafana --name grafana-server --image UbuntuLTS --location eastus --generate-ssh-keys
+```
 
 ### Abrindo a porta correspondente no NSG
 
 O Grafana utiliza a porta TCP 3000, portanto é necessário liberar esta porta no Network Security Group da VM criada de modo a liberar o acesso à VM nesta porta.
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-03-open-port-sh
+```bash
+rmartins@jarvis:~$ az network nsg list -g rg-grafana -o table
+
+Location    Name               ProvisioningState    ResourceGroup    ResourceGuid
+----------  -----------------  -------------------  ---------------  ------------------------------------
+eastus      grafana-serverNSG  Succeeded            rg-grafana       9bfbd4f6-95ad-48c9-a3b7-d68af0d707f5
+
+rmartins@jarvis:~$ az network nsg rule create --resource-group rg-grafana --nsg-name grafana-serverNSG --name allow-grafana --description "Allow access to port 3000 for HTTPS" --access Allow --protocol Tcp --direction Inbound --priority 102 --source-address-prefix "*"  --source-port-range "*" --destination-address-prefix "*" --destination-port-range "3000"
+```
 
 ### Conectando na VM
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-04-connect-vm-sh
+```bash
+rmartins@jarvis:~$ az vm show --resource-group rg-grafana --name grafana-server -d --query publicIps -otsv
+
+rmartins@jarvis:~$ ssh rmartins@[PublicIP] -i /home/rmartins/.ssh/id_rsa
+```
 
 ## Instalando o grafana
 
@@ -37,27 +53,41 @@ Procedimento de instalação seguindo [este tutorial](http://docs.grafana.org/in
 
 ### Adicionar repositório
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-05-add-repo-sh
+```bash
+rmartins@grafana-server:~$ sudo sh -c 'echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" >> /etc/apt/sources.list'
+```
 
 ### Adicionar chave do Package Cloud
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-06-add-package-key-sh
+```bash
+rmartins@grafana-server:~$ sudo curl https://packagecloud.io/gpg.key | sudo apt-key add -
+```
 
 ### Atualizar repositórios
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-07-update-repo-sh
+```bash
+rmartins@grafana-server:~$ sudo apt-get update
+```
 
 ### Instalar Grafana
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-08-install-grafana-sh
+```bash
+rmartins@grafana-server:~$ sudo apt-get install grafana
+```
 
 ### Inicializar Grafana
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-09-init-grafana-sh
+```bash
+rmartins@grafana-server:~$ sudo systemctl daemon-reload
+rmartins@grafana-server:~$ sudo systemctl start grafana-server
+rmartins@grafana-server:~$ sudo systemctl status grafana-server
+```
 
 ### Habilitar no boot
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-10-enable-on-boot-sh
+```bash
+rmartins@grafana-server:~$ sudo systemctl enable grafana-server.service
+```
 
 ### Conectar no serviço
 
@@ -75,11 +105,15 @@ A instalação do plugin será feita seguindo [esta documentação](https://graf
 
 Uma vez conectado na VM, rodar o comando abaixo:
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-11-install-plugin-azure-monitor-sh
+```bash
+rmartins@grafana-server:~$ sudo grafana-cli plugins install grafana-azure-monitor-datasource
+```
 
 Em seguida reiniciar o serviço do grafana:
 
-https://gist.github.com/rmmartins/896e4f6a22d8b8b1bc427418e7c53ca3#file-12-restart-grafana-sh
+```bash
+rmartins@grafana-server:~$ sudo systemctl restart grafana-server
+```
 
 Após isto será possível verificar que o plugin já foi instalado e já aparece como um datasource:
 
