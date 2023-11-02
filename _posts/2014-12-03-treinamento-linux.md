@@ -1,52 +1,8 @@
 ---
-id: 5204
 title: 'Linux: Treinamento à distância com instâncias da Amazon'
 date: '2014-12-03T17:21:31-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5204'
-permalink: /treinamento-linux/
-dsq_thread_id:
-    - '3287504024'
-    - '3287504024'
-    - '3287504024'
-    - '3287504024'
-    - '3287504024'
-    - '3287504024'
-    - '3287504024'
-    - '3287504024'
-views:
-    - '1242'
-    - '1242'
-    - '1242'
-    - '1242'
-    - '1242'
-    - '1242'
-    - '1242'
-    - '1242'
-audiourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-videourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - Uncategorized
+    - cursos
 ---
 
 ## Já pensou em fazer um treinamento de Linux à distância com instâncias da Amazon?
