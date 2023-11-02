@@ -1,29 +1,9 @@
 ---
-id: 8327
 title: 'Conhece o Microsoft IT Pro Cloud Essentials ou no Career Center?'
 date: '2016-09-29T22:08:04-04:00'
-author: rmmartins
-layout: post
-guid: 'https://www.ricardomartins.com.br/?p=8327'
-permalink: /conhece-o-microsoft-it-pro-cloud-essentials-ou-no-career-center/
-dsq_thread_id:
-    - '5256315294'
-    - '5256315294'
-    - '5256315294'
-    - '5256315294'
-    - '5256315294'
-    - '5256315294'
-    - '5256315294'
-    - '5256315294'
-categories:
-    - Uncategorized
 tags:
-    - '38'
-    - '44'
-    - '47'
     - azure
-    - Carreira
-    - Uncategorized
+    - carreira
 ---
 
 O Microsoft IT Pro Cloud Essentials e o IT Pro Career Center são as mais novas iniciativa da Microsoft para sua capacitação profissional em Cloud disponibilizadas gratuitamente para você.
