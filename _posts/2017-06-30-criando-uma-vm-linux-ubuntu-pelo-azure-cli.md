@@ -1,23 +1,11 @@
 ---
-id: 8545
 title: 'Criando uma VM Linux (Ubuntu) pelo Azure CLI'
-date: '2017-06-30T15:28:10-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8545'
-permalink: /criando-uma-vm-linux-ubuntu-pelo-azure-cli/
-dsq_thread_id:
-    - '5954492694'
-    - '5954492694'
-    - '5954492694'
-    - '5954492694'
 categories:
-    - Uncategorized
+    - artigos
 tags:
-    - '38'
     - azure
-    - Linux
-    - Uncategorized
+    - linux
+    - ubuntu
 ---
 
 Apenas compartilhando um vídeo que eu fiz mostrando como criar uma VM Linux (Ubuntu) pelo Azure CLI. No vídeo é explicado passo a passo do processo, no entanto vou colocar abaixo os comando executados para caso você queira testar, possa copiar e colar os comandos e ganhar tempo:
