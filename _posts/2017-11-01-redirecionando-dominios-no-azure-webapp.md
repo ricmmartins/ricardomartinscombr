@@ -24,13 +24,23 @@ Ao criar o WebApp em ambos os casos (Windows/Linux) ele vai ganhar um endereço 
 
 Configurar o arquivo web.config conforme abaixo:
 
-https://gist.github.com/rmmartins/887134d5c45001e318ceb3d79c27a644#file-webconfig-sh
+```bash
+<configuration>
+<system.webServer>
+<httpRedirect enabled="true" destination="https://www.facebook.com/RicardoLab/" httpResponseStatus="Permanent"/>
+</system.webServer>
+</configuration>
+```
 
 ### Service Plan Linux
 
 Configurar o arquivo .htaccess conforme abaixo:
 
-https://gist.github.com/rmmartins/887134d5c45001e318ceb3d79c27a644#file-htaccess-sh
+```bash
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule (.*) https://www.facebook.com/RicardoLab/ [R=301,L]
+```
 
 Pronto, agora quando acessarem http://ricardolab.azurewebsites.net será redirecionado para a página http://www.facebook.com/RicardoLab
 
