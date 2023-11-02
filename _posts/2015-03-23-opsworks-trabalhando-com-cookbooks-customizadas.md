@@ -1,37 +1,9 @@
 ---
-id: 5567
-title: 'OpsWorks: Trabalhando com cookbooks customizadas &#8211; Parte III/III'
+title: 'OpsWorks: Trabalhando com cookbooks customizadas | Parte III/III'
 date: '2015-03-23T16:51:10-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5567'
-permalink: /opsworks-trabalhando-com-cookbooks-customizadas/
-views:
-    - '1175'
-    - '1175'
-    - '1175'
-    - '1175'
-    - '1175'
-    - '1175'
-    - '1175'
-    - '1175'
-dsq_thread_id:
-    - '3620471566'
-    - '3620471566'
-    - '3620471566'
-    - '3620471566'
-    - '3620471566'
-    - '3620471566'
-    - '3620471566'
-    - '3620471566'
-categories:
-    - Uncategorized
 tags:
-    - '37'
-    - '60'
     - aws
     - opsworks
-    - Uncategorized
 ---
 
 Finalizando a série de artigos sobre o OpsWorks, neste post veremos como utilizar cookbooks customizadas em nosso ambiente.
@@ -48,9 +20,9 @@ Clique em advanced para abrir mais opções e definir que utilizaremos cookbooks
 
 [![opsworks3](/wp-content/uploads/2015/03/opsworks3.png)](/wp-content/uploads/2015/03/opsworks3.png)
 
-\* Note que eu ainda não criei a cookbook customizada e enviei para o S3, mas já posso definir o nome do arquivo e em qual dos meus buckets ela estará, no caso: https://s3.amazonaws.com/rmartins/cookbook.tar.gz Além disso informei o Access key ID e o Secret access key de um usuário com permissões neste bucket.
+* Note que eu ainda não criei a cookbook customizada e enviei para o S3, mas já posso definir o nome do arquivo e em qual dos meus buckets ela estará, no caso: https://s3.amazonaws.com/rmartins/cookbook.tar.gz Além disso informei o Access key ID e o Secret access key de um usuário com permissões neste bucket.
 
-\*\* Observe que também alterei para não utilizar os security groups padrões do OpsWorks, e usaremos um security group já criado previamente com apenas o acesso nas portas 80 e 22 liberados.
+** Observe que também alterei para não utilizar os security groups padrões do OpsWorks, e usaremos um security group já criado previamente com apenas o acesso nas portas 80 e 22 liberados.
 
 Note a opção de “Manage Berkshelf” que foi deixada em “No”. Desta forma a escolha da versão do Berkshelf utilizada será feita pelo próprio OpsWOrks. Caso prefira você mesmo escolher qual versão utilizar, coloque em YES e escolha a versão desejada.
 
@@ -62,9 +34,9 @@ Vamos trabalhar em uma estrutura de diretórios conforme abaixo:
 
 [![opsworkslab](/wp-content/uploads/2015/03/opsworkslab.png)](/wp-content/uploads/2015/03/opsworkslab.png)
 
-\[cce lang=”bash”\]  
-\# mkdir -p /opsworkslab/mycookbooks  
-\[/cc\]
+```bash
+# mkdir -p /opsworkslab/mycookbooks  
+```
 
 Dentro da pasta cookbooks, teremos as pastas com as nossas recipes. Cada recipe, com a seguinte estrutura:
 
@@ -76,15 +48,15 @@ O que vem a ser cada um destes diretórios e arquivos?
 
 . **attributes**: O diretório onde você pode armazenar atributos e/ou parâmetros de configurações. O uso é opcional. Por exemplo, se você deseja especificar que determinada aplicação terá por padrão os logs em um local específico:
 
-\[cce lang=”bash”\]  
-default\[:application\]\[:dirlog\] = “/var/log/application”  
-default\[:application\]\[:oldlog\] = “/var/log/application/old\_logs”  
-\[/cc\]
+```bash
+default[:application][:dirlog] = “/var/log/application”  
+default[:application][:oldlog] = “/var/log/application/old\_logs”  
+```
 
 Em seguida, na receita para criação da estrutura da sua aplicação, você definiria da seguinte forma:
 
-\[cce lang=”bash”\]  
-directory “#{node\[:application\]\[:dirlog\]}” do  
+```bash
+directory “#{node[:application][:dirlog]}” do  
 owner “root”  
 group “root”  
 mode 0755  
@@ -92,15 +64,14 @@ action :create
 recursive true  
 end
 
-directory “#{node\[:application\]\[:oldlog\]}” do  
+directory “#{node[:application][:oldlog]}” do  
 owner “root”  
 group “root”  
 mode 0755  
 action :create  
 recursive true  
 end
-
-\[/cc\]
+```
 
 . **recipes**: Diretório onde estarão as nossas receitas
 
@@ -112,44 +83,44 @@ Para facilitar o entendimento, vamos criar nossa primeira configuração. É uma
 
 Uma vez que você já criou o diretório /opsworkslab/mycookbooks, vamos lá:
 
-\[cce lang=”bash”\]  
-\# cd /opsworkslab/mycookbooks  
-\[/cc\]
+```bash
+# cd /opsworkslab/mycookbooks  
+```
 
 Vamos criar a estrurtura de diretórios:
 
-\[cce lang=”bash”\]  
-\# mkdir -p systemconfig/{attributes/default/,recipes,templates/default}  
-\[/cc\]
+```bash
+# mkdir -p systemconfig/{attributes/default/,recipes,templates/default}  
+```
 
 Este comando irá criar a seguinte árvore de diretórios dentro de /opsworkslab/mycookbooks:
 
 [![opsworkslab2](/wp-content/uploads/2015/03/opsworkslab2.png)](/wp-content/uploads/2015/03/opsworkslab2.png)
 
-\* Note que os subdiretórios “attributes” e “templates” precisam ter os subdiretórios default dentro, uma vez que os atributos e templates podem variar de acordo com a distribuição utilizada. Por exemplo, sistemas RedHat-like podem ter locais diferentes dos sistemas Debian-like para arquivos e/ou aplicações.
+* Note que os subdiretórios “attributes” e “templates” precisam ter os subdiretórios default dentro, uma vez que os atributos e templates podem variar de acordo com a distribuição utilizada. Por exemplo, sistemas RedHat-like podem ter locais diferentes dos sistemas Debian-like para arquivos e/ou aplicações.
 
 Com a árvore de diretórios criada, mãos à obra. Vamos criar os arquivos destes diretórios.
 
-\[cce lang=”bash”\]  
-\# vim /opsworkslab/mycookbooks/systemconfig/metadata.rb  
-\[/cc\]
+```bash
+# vim /opsworkslab/mycookbooks/systemconfig/metadata.rb  
+```
 
 Neste arquivo vamos passar algumas informações sobre a nossa receita. Insira o seguinte conteúdo no arquivo criado:
 
-\[cce lang=”bash”\]  
+```bash
 name “systemconfig”  
 description “Default System Configurations”  
 maintainer “Ricardo Martins”  
 version “1.0.0”  
-\[/cc\]
+```
 
-\[cce lang=”bash”\]  
-\# vim /opsworkslab/mycookbooks/systemconfig/recipes/timezone.rb  
-\[/cc\]
+```bash
+# vim /opsworkslab/mycookbooks/systemconfig/recipes/timezone.rb  
+```
 
 Adicione o seguinte conteúdo e salve o arquivo:
 
-\[cce lang=”bash”\]  
+```bash
 template “/etc/sysconfig/clock” do  
 source “clock.erb”  
 owner “root”  
@@ -168,30 +139,29 @@ mode 0755
 owner “root”  
 group “root”  
 end  
-\[/cc\]
+```
 
-\[cce lang=”bash”\]
+```bash
+# vim /opsworkslab/mycookbooks/systemconfig/templates/default/clock.erb
+```
 
-\# vim /opsworkslab/mycookbooks/systemconfig/templates/default/clock.erb
-
-\[/cc\]
 
 Adicione o conteúdo:
 
-\[cce lang=”bash”\]  
+```bash
 ZONE=”Brazil/East”  
 UTC=true  
-\[/cc\]
+```
 
-\[cce lang=”bash”\]  
-\# vim /opsworkslab/mycookbooks/systemconfig/templates/default/ntpdate.erb  
-\[/cc\]
+```bash
+# vim /opsworkslab/mycookbooks/systemconfig/templates/default/ntpdate.erb  
+```
 
 Adicione o conteúdo:
 
-\[cce lang=”bash”\]  
+```bash
 /usr/sbin/ntpdate -u pool.ntp.br  
-\[/cc\]
+```
 
 Pronto. Já temos nossa primeira receita criada. Agora vamos explicar passo a passo:
 
@@ -211,10 +181,10 @@ Uma boa documentação sobre cookbooks pode ser encontrada aqui: <http://docs.aw
 
 Em seguida, vamos criar o nosso arquivo compactado e enviá-lo para o S3.
 
-\[cce lang=”bash”\]  
-\# cd /opsworkslab  
-\# tar czvf coobook.tar.gz mycookbooks  
-\[/cc\]
+```bash
+# cd /opsworkslab  
+# tar czvf coobook.tar.gz mycookbooks  
+```
 
 Agora vamos abrir a console do S3 e enviar o arquivo para lá.
 
