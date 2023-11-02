@@ -1,45 +1,9 @@
 ---
-id: 4889
 title: 'Participação no FliSol 2014'
 date: '2014-04-24T12:16:59-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4889'
-permalink: /participacao-no-flisol-2014/
-views:
-    - '460'
-    - '460'
-    - '460'
-    - '460'
-    - '460'
-    - '460'
-    - '460'
-    - '460'
-Thumbnail:
-    - 'http://i2.wp.com/www.ricardomartins.com.br/media/flisol.png?fit=767%2C9999'
-    - 'http://i2.wp.com/www.ricardomartins.com.br/media/flisol.png?fit=767%2C9999'
-    - 'http://i2.wp.com/www.ricardomartins.com.br/media/flisol.png?fit=767%2C9999'
-    - 'http://i2.wp.com/www.ricardomartins.com.br/media/flisol.png?fit=767%2C9999'
-    - 'http://i2.wp.com/ricardomartinsblog.azurewebsites.ne/media/flisol.png?fit=767%2C9999'
-    - 'http://i2.wp.com/ricardomartinsblog.azurewebsites.ne/media/flisol.png?fit=767%2C9999'
-    - 'http://i2.wp.com/ricardomartinsblog.azurewebsites.net/media/flisol.png?fit=767%2C9999'
-    - 'http://i2.wp.com/ricardomartinsblog.azurewebsites.net/media/flisol.png?fit=767%2C9999'
-dsq_thread_id:
-    - '3369009118'
-    - '3369009118'
-    - '3369009118'
-    - '3369009118'
-    - '3369009118'
-    - '3369009118'
-    - '3369009118'
-    - '3369009118'
-categories:
-    - Uncategorized
 tags:
-    - '52'
     - cloud
-    - Eventos
-    - Uncategorized
+    - palestras
 ---
 
 No próximo dia 26/04 estará acontecendo em Niterói o FliSol 2014, no qual eu terei o prazer de palestrar sobre o assunto de Computação em Nuvem.
