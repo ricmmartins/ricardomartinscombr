@@ -1,35 +1,9 @@
 ---
-id: 5637
 title: 'PimpMyLog: Uma ferramenta web para visualização de logs'
 date: '2015-04-01T16:11:54-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5637'
-permalink: /pimpmylog-uma-ferramenta-web-para-visualizacao-de-logs/
-views:
-    - '1363'
-    - '1363'
-    - '1363'
-    - '1363'
-    - '1363'
-    - '1363'
-    - '1363'
-    - '1363'
-dsq_thread_id:
-    - '3646843744'
-    - '3646843744'
-    - '3646843744'
-    - '3646843744'
-    - '3646843744'
-    - '3646843744'
-    - '3646843744'
-    - '3646843744'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '160'
     - logs
+    - ferramentas
 ---
 
 Encontrei nesta semana uma ferramenta interessante, o [PimpMyLog](http://pimpmylog.com/). Encontrei por acaso no [Github](https://github.com/potsky/PimpMyLog), procurando uma ferramenta simples para visualizar logs via browser. Precisava de algo simples, objetivo e funcional.
