@@ -1,8 +1,6 @@
 ---
 title: 'Como implementar o DSpace em um WebApp Container no Azure'
 date: '2018-05-01T08:03:41-04:00'
-categories:
-    - artigos
 tags:
     - azuere
     - webapp
