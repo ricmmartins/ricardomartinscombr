@@ -1,27 +1,9 @@
 ---
-id: 8440
 title: 'Meu primeiro ano na Microsoft'
 date: '2016-12-21T15:44:55-05:00'
-author: rmmartins
-layout: post
-guid: 'https://www.ricardomartins.com.br/?p=8440'
-permalink: /meu-primeiro-ano-na-microsoft/
-dsq_thread_id:
-    - '5399750271'
-    - '5399750271'
-    - '5399750271'
-    - '5399750271'
-    - '5399750271'
-    - '5399750271'
-    - '5399750271'
-    - '5399750271'
-categories:
-    - Uncategorized
 tags:
-    - '44'
-    - Carreira
+    - carreira
     - microsoft
-    - Uncategorized
 ---
 
 ![](/wp-content/uploads/2016/12/13246354_10206280130913371_918757031935210288_o.jpg)
