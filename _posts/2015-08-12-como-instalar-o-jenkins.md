@@ -1,29 +1,9 @@
 ---
-id: 5815
 title: 'Como instalar o Jenkins'
 date: '2015-08-12T14:53:20-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5815'
-permalink: /como-instalar-o-jenkins/
-views:
-    - '1466'
-    - '1466'
-    - '1466'
-    - '1466'
-dsq_thread_id:
-    - '4026530788'
-    - '4026530788'
-    - '4026530788'
-    - '4026530788'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '60'
     - devops
     - jenkins
-    - Uncategorized
 ---
 
 A idéia deste post é criar um “mini-howto” da instalação do Jenkins.
@@ -38,7 +18,13 @@ A parte de configuração também pode variar muito, e dependerá muito das nece
 
 Neste caso, estou usando uma instância na Amazon, que utiliza o Amazon Linux (CentOS Based):
 
-https://gist.github.com/rmmartins/c2cc3588c728252d6356
+```bash
+# wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+# rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+# yum install jenkins
+# service jenkins start
+# chkconfig jenkins on
+```
 
 Por fim, acesse no browser:
 
