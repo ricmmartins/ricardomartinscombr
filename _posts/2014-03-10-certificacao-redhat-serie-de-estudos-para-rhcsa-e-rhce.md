@@ -1,37 +1,10 @@
 ---
-id: 4792
 title: 'Certificação RedHat: Série de Estudos para RHCSA e RHCE'
 date: '2014-03-10T20:45:25-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4792'
-permalink: /certificacao-redhat-serie-de-estudos-para-rhcsa-e-rhce/
-views:
-    - '10081'
-    - '10081'
-    - '10081'
-    - '10081'
-    - '10081'
-    - '10081'
-    - '10081'
-    - '10081'
-dsq_thread_id:
-    - '3277904598'
-    - '3277904598'
-    - '3277904598'
-    - '3277904598'
-    - '3277904598'
-    - '3277904598'
-    - '3277904598'
-    - '3277904598'
-categories:
-    - Uncategorized
 tags:
-    - '134'
-    - '47'
     - certificação
     - redhat
-    - Uncategorized
+    - estudo
 ---
 
 O tema “Certificação” levanta uma série de opiniões distintas e controversas sobre o assunto. Não vou entrar neste mérito uma vez que o objetivo deste post não é debater sobre certificações. Eu particularmente sempre disse o seguinte: “Estude para ser bom. Certificação e reconhecimento são consequências”.
