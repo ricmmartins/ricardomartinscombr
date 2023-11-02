@@ -1,13 +1,9 @@
 ---
-title: 'Conhecendo as opções para containers do Azure'
-subtitle: 'Descubra diferentes maneiras de rodar containers'
+title: "Conhecendo as opções para containers do Azure"
 date: '2019-01-19T01:32:22-05:00'
-author: rmmartins
-layout: post
-permalink: /conhecendo-as-opcoes-para-containers-no-azure/
 tags:
-    - Azure
-    - Containers 
+    - azure
+    - containers 
 ---
 
 O Azure é uma excelente plataforma de computação em nuvem com muitos recursos e funcionalidades interessantes, sendo as opções para containers realmente incríveis. Porém uma coisa que percebo em muitos clientes hoje são dúvidas e desconhecimento sobre detalhes destas opções. Pensando nisso estou escrevendo esse artigo para esclarecer um pouco sobre este assunto.
