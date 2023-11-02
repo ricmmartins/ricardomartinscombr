@@ -2,7 +2,7 @@
 title: "Conhecendo as opções para containers do Azure"
 date: '2019-01-19T01:32:22-05:00'
 categories:
-    - article
+    - artigos
 tags:
     - azure
     - containers 
