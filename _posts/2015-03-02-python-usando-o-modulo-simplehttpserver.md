@@ -30,7 +30,7 @@ WWW_PATH=”/var/log/”
 case $1 in  
 start)  
 cd $WWW_PATH  
-nohup python -m SimpleHTTPServer $WWW_PORT &gt;&gt; /tmp/nohup.log 2&gt;&amp;1 &amp;  
+nohup python -m SimpleHTTPServer $WWW_PORT >> /tmp/nohup.log 2>&1 &  
 sleep 2  
 stat=`netstat -tlpn | grep $WWW_PORT | grep “python” | cut -d”:” -f2 | cut -d” ” -f1`  
 if [[ $WWW_PORT -eq $stat ]]; then  
