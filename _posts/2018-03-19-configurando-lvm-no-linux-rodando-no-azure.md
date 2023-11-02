@@ -1,9 +1,6 @@
 ---
 title: 'Configurando LVM no Linux rodando no Azure'
 date: '2018-03-19T21:40:34-04:00'
-categories:
-    - artigos
-    - videos
 tags:
     - azure
     - linux
