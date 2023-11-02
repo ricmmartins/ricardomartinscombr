@@ -16,21 +16,36 @@ Supondo que você já tenha o Bash no Windows instalado, vamos lá:
 
 ## Instalando o Zsh
 
-https://gist.github.com/rmmartins/94e34eb34690d63ec081724de9a4239a
+```bash
+sudo apt-get install zsh
+```
 
 ## Tornando o Zsh o shell default
 
-https://gist.github.com/rmmartins/835206ca3bf45e7f68d8d5f8b2901bfb
+```bash
+vim ~/.bashrc
+
+#Add these lines at the end of the file
+
+# Launch Zsh
+if [ -t 1 ]; then
+exec zsh
+fi
+```
 
 ## Instalando o Oh My Zsh
 
-https://gist.github.com/rmmartins/5127eef149d5c012881cedc91324453b
+```bash
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ## Configurando o tema
 
 Tomando como o exemplo o tema agnoster, basta editar o arquivo .zshrc e deixar a linha onde consta a variável ZSH\_THEME desta forma:
 
-https://gist.github.com/rmmartins/58bd2536ba913c312195063b190c447c
+```bash
+ZSH_THEME="agnoster"
+```
 
 ## Instalando a fonte correta
 
