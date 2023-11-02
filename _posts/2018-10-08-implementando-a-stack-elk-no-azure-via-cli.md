@@ -1,9 +1,6 @@
 ---
 title: 'Implementando a Stack ELK no Azure via CLI'
 date: '2018-10-08T23:58:15-04:00'
-author: rmmartins
-layout: post
-permalink: /implementando-a-stack-elk-no-azure-via-cli/
 tags:
     - azure
     - elk
