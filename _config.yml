@@ -23,7 +23,7 @@ linkedin: ricmmartins
 minimal_mistakes_skin: "air"
 search: true
 locale: "pt-BR"
-search_within_pages: true
+logo: "/assets/images/blog-icon.png"
 comments:
   provider: "disqus"
   disqus:
