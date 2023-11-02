@@ -1,11 +1,12 @@
 ---
 title: 'Como implementar o DSpace em um WebApp Container no Azure'
 date: '2018-05-01T08:03:41-04:00'
+categories:
+    - artigos
 tags:
     - azuere
     - webapp
-    - opensource
-    
+    - opensource    
 ---
 
 # O que é o DSpace?
@@ -24,27 +25,39 @@ Primeiro, precisamos criar o Azure Database para PostgreSQL. Eu estou usando o [
 
 ## Criando o grupo de recursos
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-01-create-resource-group-sh
+```bash
+az group create --name myresourcegroup --location eastus
+```
 
 ## Adicionando a extensão atualizada do PostgreSQL
 
 Adicione a extensão atualizada de gerenciamento do Azure Database para PostgreSQL usando o seguinte comando:
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-02-add-extension-sh
+```bash
+az extension add --name rdbms
+```
 
 ## Criando o “PostgreSQL as a Service” no Azure
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-03-create-pg-sh
-
+```bash
+az postgres server create --resource-group myresourcegroup --name mydemoserver  --location eastus --admin-user myadmin --admin-password <server_admin_password> --performance-tier Basic --ssl-enforcement Disabled
+```
 ## Criando a regra de firewall no Network Security Group
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-04-create-fw-rule-sh
+```bash
+az postgres server firewall-rule create --resource-group myresourcegroup --server mydemoserver --name AllowAllIps --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
+```
 
 ## Criando o database e instalando a extensão pgcrypto:
 
 O DSpace requer a extensão “pgcrypto” instalada no banco de dados. Então vamos criar o banco de dados e instalar esta extensão. Aqui, estou usando o [psql](https://www.postgresql.org/docs/9.2/static/app-psql.html) para fazer isto:
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-05-create-db-sh
+```bash
+psql --host=mydemoserver.postgres.database.azure.com --port=5432 --username=myadmin@mydemoserver --dbname=postgres
+create database dspace; 
+\c dspace
+create extension pgcrypto;
+```
 
 # Build da imagem
 
@@ -52,25 +65,36 @@ https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-05-creat
 
 Faça o clone do meu repositório do DSpace no github:
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-06-clone-repo-sh
+```bash
+git clone https://github.com/rmmartins/docker-dspace-azure.git
+```
 
 ## Faça alguns pequenos ajustes
 
 Para construir a imagem Docker, você precisa ajustar o arquivo [local.cfg](https://github.com/rmmartins/docker-dspace-azure/blob/master/config/local.cfg#L91) na linha 91. Você precisa alterar o endereço do servidor, nome de usuário e senha pelos parâmetros do PostgreSQL que você criou nos passos anteriores.
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-07-adjustments1-sh
+```bash
+cd docker-dspace-azure/
+vim config/local.cfg
+```
 
 Após realizar as alterações, a linha 91 do arquivo config/local.cfg deverá estar similar a esta (porém com os seus dados ):
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-07-adjustments2-sh
+```bash
+db.url = jdbc:postgresql://dspace2.postgres.database.azure.com:5432/dspace?user=dspaceadmin@dspace2&password=Pass0rd1?wx$&ssl=false
+```
 
 ## Criando o build da nossa imagem
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-08-build-sh
+```bash
+sudo  docker build -t rmartins/docker-dspace-azure .
+```
 
 ## Colocando a nossa imagem para rodar
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-09-run-sh
+```bash
+sudo docker run  -p 8080:8080 rmartins/docker-dspace-azure
+```
 
 Depois de alguns segundos, as interfaces do DSpace estarão acessíveis através dos endereços abaixo:
 
@@ -89,13 +113,17 @@ Esta é a melhor parte! Se você deseja rodar o Dspace sem ter que gerenciar uma
 
 Primeiro salve a imagem que já temos como uma nova imagem. Para isto, você precisa encontrar o container ID (usando o comando docker ps) e então fazer o commit usando um novo nome de imagem:
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-10-prepare-new-image-sh
-
+```bash
+sudo docker commit c16378f943fe rmartins/docker-dspace-azure-webapp
+```
 ## Envie a nova imagem para o repositório
 
 Uma vez que já temos uma nova imagem, com todos os ajustes necessários realizados, vamos enviá-la ao Docker Hub:
 
-https://gist.github.com/rmmartins/819767b89bdbc3aae4fff7b03b77dc4c#file-11-push-sh
+```bash
+sudo docker login
+sudo docker push rmartins/docker-dspace-azure-webapp
+```
 
 Observação: Caso você não possua uma conta no Docker Hub, basta acessar <https://hub.docker.com/> e criar uma gratuitamente. Você também pode usar o [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/) para armazenar suas imagens.
 
