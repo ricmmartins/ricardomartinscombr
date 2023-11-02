@@ -13,8 +13,6 @@ Aqui tem uma demonstração dele: [http://phpsysinfo.sourceforge.net/phpsysinfo/
 
 Eu instalei ele na mesma máquina virtual do dashboard demonstrado anteriormente, então você precisará basicamente dos mesmos pacotes. Depois de instalar os pacotes necessários (php, php-common, php-gd, php-mbstring, php-xml, php-xmlrpc) e subir um servidor web (Apache ou Nginx por exemplo), basta você baixar o pacote (wget <https://github.com/rk4an/phpsysinfo/tarball/master>), descompactar e renomear o arquivo phpsysinfo.ini.new para phpsysinfo.ini
 
-O mais interessante é que de acordo com o site, tem [cliente para acessar via Android](http://rk4an.github.io/psiandroid/ "Android Client"), [módulo para Puppet](https://github.com/drivard/puppet-phpsysinfo "Modulo para Puppet"), acesso via XML e JSON API o/
-
-E para Windows users, calma tem pra vocês também! Confira em [https://github.com/rk4an/phpsysinfo#current-tested-platforms](https://github.com/rk4an/phpsysinfo#current-tested-platforms "Plataformas testadas")
+O mais interessante é que de acordo com o site, tem [cliente para acessar via Android](http://rk4an.github.io/psiandroid/ "Android Client"), acesso via XML e JSON API. E para Windows users, calma tem pra vocês também! Confira em [https://github.com/rk4an/phpsysinfo#current-tested-platforms](https://github.com/rk4an/phpsysinfo#current-tested-platforms "Plataformas testadas")
 
 Por hoje é só.
