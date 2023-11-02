@@ -35,18 +35,14 @@ Uma vez que você já tenha o AZ CLI instalado, vamos aos comandos. A primeira c
 
 Assim que concluir esta etapa, você já estará autenticado em sua assinatura do Azure e pronto para começar a executar os comandos.
 
-```
+```bash
 user@mydesktop:~$ az group create \
 --name rg-guacamole-demo \
 --location eastus
 ```
 ## Criação do serviço do MySQL
 
-https://gist.github.com/rmmartins/b45afbcc973c14840b8fb4bc0298ee39#file-02-create-mysql-sh
-
-## Criação da regra de firewall para o MySQL
-
-```
+```bash
 user@mydesktop:~$ az mysql server create \
 --resource-group rg-guacamole-demo \
 --name guacamoledemodb \
@@ -59,7 +55,22 @@ user@mydesktop:~$ az mysql server create \
 --ssl-enforcement Disabled
 ```
 
+## Criação da regra de firewall para o MySQL
+
+```bash
+user@mydesktop:~$ az mysql server create \
+--resource-group rg-guacamole-demo \
+--name guacamoledemodb \
+--location eastus \
+--admin-user guacadbadminuser \
+--admin-password 'Password01@2018!' \
+--performance-tier Basic \
+--compute-units 50 \
+--storage-size 51200 \
+--ssl-enforcement Disabled
 ```
+
+```bash
 user@mydesktop:~$ az mysql server firewall-rule create \
 --resource-group rg-guacamole-demo \
 --server guacamoledemodb \
@@ -74,7 +85,7 @@ Após setup e testes iniciais, é importante remover esta regra a deixar habilit
 
 ## Criação da VNET
 
-```
+```bash
 user@mydesktop:~$ az network vnet create \
 --resource-group rg-guacamole-demo \
 --name myVnet \
@@ -85,7 +96,7 @@ user@mydesktop:~$ az network vnet create \
 
 ## Criação do Availability Set
 
-```
+```bash
 user@mydesktop:~$ az vm availability-set create \
 --resource-group rg-guacamole-demo \
 --name guacamoleAvSet \
@@ -95,7 +106,7 @@ user@mydesktop:~$ az vm availability-set create \
 
 ## Criação das VMs
 
-```
+```bash
 user@mydesktop:~$ for i in `seq 1 2`; do
 az vm create \
 --resource-group rg-guacamole-demo \
@@ -116,13 +127,13 @@ Após a execução deste bloco de comandos, serão criadas duas máquinas virtua
 
 Importante ressaltar que as chaves SSH serão armazenadas no diretório ~/.ssh do host onde os comandos foram executados e para conectar nas VMs basta rodar o comando abaixo:
 
-```
+```bash
 user@mydesktop:~$ ssh -i .ssh/id_rsa guacauser@<ip>
 ```
 
 ## Criação do Network Security Group
 
-```
+```bash
 user@mydesktop:~$ az network nsg rule create \
 --resource-group rg-guacamole-demo \
 --nsg-name NSG-Guacamole \
@@ -143,7 +154,7 @@ Neste caso, estamos criando a regra de liberar o acesso na porta 80 (HTTP) à pa
 
 Neste ponto iremos usar um arquivo json que irá fazer uma chamada à um shell script e executar a instalação de pacotes necessários no Linux. Abaixo os comandos à serem executados:
 
-```
+```bash
 user@mydesktop:~$ for i in `seq 1 2`; do
 az vm extension set \
 --resource-group rg-guacamole-demo \
@@ -155,7 +166,7 @@ done
 
 ### Conteúdo do arquivo JSON (guac.json)
 
-```
+```bash
 {  
   "fileUris": ["https://ricardomartins9888.blob.core.windows.net/arquivos/guac-install.sh"],
   "commandToExecute": "./guac-install.sh"
@@ -166,7 +177,7 @@ Caso o script guac-install.sh esteja armazenado em outra url, alterar no campo c
 
 ### Conteúdo do script shell (guac-install.sh)
 
-```
+```bash
 #!/bin/bash
 
 # Version numbers of Guacamole and MySQL Connector/J to download
@@ -323,7 +334,7 @@ echo -e "Installation Complete\nhttp://localhost:8080/guacamole/\nDefault login 
 
 Por padrão o acesso no Guacamole se dá acessando o IP do servidor /guacamole. Por exemplo, http://10.20.30.40/guacamole. O objetivo aqui é permitir que o acesso seja feito diretamente em http://10.20.30.40
 
-````
+````bash
 user@mydesktop:~$ for i in `seq 1 2`; do
 az vm run-command invoke -g rg-guacamole-demo -n Guacamole-VM$i \
 --command-id RunShellScript \
@@ -335,7 +346,7 @@ done
 
 Por padrão o Tomcat trabalha escutando requisições na porta 8080. Aqui é feita a alteração para que ele escute por requisições na porta 80.
 
-```
+```bash
 user@mydesktop:~$ for i in `seq 1 2`; do
 az vm run-command invoke -g rg-guacamole-demo -n Guacamole-VM$i \
 --command-id RunShellScript --scripts "sudo sed -i.bak 's/#AUTHBIND=no/AUTHBIND=yes'/g /etc/default/tomcat7"
@@ -354,7 +365,7 @@ A criação do balanceador de carga envolve alguns passos, como a criação do I
 
 ### Criação do IP Público do Balanceador de Carga
 
-```
+```bash
 user@mydesktop:~$ az network public-ip create \
 -g rg-guacamole-demo \
 -n lbguacamoledemopip \
@@ -366,7 +377,7 @@ user@mydesktop:~$ az network public-ip create \
 
 ### Criação do Balanceador de Carga
 
-```
+```bash
 user@mydesktop:~$ az network lb create \
 -g rg-guacamole-demo \
 --name lbguacademo \
@@ -378,7 +389,7 @@ user@mydesktop:~$ az network lb create \
 
 ### Criação do Healthprobe
 
-```
+```bash
 user@mydesktop:~$ az network lb probe create \
 --resource-group rg-guacamole-demo \
 --lb-name lbguacademo \
@@ -390,7 +401,7 @@ user@mydesktop:~$ az network lb probe create \
 
 ### Criação da regra de balanceamento
 
-```
+```bash
 user@mydesktop:~$ az network lb rule create \
 --resource-group rg-guacamole-demo \
 --lb-name lbguacademo \
@@ -406,7 +417,7 @@ user@mydesktop:~$ az network lb rule create \
 
 ### Inserção das máquinas virtuais na regra de balanceamento
 
-```
+```bash
 user@mydesktop:~$ az network nic ip-config update \
 --name ipconfigGuacamole-VM1 \
 --nic-name Guacamole-VM1VMNic \
@@ -428,7 +439,7 @@ As regras de INAT irão permitir que as chamadas feitas diretamente no endereço
 
 Neste caso, ao realizar a chamadda na porta 21 do balanceador, direciona para a porta a VM1 na porta 22 (SSH) e a chamada na porta 23 do balanceador direciona para a VM2 na porta 22 (SSH).
 
-```
+```bash
 user@mydesktop:~$ az network lb inbound-nat-rule create \
 --resource-group rg-guacamole-demo \
 --lb-name lbguacademo \
@@ -464,7 +475,7 @@ user@mydesktop:~$ az network nic ip-config inbound-nat-rule add \
 
 Com isso, você pode alterar a regra default do NSG criado anteriormente que possui a porta 22 exposta para a internet com o comando abaixo:
 
-```
+```bash
 user@mydesktop:~$ az network nsg rule delete \
 --resource-group rg-guacamole-demo \
 --nsg-name NSG-Guacamole \
