@@ -128,7 +128,7 @@ Agora podemos fazer o deploy da nossa App:
 
 Uma vez que tenha sido realizado deploy com sucesso, vamos ver o conteúdo disponibilizado:
 
-[![19](/wp-content/uploads/2015/03/19.png)](/wp-content/uploads/2015/03/19.png)
+[![19](/wp-content/uploads/2015/03/19-1.png)](/wp-content/uploads/2015/03/19-1.png)
 
 [![20](/wp-content/uploads/2015/03/20.png)](/wp-content/uploads/2015/03/20.png)
 
@@ -147,11 +147,11 @@ lrwxrwxrwx 1 root root 34 Mar 12 19:11 ricardo -> /etc/nginx/sites-available/ric
 ```
 
 ```bash
-[root@web1 sites-enabled\]# cat ricardo  
+[root@web1 sites-enabled]# cat ricardo  
 server {  
 listen 80;  
-server\_name ricardo web1;  
-access\_log /var/log/nginx/ricardo.access.log;
+server_name ricardo web1;  
+access_log /var/log/nginx/ricardo.access.log;
 
 location / {  
 root /srv/www/ricardo/current/;  
