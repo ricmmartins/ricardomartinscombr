@@ -8,7 +8,7 @@ tags:
     - opsworks
 ---
 
-[![AWS_OpsWorks-512x320](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320-1.png)
+[![AWS_OpsWorks-512x320](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320-1.png)](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320-1.png)
 
 Olá pessoal, este artigo sobre o OpsWorks está muito relacionado com o tema gerência de configuração, e da mesma forma também com um outro assunto que vem ganhando bastante repercussão atualmente: DevOps.
 
