@@ -1,27 +1,9 @@
 ---
-id: 8311
 title: 'Usando Bots no Azure'
 date: '2016-09-13T23:23:39-04:00'
-author: rmmartins
-layout: post
-guid: 'https://www.ricardomartins.com.br/?p=8311'
-permalink: /usando-bots-no-azure/
-dsq_thread_id:
-    - '5263549924'
-    - '5263549924'
-    - '5263549924'
-    - '5263549924'
-    - '5263549924'
-    - '5263549924'
-    - '5263549924'
-    - '5263549924'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
-    - bot
-    - Uncategorized
+    - bots
 ---
 
 Já pensou você poder conversar via Skype com um bot e executar operações no Azure através de uma conversa usando linguagem natural? Agora você pode! Por enquanto estão disponíveis as funções de iniciar, parar, listar VMs e executar runbooks do Automation, mas muita coisa ainda vem por aí.
