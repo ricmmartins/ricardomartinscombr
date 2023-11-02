@@ -20,7 +20,38 @@ Note que crio um disco de 50GB chamado lvmdiskL
 
 <div class="wp-video" style="width: 640px;"><video class="wp-video-shortcode" controls="controls" height="305" id="video-8746-1" preload="metadata" width="640"><source src="/wp-content/uploads/2018/03/lvmdisk.mp4?_=1" type="video/mp4"></source>[/wp-content/uploads/2018/03/lvmdisk.mp4](/wp-content/uploads/2018/03/lvmdisk.mp4)</video></div>Em seguida, vamos aos comandos que você precisa executar:
 
-<script src="https://gist.github.com/rmmartins/59ce1c12ff61d7c7bae6303372874885.js"></script>
+```bash
+sudo cfdisk /dev/sdc
+
+sudo pvcreate /dev/sdc1
+sudo pvdisplay
+
+sudo vgcreate test_vg /dev/sdc1
+sudo vgdisplay
+
+sudo lvcreate -L 5G -n lv01 test_vg
+sudo lvdisplay
+
+sudo mkfs.ext4 /dev/mapper/test_vg-lv01
+
+sudo mkdir /lvm
+sudo mount /dev/mapper/test_vg-lv01 /lvm
+
+cd /lvm
+df -h .
+sudo umount /lvm
+
+sudo lvextend -L +3G /dev/mapper/test_vg-lv01 /dev/sdc1
+sudo lvdisplay
+
+sudo e2fsck -f /dev/mapper/test_vg-lv01
+sudo resize2fs /dev/mapper/test_vg-lv01
+
+sudo mount /dev/mapper/test_vg-lv01 /lvm
+
+cd /lvm
+df -h .
+```
 
 Explicando as linhas:
 
