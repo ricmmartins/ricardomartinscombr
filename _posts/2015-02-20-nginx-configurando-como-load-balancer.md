@@ -1,44 +1,8 @@
 ---
-id: 5338
 title: 'Nginx: Configurando como load balancer'
 date: '2015-02-20T20:47:20-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5338'
-permalink: /nginx-configurando-como-load-balancer/
-views:
-    - '1846'
-    - '1846'
-    - '1846'
-    - '1846'
-    - '1846'
-    - '1846'
-    - '1846'
-    - '1846'
-videourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-dsq_thread_id:
-    - '3534056524'
-    - '3534056524'
-    - '3534056524'
-    - '3534056524'
-    - '3534056524'
-    - '3534056524'
-    - '3534056524'
-    - '3534056524'
-categories:
-    - Uncategorized
 tags:
-    - '103'
     - nginx
-    - Uncategorized
 ---
 
 Hoje vou mostrar um recurso interessante do Nginx para balanceamento de carga. O Nginx possui suporte para três mecanismos de balanceamento de carga:
@@ -63,20 +27,20 @@ Em um cenário real, deveria apontar para outros dois servidores web com o mesmo
 
 Abaixo a configuração do /etc/nginx/conf.d/loadbalancer.conf
 
-\[cc lang=”bash”\]  
+```bash
 server {  
-listen 80;  
-server\_name loadbalancer.ricardomartins.com.br;  
-location / {  
-proxy\_pass http://ricardo;  
-}  
+  listen 80;  
+  server\_name loadbalancer.ricardomartins.com.br;  
+  location / {  
+  proxy\_pass http://ricardo;  
+  }   
 }
 
 upstream ricardo {  
-server br-linux.org;  
-server distrowatch.com;  
+  server br-linux.org;  
+  server distrowatch.com;  
 }  
-\[/cc\]
+```
 
 Desta forma, quando chamar loadbalancer.ricardomartins.com.br, como estou usando a configuração padrão de round-robin, cada hora estarei sendo direcionado para um servidor, no nosso caso, para br-linux.org e distrowatch.com. Vejam o teste:
 
