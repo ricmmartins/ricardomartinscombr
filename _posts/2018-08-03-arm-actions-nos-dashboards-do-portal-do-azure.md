@@ -1,10 +1,6 @@
 ---
 title: 'ARM Actions nos dashboards do portal do Azure'
 date: '2018-08-03T17:33:14-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8786'
-permalink: /arm-actions-nos-dashboards-do-portal-do-azure/
 tags:
     - azure
     - monitoramento
