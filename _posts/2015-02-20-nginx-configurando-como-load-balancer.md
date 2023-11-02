@@ -30,9 +30,9 @@ Abaixo a configuração do /etc/nginx/conf.d/loadbalancer.conf
 ```bash
 server {  
   listen 80;  
-  server\_name loadbalancer.ricardomartins.com.br;  
+  server_name loadbalancer.ricardomartins.com.br;  
   location / {  
-  proxy\_pass http://ricardo;  
+  proxy_pass http://ricardo;  
   }   
 }
 
