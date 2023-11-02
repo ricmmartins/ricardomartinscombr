@@ -11,4 +11,4 @@ Encontrei hoje um excelente material contendo as melhores práticas para impleme
 
 – [WordPress: Best Practices on AWS](http://d0.awsstatic.com/whitepapers/wordpress-best-practices-on-aws.pdf) (Reference Architecture for Scalable WordPress-powered Websites)
 
-\[slideshare id=41572873&amp;doc=web302-141114135613-conversion-gate02\]
+
