@@ -98,13 +98,13 @@ A portabilidade dos containers, permite que você rode em máquinas virtuais ou 
 
 Para criar o nosso container, o primeiro passo é fazer o clone da aplicação no Github.
 
-```
+```bash
 git clone https://github.com/ricmmartins/simple-php-app.git
 ```
 
 Entre no diretório **simple-php-app** e dentro dele crie o Dockerfile com o seguinte conteúdo
 
-```
+```bash
 FROM debian
 MAINTAINER Ricardo Martins - ricmart@microsoft.com
 
@@ -132,7 +132,7 @@ CMD service php7.0-fpm start && nginx -g "daemon off;"
 
 No mesmo diretório crie o o arquivo de configuracão do Nginx que será adicionado ao container. Crie um arquivo com nome **default** com o seguinte conteúdo:
 
-```
+```bash
     server {
     listen   80;
     root /var/www/app;
@@ -150,19 +150,19 @@ No mesmo diretório crie o o arquivo de configuracão do Nginx que será adicion
 
 O próximo passo é fazer o build da imagem:
 
-```
+```bash
 sudo docker build . -t simplephpapp
 ```
 
 E em seguida colocar para rodar:
 
-```
+```bash
 sudo docker run -d -p 8080:80 simplephpapp
 ```
 
 Agora você pode verificar se está ok com o comando abaixo:
 
-```
+```bash
 curl localhost:8080
 ```
 
@@ -172,7 +172,7 @@ Se tudo estiver ok, sua saída será similar à esta:
 
 Agora basta fazer o push da imagem para o [Azure Container Registry ](https://docs.microsoft.com/en-us/azure/container-registry/)ou para o próprio Docker Hub que é como vou fazer aqui. Abaixo o procedimento:
 
-```
+```bash
 sudo docker login
 ```
 
@@ -180,13 +180,13 @@ sudo docker login
 
 Agora vamos gerar uma tag para nossa imagem:
 
-```
+```bash
 sudo docker tag simplephpapp rmartins/simplephpapp
 ```
 
 E enfim enviá-la para o Docker Hub:
 
-```
+```bash
 sudo docker push rmartins/simplephpapp
 ```
 
@@ -248,11 +248,11 @@ O procedimento de criação do AKS via portal também está muito bem documentad
 
 Basicamente uma vez criado o serviço, o que você precisa fazer é [conectar no cluster](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal#connect-to-the-cluster) e usar o [kubectl ](https://kubernetes.io/docs/reference/kubectl/overview/)para gerenciar o Kubernetes. Vamos ao nosso exemplo, e a primeira coisa a fazer é criar o arquivo yaml com as definições básicas da nossa aplicação:
 
-```
+```bash
 vim simplephpapp.yaml
 ```
 
-```
+```bash
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
  kind: Deployment
  metadata:
@@ -276,13 +276,13 @@ apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 
 Em seguida vamos criar o deployment da aplicação:
 
-```
+```bash
 ricardo@Azure:~$ kubectl create -f simplephpapp.yaml deployment.apps/simplephpapp created
 ```
 
 Em seguida vamos verificar os detalhes do deployment criado:
 
-```
+```bash
 ricardo@Azure:~$ kubectl describe deployment simplephpapp
  Name:                   simplephpapp
  Namespace:              default
@@ -319,14 +319,14 @@ ricardo@Azure:~$ kubectl describe deployment simplephpapp
 
 Em seguida vamos expor a aplicação de forma balanceada:
 
-```
+```bash
 ricardo@Azure:~$ kubectl expose deployment simplephpapp --port=80 --type=LoadBalancer
  service/simplephpapp exposed
 ```
 
 Fazer a validação:
 
-```
+```bash
 ricardo@Azure:~$ kubectl get services
  NAME           TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)        AGE
  kubernetes     ClusterIP      10.0.0.1                 443/TCP        16m
@@ -335,14 +335,14 @@ ricardo@Azure:~$ kubectl get services
 
 E agora aumentar o número de réplicas:
 
-```
+```bash
 ricardo@Azure:~$ kubectl scale --replicas=5 deployment/simplephpapp
  deployment.extensions/simplephpapp scaled
 ```
 
 Conferindo:
 
-```
+```bash
 ricardo@Azure:~$ kubectl get pods
  NAME                                          READY     STATUS             RESTARTS   AGE
  simplephpapp-67f946cb9c-6qxcz                 1/1       Running            0          35s
@@ -358,7 +358,7 @@ Ao acessar pelo ip externo obtido no comando kubectl get services (**104.209.196
 
 Um outro teste manual que você pode fazer para validar o funcionamento do balanceamento é rodar o comando abaixo, que irá enviar 1000 requests ao serviço. Você também irá conseguir visualizar os diferentes nomes dos nós respondendo:
 
-```
+```bash
 time curl -s "http://104.209.196.76 [1-1000]"  
 ```
 
@@ -401,7 +401,7 @@ Conteúdo do compose file
 
 Abaixo o conteúdo do arquivo compose para você copiar:
 
-```
+```bash
 version: '3'
  services:
    simplephpapp:
