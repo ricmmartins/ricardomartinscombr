@@ -24,6 +24,7 @@ minimal_mistakes_skin: "air"
 search: true
 locale: "pt-BR"
 logo: "/assets/images/blog-icon.png"
+masthead_title: "My Custom Title"
 comments:
   provider: "disqus"
   disqus:
