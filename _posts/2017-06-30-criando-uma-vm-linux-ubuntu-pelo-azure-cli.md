@@ -1,7 +1,5 @@
 ---
 title: 'Criando uma VM Linux (Ubuntu) pelo Azure CLI'
-categories:
-    - artigos
 tags:
     - azure
     - linux
