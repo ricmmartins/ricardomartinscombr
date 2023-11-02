@@ -1,34 +1,9 @@
 ---
-id: 5248
 title: 'Coursera: Curso de especialização em Cloud Computing'
 date: '2015-01-15T15:26:53-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5248'
-permalink: /coursera-curso-de-especializacao-em-cloud-computing/
-views:
-    - '1074'
-    - '1074'
-    - '1074'
-    - '1074'
-    - '1074'
-    - '1074'
-    - '1074'
-    - '1074'
-dsq_thread_id:
-    - '3423262367'
-    - '3423262367'
-    - '3423262367'
-    - '3423262367'
-    - '3423262367'
-    - '3423262367'
-    - '3423262367'
-    - '3423262367'
-categories:
-    - Uncategorized
 tags:
-    - '52'
-    - Uncategorized
+    - cursos
+    - cloud
 ---
 
 Se você se interessa pelo assunto, não pode perder esta excelente oportunidade de aprimorar seus conhecimentos.
