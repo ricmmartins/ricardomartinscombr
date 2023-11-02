@@ -1,39 +1,9 @@
 ---
-id: 5700
 title: 'CoreOS: O que é e como funciona?'
 date: '2015-05-05T19:05:52-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5700'
-permalink: /coreos-o-que-e-e-como-funciona/
-views:
-    - '7892'
-    - '7892'
-    - '7892'
-    - '7892'
-    - '7892'
-    - '7892'
-    - '7892'
-    - '7892'
-dsq_thread_id:
-    - '3739470217'
-    - '3739470217'
-    - '3739470217'
-    - '3739470217'
-    - '3739470217'
-    - '3739470217'
-    - '3739470217'
-    - '3739470217'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '56'
-    - '60'
-    - '64'
     - coreos
-    - Linux
-    - Uncategorized
+    - linux
 ---
 
 Em tempos de computação em nuvem, micro serviços e containers, o CoreOS é uma distribuição Linux que vem ganhando força. Neste post vou compartilhar um pouco do que tenho estudado e descoberto sobre ele com vocês.
