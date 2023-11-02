@@ -1,27 +1,9 @@
 ---
-id: 4806
 title: 'Sistema automatizado de detecção de intrusão em Python'
 date: '2014-03-10T22:19:01-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4806'
-permalink: /sistema-automatizado-de-deteccao-de-intrusao-em-python/
-views:
-    - '639'
-    - '639'
-    - '639'
-    - '639'
-dsq_thread_id:
-    - '3339680843'
-    - '3339680843'
-    - '3339680843'
-    - '3339680843'
-categories:
-    - Uncategorized
 tags:
-    - '143'
     - ferramentas
-    - Uncategorized
+    - python
 ---
 
 Semanalmente eu costumo visitar o site do [SANS Institute](http://www.sans.org/). O SANS Institute é um renomado centro de segurança norte-americano. Lá eles divulgam diversos papers e informações sobre vulnerabilidades de segurança. Recentemente eu encontrei por lá um paper sobre uma ferramenta escrita em Python bastante interessante para detecção de intrusão. Se você se interessa por este tipode conteúdo, vale a pena ler.
