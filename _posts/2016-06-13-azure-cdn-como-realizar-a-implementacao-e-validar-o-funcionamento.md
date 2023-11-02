@@ -1,27 +1,9 @@
 ---
-id: 8232
 title: 'Azure CDN: Como realizar a implementação e validar o funcionamento'
 date: '2016-06-13T20:27:47-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8232'
-permalink: /azure-cdn-como-realizar-a-implementacao-e-validar-o-funcionamento/
-dsq_thread_id:
-    - '5260470980'
-    - '5260470980'
-    - '5260470980'
-    - '5260470980'
-    - '5260470980'
-    - '5260470980'
-    - '5260470980'
-    - '5260470980'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
     - cdn
-    - Uncategorized
 ---
 
 O objetivo deste artigo é demonstrar passo-a-passo a criação de um ambiente web hospedando um website utilizando a CDN do Azure.
@@ -170,23 +152,44 @@ Neste exemplo, vamos trabalhar com o Nginx como servidor web. Vamos conectar no 
 
 Instalação do repositório epel:
 
-https://gist.github.com/rmmartins/b9c9c2308310cd237805e6ec771f8fde
+```bash
+sudo yum install epel-release -y
+```
 
 Instalação do Nginx:
 
-https://gist.github.com/rmmartins/5cc812542143a8d7c77418aeb638c35e
+```bash
+sudo yum install nginx -y
+```
 
 Criando a configuração do servidor web:
 
-https://gist.github.com/rmmartins/3cdbe4abfe93afdc4f0dde9f657ad9ca
+```bash
+mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.orig
+```
 
 Em seguida rode esta linha de comando:
 
-https://gist.github.com/rmmartins/115133dc8f9e2b7a11a8299c34c51419
+```bash
+cat <<'EOF' >> /etc/nginx/conf.d/default.conf
+server {
+	listen 80 default_server;
+	server_name www.azurelab.com.br;
+	
+	include /etc/nginx/conf.d/*.conf;
+	location / {
+		root	/usr/share/nginx/html;
+		index	index.html index.html;
+	}
+}
+EOF
+```
 
 Iniciando o servidor:
 
-https://gist.github.com/rmmartins/6df13dd307100b63548d8faefd934d19
+```bash
+/etc/init.d/nginx start && chkconfig nginx on
+```
 
 Testando o acesso:
 
@@ -272,15 +275,42 @@ Abra a blade da CDN criada, em seguida clique para adicionar um endpoint e preen
 
 Para que as chamadas em [www.azurelab.com.br/cdn](http://www.azurelab.com.br/cdn) sejam direcionadas para o endpoint da CDN, precisamos adicionar o bloco abaixo ao arquivo de configuração do Nginx (/etc/nginx/conf.d/default.conf):
 
-https://gist.github.com/rmmartins/f4710475048a99d638134851783fe64c
+```bash
+location /cdn {
+		proxy_pass			http://labricardo.azureedge.net/files/;
+		proxy_redirect		off;
+		proxy_set_header	X-Real-IP $remote_addr;
+		proxy_set_header	X-Forwarded-For $proxy_add_x_forwarded_for;
+	}
+```
 
 O arquivo deve ficar assim:
 
-https://gist.github.com/rmmartins/a1c7e042dd78f4c21adcb3272f3c1b93
+```bash
+server {
+        listen 80;
+        server_name www.azurelab.com.br;
 
+        include /etc/nginx/default.d/*.conf;
+
+        location / {
+                root    /usr/share/nginx/html;
+                index   index.html index.html;
+        }
+
+location /cdn {
+                proxy_pass              http://labricardo.azureedge.net/files/;
+                proxy_redirect          off;
+                proxy_set_header        X-Real-IP $remote_addr;
+                proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+}
+```
 Depois faça um reload na configuração com o comando:
 
-https://gist.github.com/rmmartins/983bd628c7fb86a3ac7fe673031fe7f2
+```bash
+/etc/init.d/nginx reload
+```
 
 ## Validando a configuração
 
