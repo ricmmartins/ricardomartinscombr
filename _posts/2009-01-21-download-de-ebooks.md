@@ -1,0 +1,103 @@
+---
+id: 428
+title: 'Download de Ebooks'
+date: '2009-01-21T21:57:33-05:00'
+author: rmmartins
+layout: post
+guid: 'http://ricardomartins.com.br/?p=428'
+permalink: /download-de-ebooks/
+views:
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+    - '857'
+dsq_thread_id:
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+    - '3428926452'
+categories:
+    - Uncategorized
+tags:
+    - '160'
+    - download
+    - ebooks
+---
+
+O site [Free It E-books](http://www.free-itebooks.com/) contém uma lista de diversos e-books na internet que foram disponibilizados para acesso livre, ou seja, não há pirataria de software e muito menos violação de direito autoral. São e-books relacionados a programação e computação em geral.
+
+Confira !
+
+Fonte: <http://www.gotchait.com/>
