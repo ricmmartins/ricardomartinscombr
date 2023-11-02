@@ -9,12 +9,24 @@ Recentemente precisei acessar um ambiente para coletar informações sobre VMs e
 
 ### Listar subscriptions:
 
-https://gist.github.com/rmmartins/d603d1fb9aa44a354259a0be754a89c1#file-01-list-subs-sh
+```bash
+az account list
+Tecnologia - TI           AzureCloud   35e10abf-9270-4hse-85ff-3895b959e820  Enabled
+Tecnologia - Arq          AzureCloud   83e30abf-2981-4die-88jw-4095b960e790  Enabled
+```
 
 ### Alternar para determinada subscription:
 
-https://gist.github.com/rmmartins/d603d1fb9aa44a354259a0be754a89c1#file-02-change-subs-sh
+```bash
+az account set -s 35e10abf-9270-4hse-85ff-3895b959e820
+```
 
 ### Listar VMs pelo nome, estado de execução, tamanho, tipo de sistema operacional e localização:
 
-https://gist.github.com/rmmartins/d603d1fb9aa44a354259a0be754a89c1#file-03-list-vm-info-sh
+```bash
+az vm list --show-details --query '[].{Name:name,PowerState:powerState,VMSize:hardwareProfile.vmSize,OSType:storageProfile.osDisk.osType,Location:location}' -o table
+ 
+Name          PowerState    VMSize       OSType    Location
+------------  ------------  -----------  --------  -----------
+vmexemplo1    VM running    Standard_A2  Linux   brazilsouth
+```
