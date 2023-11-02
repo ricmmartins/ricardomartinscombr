@@ -1,36 +1,14 @@
 ---
-id: 5253
 title: 'OpsWorks: Conhecendo a ferramenta de gerência de configuração da Amazon &#8211; Parte I/III'
 date: '2015-01-16T13:38:49-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5253'
-permalink: /opsworks-conhecendo-ferramenta-de-gerencia-de-configuracao-da-amazon/
-views:
-    - '3251'
-    - '3251'
-    - '3251'
-    - '3251'
-dsq_thread_id:
-    - '3426189129'
-    - '3426189129'
-    - '3426189129'
-    - '3426189129'
-categories:
-    - Uncategorized
 tags:
-    - '37'
-    - '52'
-    - '60'
-    - '64'
     - aws
     - cloud
     - devops
     - opsworks
-    - Uncategorized
 ---
 
-[![AWS_OpsWorks-512x320](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)
+[![AWS_OpsWorks-512x320](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320.png)](/wp-content/uploads/2015/01/AWS_OpsWorks-512x320-1.png)
 
 Olá pessoal, este artigo sobre o OpsWorks está muito relacionado com o tema gerência de configuração, e da mesma forma também com um outro assunto que vem ganhando bastante repercussão atualmente: DevOps.
 
