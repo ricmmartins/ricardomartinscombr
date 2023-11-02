@@ -1,28 +1,9 @@
 ---
-id: 8320
 title: 'Como se tornar um IT Pro melhor'
 date: '2016-09-19T16:45:50-04:00'
-author: rmmartins
-layout: post
-guid: 'https://www.ricardomartins.com.br/?p=8320'
-permalink: /como-se-tornar-um-it-pro-melhor/
-dsq_thread_id:
-    - '5259348117'
-    - '5259348117'
-    - '5259348117'
-    - '5259348117'
-    - '5259348117'
-    - '5259348117'
-    - '5259348117'
-    - '5259348117'
-categories:
-    - Uncategorized
 tags:
-    - '44'
-    - '60'
     - azure
-    - Carreira
-    - Uncategorized
+    - carreira    
 ---
 
 Nos dias de hoje o profissional de TI passa por grandes mudanças. São novos paradigmas, novas tendências e etc. O administrador de sistemas hoje precisa lidar com novas formas de trabalho, culturas, metodologias e ferramentas para continuar em linha com o que o mercado exige dele.
