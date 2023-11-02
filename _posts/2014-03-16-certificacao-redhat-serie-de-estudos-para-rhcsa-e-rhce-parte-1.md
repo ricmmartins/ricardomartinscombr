@@ -1,7 +1,6 @@
 ---
 title: 'Certificação RedHat: Série de Estudos para RHCSA e RHCE - Parte 1'
 date: '2014-03-16T12:22:56-04:00'
-ed
 tags:
     - certificação
     - redhat
@@ -20,7 +19,9 @@ Neste primeiro post da série de estudos, eu vou apenas indicar alguns links com
 
 Para baixar os repositórios, utilize:
 
-# git clone <url>
+```bash
+git clone <url>
+```
 
 ## Dicas de alguns blogs:
 
