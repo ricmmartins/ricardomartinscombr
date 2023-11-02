@@ -1,38 +1,13 @@
 ---
-id: 5758
+
 title: 'Monit: Monitoramento de aplicações e serviços de forma inteligente'
 date: '2015-06-26T17:04:55-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5758'
-permalink: /monit-monitoramento-de-aplicacoes-e-servicos-de-forma-inteligente/
-views:
-    - '2543'
-    - '2543'
-    - '2543'
-    - '2543'
-    - '2543'
-    - '2543'
-    - '2543'
-    - '2543'
-dsq_thread_id:
-    - '3882485644'
-    - '3882485644'
-    - '3882485644'
-    - '3882485644'
-    - '3882485644'
-    - '3882485644'
-    - '3882485644'
-    - '3882485644'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - Linux
+    - linux
     - monit
+    - monitoramento
     - nginx
     - php-fpm
-    - Uncategorized
     - vagrant
 ---
 
