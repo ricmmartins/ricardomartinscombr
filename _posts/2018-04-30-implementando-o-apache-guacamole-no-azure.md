@@ -1,10 +1,6 @@
 ---
 title: 'Implementando o Apache Guacamole no Azure'
 date: '2018-04-30T20:44:48-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8758'
-permalink: /implementando-o-apache-guacamole-no-azure/
 tags:
     - azure
     - opensource
