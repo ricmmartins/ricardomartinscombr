@@ -3,7 +3,7 @@ title: 'Azure File Sync'
 date: '2018-08-02T11:21:59-04:00'
 tags:
     - azure
-    -storage
+    - storage
 ---
 
 O post de hoje é bem rápido, apenas para compartilhar algumas coisas sobre o Azure File Sync. Caso você ainda não conheça vale a pena dar uma olhada. Neste primeiro vídeo, um breve overview sobre ele:
