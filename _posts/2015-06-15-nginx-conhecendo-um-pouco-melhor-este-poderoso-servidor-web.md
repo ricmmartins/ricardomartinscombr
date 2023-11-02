@@ -1,37 +1,8 @@
 ---
-id: 5747
 title: 'Nginx: Conhecendo um pouco melhor este poderoso servidor web'
 date: '2015-06-15T12:06:46-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5747'
-permalink: /nginx-conhecendo-um-pouco-melhor-este-poderoso-servidor-web/
-views:
-    - '1144'
-    - '1144'
-    - '1144'
-    - '1144'
-    - '1144'
-    - '1144'
-    - '1144'
-    - '1144'
-dsq_thread_id:
-    - '3850391913'
-    - '3850391913'
-    - '3850391913'
-    - '3850391913'
-    - '3850391913'
-    - '3850391913'
-    - '3850391913'
-    - '3850391913'
-categories:
-    - Uncategorized
 tags:
-    - '103'
     - nginx
-    - tunning
-    - Uncategorized
-    - webserver
 ---
 
 [![nginx_logo](/wp-content/uploads/2015/02/nginx_logo-300x206.gif)](/wp-content/uploads/2015/02/nginx_logo.gif)
