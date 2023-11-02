@@ -192,7 +192,7 @@ Agora vamos abrir a console do S3 e enviar o arquivo para lá.
 
 Agora que já temos o arquivo no S3, vamos criar a nossa layer no OpsWorks:
 
-[![opsworks5](/wp-content/uploads/2015/03/opsworks5.png)](/wp-content/uploads/2015/03/opsworks5.png)
+[![opsworks5](/wp-content/uploads/2015/03/opsworks5-1.png)](/wp-content/uploads/2015/03/opsworks5-1.png)
 
 Vamos clicar em “Add a layer” e em seguida vamos preencher as informações necessárias:
 
@@ -228,7 +228,7 @@ Agora voltamos no meu Layers, e vamos fazer um ajuste nas configurações de red
 
 Dentro da parte de Network, clicamos em Edit e vamos configurar para que a instância obtenha um endereço ip público quando for iniciada:
 
-[![opsworks13](/wp-content/uploads/2015/03/opsworks13.png)](/wp-content/uploads/2015/03/opsworks13.png)
+[![opsworks13](/wp-content/uploads/2015/03/opsworks13-1.png)](/wp-content/uploads/2015/03/opsworks13-1.png)
 
 Agora podemos adicionar nossa instância e em seguida ela será inicializada. No processo de setup terá nossa receita customizada aplicada.
 
@@ -246,13 +246,13 @@ E por fim clicamos em “Add Instance”. Seremos direcionados para a tela segui
 
 Uma vez dado start, podemos acompanhar a atualização de status o processo de criação e inicialização da instância até que ela esteja totalmente operacional.
 
-[![opsworks17](/wp-content/uploads/2015/03/opsworks17.png)](/wp-content/uploads/2015/03/opsworks17.png)
+[![opsworks17](/wp-content/uploads/2015/03/opsworks17-1.png)](/wp-content/uploads/2015/03/opsworks17-1.png)
 
 Uma vez a instância inicializada e configurada, vamos conectar nela e conferir a configuração:
 
 [![opsworks18](/wp-content/uploads/2015/03/opsworks18.png)](/wp-content/uploads/2015/03/opsworks18.png)
 
-[![opsworks19](/wp-content/uploads/2015/03/opsworks19.png)](/wp-content/uploads/2015/03/opsworks19.png)
+[![opsworks19](/wp-content/uploads/2015/03/opsworks19-1.png)](/wp-content/uploads/2015/03/opsworks19-1.png)
 
 Caso queria visualizar, as nossas receitas são copiadas para a instância dentro de /opw/aws/opsworks:
 
