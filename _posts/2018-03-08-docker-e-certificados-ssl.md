@@ -1,6 +1,8 @@
 ---
 title: 'Docker e certificados SSL'
 date: '2018-03-08T15:52:01-05:00'
+categories:
+    - artigos
 tags:
     - docker
     - linux
@@ -40,26 +42,65 @@ Neste caso eu optei por usar o Nginx fazendo proxy\_pass para o Docker. A única
 
 Instalando os pacotes:
 
-https://gist.github.com/rmmartins/a08b45d3ede58429c6f08c06c77778a4#file-01-install-nginx-proxy-pass-sh
+```bash
+sudo apt-get install nginx
+sudo systemctl enable nginx
+```
 
 Criando o arquivo de configuração:
 
-https://gist.github.com/rmmartins/a08b45d3ede58429c6f08c06c77778a4#file-02-install-nginx-proxy-pass-sh
+```bash
+vim  /etc/nginx/sites-available/demoapp
+```
 
 Definindo as configurações:
 
 Note que coloquei o Nginx escutando na porta 80, respondendo pelo nome [demoapp.azurelab.com.br](http://demoapp.azurelab.com.br). Todas as requests que chegarem na porta 80, são automaticamente redirecionadas para a porta 443. Mais ao fim, configuro o proxy\_pass de modo que ele repasse as conexões para http://localhost:8080, que é a porta onde está rodando a aplicação Docker.
 
-https://gist.github.com/rmmartins/a08b45d3ede58429c6f08c06c77778a4#file-03-install-nginx-proxy-pass-sh
+```bash
+server {
+    listen 80;
+    server_name demoapp.azurelab.com.br;
+    return 301 https://$server_name$request_uri;
+}
+ 
+server {
+    listen 443;
+    server_name demoapp.azurelab.com.br;
+
+    ssl_certificate           /etc/nginx/cert.crt;
+    ssl_certificate_key       /etc/nginx/cert.key;
+
+    ssl on;
+    ssl_session_cache  builtin:1000  shared:SSL:10m;
+    ssl_protocols  TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers HIGH:!aNULL:!eNULL:!EXPORT:!CAMELLIA:!DES:!MD5:!PSK:!RC4;
+    ssl_prefer_server_ciphers on;
+
+    location / {
+        proxy_pass http://localhost:8080;
+        proxy_read_timeout  90;
+        proxy_redirect      http://localhost:8080 https://demoapp.azurelab.com.br;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
 
 Finalizando os ajustes, criando o link para os sites habilitados e removendo a configuração default:
 
-https://gist.github.com/rmmartins/a08b45d3ede58429c6f08c06c77778a4#file-04-install-nginx-proxy-pass-sh
+```bash
+ln -s /etc/nginx/sites-available/demoapp /etc/nginx/sites-enabled/
+rm -f /etc/nginx/sites-enabled/default
+```
 
 Fazendo restart do serviço:
 
-https://gist.github.com/rmmartins/a08b45d3ede58429c6f08c06c77778a4#file-05-install-nginx-proxy-pass-sh
-
+```bash
+sudo systemctl restart nginx
+```
 Pronto, agora temos as requisições sendo redirecionadas para HTTPS e fazendo o proxy\_pass para a porta 8080 onde está exposta a aplicação Docker.
 
 Até a próxima!
