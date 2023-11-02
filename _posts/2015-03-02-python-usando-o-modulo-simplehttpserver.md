@@ -2,44 +2,9 @@
 id: 5364
 title: 'Python: Usando o módulo SimpleHTTPServer'
 date: '2015-03-02T18:45:44-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5364'
-permalink: /python-usando-o-modulo-simplehttpserver/
-views:
-    - '1641'
-    - '1641'
-    - '1641'
-    - '1641'
-    - '1641'
-    - '1641'
-    - '1641'
-    - '1641'
-videourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-dsq_thread_id:
-    - '3561820391'
-    - '3561820391'
-    - '3561820391'
-    - '3561820391'
-    - '3561820391'
-    - '3561820391'
-    - '3561820391'
-    - '3561820391'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - Linux
+    - linux
     - python
-    - Uncategorized
 ---
 
 O SimpleHTTPServer é um módulo do python que representa uma alternativa simples e rápida para servir arquivos à partir de um diretório no seu sistema via HTTP sem que seja necessário instalar o Nginx, Apache ou algum outro servidor web.
@@ -52,27 +17,24 @@ Neste post vou mostrar um script em bash que você pode usar para disponibilizar
 
 Neste exemplo vou colocar o script para usar a porta 8081 e listar o conteúdo do /var/log via HTTP:
 
-\[cce lang=”bash”\]
+```bash
+# vim /tmp/http-server
+```
 
-\# vim /tmp/http-server
+```bash
+#!/bin/bash
 
-\[/cc\]
-
-\[cc escaped=”true” lang=”bash”\]
-
-\#!/bin/bash
-
-WWW\_PORT=’8081′  
-WWW\_PATH=”/var/log/”
+WWW_PORT=’8081′  
+WWW_PATH=”/var/log/”
 
 case $1 in  
 start)  
-cd $WWW\_PATH  
-nohup python -m SimpleHTTPServer $WWW\_PORT &gt;&gt; /tmp/nohup.log 2&gt;&amp;1 &amp;  
+cd $WWW_PATH  
+nohup python -m SimpleHTTPServer $WWW_PORT &gt;&gt; /tmp/nohup.log 2&gt;&amp;1 &amp;  
 sleep 2  
-stat=`netstat -tlpn | grep $WWW\_PORT | grep “python” | cut -d”:” -f2 | cut -d” ” -f1`  
-if \[\[ $WWW\_PORT -eq $stat \]\]; then  
-sock=`netstat -tlpn | grep $WWW\_PORT | grep “python”`  
+stat=`netstat -tlpn | grep $WWW_PORT | grep “python” | cut -d”:” -f2 | cut -d” ” -f1`  
+if [[ $WWW_PORT -eq $stat ]]; then  
+sock=`netstat -tlpn | grep $WWW_PORT | grep “python”`  
 echo -e “Server is running:n$sock”  
 else  
 echo -e “Server is stopped”  
@@ -80,12 +42,12 @@ fi
 ;;
 
 stop)  
-pid=`ps -ef | grep “SimpleHTTPServer $WWW\_PORT”| awk ‘{print $2}’`  
+pid=`ps -ef | grep “SimpleHTTPServer $WWW_PORT”| awk ‘{print $2}’`  
 kill -9 $pid 2&gt;/dev/null  
 rm -f /tmp/nohup.log  
-stat=`netstat -tlpn | grep $WWW\_PORT | grep “python”| cut -d”:” -f2 | cut -d” ” -f1`  
-if \[\[ $WWW\_PORT -eq $stat \]\]; then  
-sock=`netstat -tlpn | grep $WWW\_PORT | grep “python”`  
+stat=`netstat -tlpn | grep $WWW_PORT | grep “python”| cut -d”:” -f2 | cut -d” ” -f1`  
+if [[ $WWW_PORT -eq $stat ]]; then  
+sock=`netstat -tlpn | grep $WWW_PORT | grep “python”`  
 echo -e “Server is still running:n$sock”  
 else  
 echo -e “Server has stopped”  
@@ -94,9 +56,9 @@ fi
 ;;
 
 status)  
-stat=`netstat -tlpn |grep $WWW\_PORT| grep “python” | cut -d”:” -f2 | cut -d” ” -f1`  
-if \[\[ $WWW\_PORT -eq $stat \]\]; then  
-sock=`netstat -tlpn | grep $WWW\_PORT | grep “python”`  
+stat=`netstat -tlpn |grep $WWW_PORT| grep “python” | cut -d”:” -f2 | cut -d” ” -f1`  
+if [[ $WWW_PORT -eq $stat ]]; then  
+sock=`netstat -tlpn | grep $WWW_PORT | grep “python”`  
 echo -e “Server is running:n$sock”  
 else  
 echo -e “Server is stopped”  
@@ -106,21 +68,20 @@ fi
 echo “Use $0 start|stop|status”  
 ;;  
 esac
-
-\[/cc\]
+```
 
 ### Em seguida vamos dar permissões de execução:
 
-\[cce lang=”bash”\]  
-\# chmod a+x /tmp/http-server  
-\[/cc\]
+```bash
+# chmod a+x /tmp/http-server  
+```
 
 ### E finalmente vamos executar e verificar o status:
 
-\[cce lang=”bash”\]  
-\# /tmp/http-server start  
-\# /tmp/http-server stop  
-\[/cc\]
+```bash
+# /tmp/http-server start  
+# /tmp/http-server stop  
+```
 
 Agora vamos ver o conteúdo do /var/log pelo browser:
 
@@ -134,12 +95,12 @@ O script http-server também configura para que os logs do SimpleHTTPServer seja
 
 No CentOS, basta criar a seguinte linha no /etc/rc.local antes da linha que contém “exit 0″:
 
-\[cce lang=”bash”\]  
+```bash
 /tmp/http-server start  
-\[/cc\]
+```
 
 Para garantir que o rc.local esteja habilitado em sistemas debian, basta instalar o pacote sysv-rc-conf e em seguida rodar:
 
-\[cce lang=”bash”\]  
+```bash
 sysv-rc-conf rc.local on  
-\[/cc\]
+```
