@@ -1,6 +1,8 @@
 ---
 title: 'ARM Actions nos dashboards do portal do Azure'
 date: '2018-08-03T17:33:14-04:00'
+categories: 
+    - artigos
 tags:
     - azure
     - monitoramento
