@@ -1,20 +1,10 @@
 ---
-id: 8738
 title: 'Docker e certificados SSL'
 date: '2018-03-08T15:52:01-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8738'
-permalink: /docker-e-certificados-ssl/
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '64'
     - docker
-    - Linux
+    - linux
     - nginx
-    - Uncategorized
 ---
 
 Este é um post rápido apenas para compartilhar uma forma de habilitar o uso de SSL para uma aplicação que esteja rodando em um container Docker.
