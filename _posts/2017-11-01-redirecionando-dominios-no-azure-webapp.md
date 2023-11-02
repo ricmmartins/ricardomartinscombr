@@ -1,22 +1,9 @@
 ---
-id: 8652
 title: 'Redirecionando domínios no Azure WebApp'
 date: '2017-11-01T16:07:26-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8652'
-permalink: /redirecionando-dominios-no-azure-webapp/
-dsq_thread_id:
-    - '6257093770'
-    - '6257093770'
-    - '6257093770'
-    - '6257093770'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
-    - Uncategorized
+    - webapps
 ---
 
 Dica rápida para você que trabalha com Azure WebApps e já precisou trabalhar com redirecionamentos. O Azure WebApp pode ser configurado em um service plan Windows ou Linux.
