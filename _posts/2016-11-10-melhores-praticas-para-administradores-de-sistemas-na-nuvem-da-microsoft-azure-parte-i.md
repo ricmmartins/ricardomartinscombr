@@ -1,26 +1,9 @@
 ---
-id: 8373
 title: 'Melhores práticas para administradores de sistemas na nuvem da Microsoft (Azure) &#8211; Parte I'
 date: '2016-11-10T00:35:22-05:00'
-author: rmmartins
-layout: post
-guid: 'https://www.ricardomartins.com.br/?p=8373'
-permalink: /melhores-praticas-para-administradores-de-sistemas-na-nuvem-da-microsoft-azure-parte-i/
-dsq_thread_id:
-    - '5292489567'
-    - '5292489567'
-    - '5292489567'
-    - '5292489567'
-    - '5292489567'
-    - '5292489567'
-    - '5292489567'
-    - '5292489567'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
-    - Uncategorized
+    - bestpracticies
 ---
 
 Nesta série de artigos gostaria de compartilhar algumas boas práticas para quem administra ambientes no Azure, abordando temas como organização dos recursos, monitoramento, backup, segurança, auditoria, alta disponibilidade, limites, permissionamento, automação, entre outros.
