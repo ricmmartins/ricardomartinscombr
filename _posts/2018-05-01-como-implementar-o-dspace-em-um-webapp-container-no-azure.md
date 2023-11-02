@@ -1,11 +1,6 @@
 ---
-id: 8765
 title: 'Como implementar o DSpace em um WebApp Container no Azure'
 date: '2018-05-01T08:03:41-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8765'
-permalink: /como-implementar-o-dspace-em-um-webapp-container-no-azure/
 tags:
     - azuere
     - webapp
