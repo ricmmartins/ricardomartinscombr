@@ -1,23 +1,8 @@
 ---
-id: 8588
 title: 'Saiba mais sobre o Azure Container Instance'
-date: '2017-08-03T10:12:19-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8588'
-permalink: /saiba-mais-sobre-o-azure-container-instance/
-dsq_thread_id:
-    - '6038403995'
-    - '6038403995'
-    - '6038403995'
-    - '6038403995'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
     - containers
-    - Uncategorized
 ---
 
 Nesta semana foi lançado o Azure Container Instance, que é uma excelente opção para rodar containers no Azure de forma simples e rápida, sem ter que se preocupar com provisionamento de máquina virtual e requisitos relacionados.
