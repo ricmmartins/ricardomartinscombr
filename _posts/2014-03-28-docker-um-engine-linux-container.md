@@ -1,39 +1,10 @@
 ---
-id: 4851
-title: 'Docker: Um linux container engine &#8211; Parte I/III'
+title: 'Docker: Um linux container engine - Parte I/III'
 date: '2014-03-28T13:09:20-04:00'
 author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4851'
-permalink: /docker-um-engine-linux-container/
-views:
-    - '40821'
-    - '40821'
-    - '40821'
-    - '40821'
-    - '40821'
-    - '40821'
-    - '40821'
-    - '40821'
-dsq_thread_id:
-    - '2607469732'
-    - '2607469732'
-    - '2607469732'
-    - '2607469732'
-    - '2607469732'
-    - '2607469732'
-    - '2607469732'
-    - '2607469732'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '160'
-    - '60'
-    - '64'
     - docker
-    - ferramentas
-    - Linux
+    - linux
 ---
 
 No cenário de constantes mudanças em ambientes web sempre surgem novas técnicas e ferramentas surpreendentes. Manter-se atualizado com todas as novidades que surgem diariamente é um grande desafio, mas bastante emocionante.
