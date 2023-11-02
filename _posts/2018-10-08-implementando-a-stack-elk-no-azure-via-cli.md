@@ -46,26 +46,26 @@ Para instalar no Ubuntu, basicamente os comandos são:
 
 - Modificar o sources.list:
 
-```
+```bash
 AZ_REPO=$(lsb_release -cs)<br></br>echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
 ```
 
 - Obter o Microsoft signin key:
 
-```
+```bash
 curl -L https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 ```
 
 - Instalar o CLI:
 
-```
+```bash
 sudo apt-get update
 sudo apt-get install apt-transport-https azure-cli
 ```
 
 - Fazer login:
 
-```
+```bash
 az login
 ```
 
