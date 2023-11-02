@@ -1,37 +1,9 @@
 ---
-id: 5270
 title: 'DevOps: Problemas comuns de segurança'
 date: '2015-01-19T11:16:27-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5270'
-permalink: /devops-problemas-comuns-de-seguranca/
-views:
-    - '925'
-    - '925'
-    - '925'
-    - '925'
-    - '925'
-    - '925'
-    - '925'
-    - '925'
-dsq_thread_id:
-    - '3434819375'
-    - '3434819375'
-    - '3434819375'
-    - '3434819375'
-    - '3434819375'
-    - '3434819375'
-    - '3434819375'
-    - '3434819375'
-categories:
-    - Uncategorized
 tags:
-    - '143'
-    - '60'
     - devops
-    - Segurança
-    - Uncategorized
+    - segurança
 ---
 
 Muito boa essa apresentação mostrando os principais problemas de segurança relacionados à cultura de DevOps.
