@@ -1,22 +1,9 @@
 ---
-id: 8427
 title: 'Melhores práticas para administradores de sistemas na nuvem da Microsoft (Azure) &#8211; Parte II'
 date: '2016-11-23T15:47:45-05:00'
-author: rmmartins
-layout: post
-guid: 'https://www.ricardomartins.com.br/?p=8427'
-permalink: /melhores-praticas-para-administradores-de-sistemas-na-nuvem-da-microsoft-azure-parte-ii/
-dsq_thread_id:
-    - '5327095153'
-    - '5327095153'
-    - '5327095153'
-    - '5327095153'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
-    - Uncategorized
+    - bestpractices
 ---
 
 ## Criando e organizando os recursos
