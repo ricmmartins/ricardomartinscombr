@@ -1,10 +1,6 @@
 ---
 title: 'Azure File Sync'
 date: '2018-08-02T11:21:59-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8779'
-permalink: /azure-file-sync/
 tags:
     - azure
 
