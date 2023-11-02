@@ -1,8 +1,6 @@
 ---
 title: 'Implementando o Apache Guacamole no Azure'
 date: '2018-04-30T20:44:48-04:00'
-categories:
-    - artigos
 tags:
     - azure
     - opensource
