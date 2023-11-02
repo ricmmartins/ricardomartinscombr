@@ -1,36 +1,9 @@
 ---
-id: 5855
 title: 'Como é trabalhar onde tantos gostariam?'
 date: '2016-03-21T21:30:59-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5855'
-permalink: /como-e-trabalhar-onde-tantos-gostariam/
-views:
-    - '281'
-    - '281'
-    - '281'
-    - '281'
-    - '281'
-    - '281'
-    - '281'
-    - '281'
-dsq_thread_id:
-    - '4717227755'
-    - '4717227755'
-    - '4717227755'
-    - '4717227755'
-    - '4717227755'
-    - '4717227755'
-    - '4717227755'
-    - '4717227755'
-categories:
-    - Uncategorized
 tags:
-    - '44'
-    - Carreira
+    - carreira
     - microsoft
-    - Uncategorized
 ---
 
 Hoje eu completo 3 meses na empresa onde estou trabalhando. Tem sido uma experiência incrível e muito além do que eu imaginava que seria em todos os aspectos, seja em relação ao ambiente, as pessoas, o trabalho, a cultura, os desafios, etc.
