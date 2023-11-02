@@ -1,25 +1,9 @@
 ---
-id: 8600
 title: 'Instalando o Oh My Zsh no Bash do Windows'
 date: '2017-09-15T14:51:54-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8600'
-permalink: /instalando-o-oh-my-zsh-no-bash-do-windows/
-dsq_thread_id:
-    - '6146129326'
-    - '6146129326'
-    - '6146129326'
-    - '6146129326'
-    - '6146129326'
-    - '6146129326'
-    - '6146129326'
-    - '6146129326'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - Uncategorized
+    - zsh
+    - windows
 ---
 
 Há algum tempo atrás eu descobri o [Oh My Zsh ](http://ohmyz.sh)e desde então me tornei usuário. Porém há aproximadamente um ano e meio mudei de emprego e passei a utilizar WIndows no desktop.
