@@ -1,19 +1,9 @@
 ---
-id: 8746
 title: 'Configurando LVM no Linux rodando no Azure'
 date: '2018-03-19T21:40:34-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8746'
-permalink: /configurando-lvm-no-linux-rodando-no-azure/
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '38'
     - azure
-    - Linux
-    - Uncategorized
+    - linux
 ---
 
 Este é um post rápido mostrando uma forma básica de configuração do LVM no Linux. É resultado de um laboratório que estive fazendo enquanto estudava para o exame [LFCS](https://training.linuxfoundation.org/certification/lfcs).
