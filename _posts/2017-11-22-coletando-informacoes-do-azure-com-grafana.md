@@ -1,22 +1,10 @@
 ---
-id: 8682
 title: 'Coletando informações do Azure com Grafana'
 date: '2017-11-22T02:14:33-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=8682'
-permalink: /coletando-informacoes-do-azure-com-grafana/
-dsq_thread_id:
-    - '6301442860'
-    - '6301442860'
-    - '6301442860'
-    - '6301442860'
-categories:
-    - Uncategorized
 tags:
-    - '38'
     - azure
-    - Uncategorized
+    - grafana
+    - monitoramento
 ---
 
 Recentemente [foi lançado um plugin do Azure Monitor para o Grafana](https://azure.microsoft.com/en-us/blog/monitor-azure-services-and-applications-using-grafana/) que eu resolvi testar e escrever este post.
