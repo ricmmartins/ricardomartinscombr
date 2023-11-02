@@ -1,8 +1,6 @@
 ---
 title: 'Docker e certificados SSL'
 date: '2018-03-08T15:52:01-05:00'
-categories:
-    - artigos
 tags:
     - docker
     - linux
