@@ -1,30 +1,13 @@
 ---
-id: 4865
 title: 'Balanceamento de carga com HAProxy'
 date: '2014-04-02T13:34:43-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4865'
-permalink: /balanceamento-de-carga-com-haproxy/
-dsq_thread_id:
-    - '3282713040'
-    - '3282713040'
-    - '3282713040'
-    - '3282713040'
-views:
-    - '6001'
-    - '6001'
-    - '6001'
-    - '6001'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '160'
     - haproxy
 ---
 
-![haproxy](http://www.ricardomartins.com.br/media/haproxy1.png)Configurar o balanceamento de carga entre vários servidores web pode parecer um desafio, porém na verdade não é. O [HAProxy](http://haproxy.1wt.eu/ "HAProxy") é uma ferramenta poderosa, leve, fácil de configurar e com um grande número de recursos sofisticados para gerenciar e servir conteúdo.
+![haproxy](/media/haproxy1.png)
+
+Configurar o balanceamento de carga entre vários servidores web pode parecer um desafio, porém na verdade não é. O [HAProxy](http://haproxy.1wt.eu/ "HAProxy") é uma ferramenta poderosa, leve, fácil de configurar e com um grande número de recursos sofisticados para gerenciar e servir conteúdo.
 
 Neste artigo, tenho um cenário simples usando três servidores:
 
@@ -38,28 +21,39 @@ Todos os servidores estão com CentOS 5.8 e rodando dentro do Vagrant.
 
 #### Instalação do repositório EPEL
 
-\[cce lang=”bash”\]# wget http://dl.fedoraproject.org/pub/epel/5/x86\_64/epel-release-5-4.noarch.rpm  
-\# wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
-\# rpm -Uvh remi-release-5\*.rpm epel-release-5\*.rpm\[/cc\]
+```bash
+# wget http://dl.fedoraproject.org/pub/epel/5/x86\_64/epel-release-5-4.noarch.rpm  
+# wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
+# rpm -Uvh remi-release-5*.rpm epel-release-5*.rpm
+```
 
 #### Instalação e Configuração do HAProxy
 
 No caso vamos usar o algoritmo de balanceamento por RoundRobin. Existem outras opções de uso que você pode definir de acordo com sua necessidade. [Neste link](http://wiki.joyent.com/wiki/display/jpc2/Load+Balancing+with+HAproxy), tem uma boa explicação sobre eles.
 
-\[cce lang=”bash”\]# yum install haproxy\[/cc\]
+```bash
+# yum install haproxy
+```
 
-\[cce lang=”bash”\]# mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.ori\[/cc\]
+```bash
+# mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.ori
+```
 
-\[cce lang=”bash”\]# vim /etc/haproxy/haproxy.cfg\[/cc\]
+```bash
+# vim /etc/haproxy/haproxy.cfg
+```
 
-\[cce lang=”bash”\]global  
+```bash
+global  
 log 127.0.0.1 local0  
 maxconn 4096  
 user haproxy  
 group haproxy  
-daemon\[/cc\]
+daemon
+```
 
-\[cce lang=”bash”\]defaults  
+```bash
+defaults  
 log global  
 mode http  
 option httplog  
@@ -69,56 +63,72 @@ option redispatch
 maxconn 2000  
 contimeout 5000  
 clitimeout 50000  
-srvtimeout 50000\[/cc\]
+srvtimeout 50000
+```
 
-\[cce lang=”bash”\]listen web-farm 0.0.0.0:80  
+```bash
+listen web-farm 0.0.0.0:80  
 cookie SERVERID rewrite  
 balance roundrobin  
 server node2 192.168.10.20:80 cookie app1inst1 check inter 2000 rise 2 fall 5  
-server node3 192.168.10.30:80 cookie app1inst2 check inter 2000 rise 2 fall 5\[/cc\]
+server node3 192.168.10.30:80 cookie app1inst2 check inter 2000 rise 2 fall 5
+```
 
 #### Start no serviço e garantia de inicialização no boot
 
-\[cce lang=”bash”\]# /etc/init.d/haproxy start  
-\# /sbin/chkconfig haproxy on\[/cc\]
+```bash]# /etc/init.d/haproxy start  
+# /sbin/chkconfig haproxy on
+```
 
 ### Configuração do servidor Web – Node2 (192.168.10.20):
 
 #### Instalação do repositório EPEL
 
-\[cce lang=”bash”\]# wget http://dl.fedoraproject.org/pub/epel/5/x86\_64/epel-release-5-4.noarch.rpm  
-\# wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
-\# rpm -Uvh remi-release-5\*.rpm epel-release-5\*.rpm\[/cc\]
+```bash
+# wget http://dl.fedoraproject.org/pub/epel/5/x86\_64/epel-release-5-4.noarch.rpm  
+# wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
+# rpm -Uvh remi-release-5\*.rpm epel-release-5\*.rpm
+```
 
 #### Instalação e configuração básica do Apache
 
-\[cce lang=”bash”\]# yum install httpd  
-\# rm /etc/httpd/conf.d/welcome.conf  
-\# echo Node2 &gt; /var/www/html/index.html\[/cc\]
+```bash
+# yum install httpd  
+# rm /etc/httpd/conf.d/welcome.conf  
+# echo Node2 > /var/www/html/index.html
+```
 
 #### Start no serviço e garantia de inicialização no boot
 
-\[cce lang=”bash”\]# /etc/init.d/httpd start  
-\# /sbin/chkconfig httpd on\[/cc\]
+```bash
+# /etc/init.d/httpd start  
+# /sbin/chkconfig httpd on
+```
 
 ### Configuração do servidor Web – Node3 (192.168.10.30):
 
 #### Instalação do repositório EPEL
 
-\[cce lang=”bash”\]# wget http://dl.fedoraproject.org/pub/epel/5/x86\_64/epel-release-5-4.noarch.rpm  
-\# wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
-\# rpm -Uvh remi-release-5\*.rpm epel-release-5\*.rpm\[/cc\]
+```bash
+# wget http://dl.fedoraproject.org/pub/epel/5/x86\_64/epel-release-5-4.noarch.rpm  
+# wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm  
+# rpm -Uvh remi-release-5*.rpm epel-release-5*.rpm
+```
 
 #### Instalação e configuração básica do Apache
 
-\[cce lang=”bash”\]# yum install httpd  
-\# rm /etc/httpd/conf.d/welcome.conf  
-\# echo Node3 &gt; /var/www/html/index.html\[/cc\]
+```bash
+# yum install httpd  
+# rm /etc/httpd/conf.d/welcome.conf  
+# echo Node3 > /var/www/html/index.html
+```
 
 #### Start no serviço e garantia de inicialização no boot
 
-\[cce lang=”bash”\]# /etc/init.d/httpd start  
-\# /sbin/chkconfig httpd on\[/cc\]
+```bash
+# /etc/init.d/httpd start  
+# /sbin/chkconfig httpd on
+```
 
 ### Vídeo Demo o/
 
@@ -130,11 +140,13 @@ Assista ao vídeo com a validação do uso:
 
 Se você quiser disponibilizar uma interface Web para visualização das estatísticas do HAProxy similar à esta: <http://demo.1wt.eu/>, basta adicionar as linhas abaixo no arquivo **/etc/haproxy/haproxy.cfg** e reiniciar o serviço.
 
-\[cce lang=”bash”\]listen stats 0.0.0.0:9000  
-stats uri /haproxy\_stats  
+```bash
+listen stats 0.0.0.0:9000  
+stats uri /haproxy_stats  
 stats realm HAProxy Statistics  
-stats auth admin:password\[/cc\]
+stats auth admin:password
+```
 
-No caso, ao tentar acessar o serviço através da url http://192.168.10.10:9000/haproxy\_stats será solicitado o usuário e senha conforme explicitados no arquivo acima (admin/password)
+No caso, ao tentar acessar o serviço através da url http://192.168.10.10:9000/haproxy_stats será solicitado o usuário e senha conforme explicitados no arquivo acima (admin/password)
 
 Até a próxima!
