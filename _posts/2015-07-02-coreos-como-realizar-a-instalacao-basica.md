@@ -1,39 +1,10 @@
 ---
-id: 5770
 title: 'CoreOS: Como realizar a instalação básica em cluster'
 date: '2015-07-02T15:30:56-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5770'
-permalink: /coreos-como-realizar-a-instalacao-basica/
-views:
-    - '2883'
-    - '2883'
-    - '2883'
-    - '2883'
-    - '2883'
-    - '2883'
-    - '2883'
-    - '2883'
-dsq_thread_id:
-    - '3898937153'
-    - '3898937153'
-    - '3898937153'
-    - '3898937153'
-    - '3898937153'
-    - '3898937153'
-    - '3898937153'
-    - '3898937153'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '56'
-    - '60'
     - coreos
     - devops
-    - Linux
-    - Uncategorized
+    - linux
     - virtualbox
 ---
 
@@ -65,9 +36,9 @@ Em seguida, é preciso criar um arquivo de configuração chamado **cloud-config
 
 O acesso às máquinas, será feito por chaves SSH. Para gerar seu par de chaves, rode o comando abaixo:
 
-\[cce lang=”bash”\]  
-\# ssh-keygen -t rsa -b 2048  
-\[/cce\]
+```bash
+# ssh-keygen -t rsa -b 2048  
+```
 
 Durante o processo, você pode informar onde quer que os arquivos sejam salvos, neste exemplo, vou salvá-los em /tmp. Deste modo basta informar /tmp/CoreOS
 
@@ -80,20 +51,20 @@ Depois de informar uma senha, serão gerados os dois arquivos abaixo dento do di
 
 No ambiente Live-CD do VirtualBox, vamos baixar do GitHub o script de instalação do CoreOS.
 
-\[cce lang=”bash”\]  
-\# wget https://raw.githubusercontent.com/coreos/init/master/bin/coreos-install -O coreos-install.sh  
-\# chmod a+x /tmp/coreos-install.sh  
-\[/cce\]
+```bash
+# wget https://raw.githubusercontent.com/coreos/init/master/bin/coreos-install -O coreos-install.sh  
+# chmod a+x /tmp/coreos-install.sh  
+```
 
 Agora vamos criar o arquivo cloud-config.yaml, que será interpretado pela instalação do script de instalação. Por ser um [YAML](https://pt.wikipedia.org/wiki/YAML) você precisa tomar alguns cuidados na formatação e identação, pois caso contrário pode apresentar falha no parsing realizado. Para garantir que esteja correto, você pode validar seu arquivo neste link <http://coreos.com/validate>
 
-\[cce lang=”bash”\]  
-\# vim /tmp/cloud-config.yaml
+```bash
+# vim /tmp/cloud-config.yaml
 
-\#cloud-config  
+#cloud-config  
 hostname: CoreOS1
 
-ssh\_authorized\_keys:  
+ssh_authorized_keys:  
 – ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXq2wdVv3PkauEjXTLcuAKFMhNTGvcSa2ChbcJacgnhpfzRpq1epfvX/M5078e/VDl3IQpjEQeutCJY0idwbD7ft2fNSA8xETYMlirit9AAqIduVWHkK2SDA8Q1JMcuNCopV6+6VkGYDyHufWvHp+WN5yawr4h5m4FawYlY0X02twJjs2eMGd3rZLUbq6wzuX5Lym/AkXGF5eCKOIEc/6bAKzg57qcGdqNTbRXdM7DQO2CstxUFM9m8pYUyp4I5x8zy9rYd8kztpVrd3CLAyVs8u9Sb87Hpnuo8dfPQ9WfJ/v/DMlZOWOdQYqfn44jtHriQfi9/tWCHM/Fc+38Dwij ricardo@martins
 
 coreos:  
@@ -108,18 +79,19 @@ command: start
 command: start  
 – name: static.network  
 content: |  
-\[Match\]  
+
+[Match]
 Name=enp0s3
 
-\[Network\]  
+[Network]  
 Address=192.168.1.130/24  
 Gateway=192.168.1.1  
 DNS=8.8.8.8  
-\[/cce\]
+```
 
 Observações:
 
-- **ssh\_authorized\_keys**: Neste campo informe o conteúdo da sua chave pública. Se você utilizar a mesma que eu coloquei acima, não vai funcionar uma vez que você não tenha a chave privada correspondente. Importante acrescentar o **“-“** no começo da linha;
+- **ssh_authorized_keys**: Neste campo informe o conteúdo da sua chave pública. Se você utilizar a mesma que eu coloquei acima, não vai funcionar uma vez que você não tenha a chave privada correspondente. Importante acrescentar o **“-“** no começo da linha;
 - **discovery**: Neste campo é informado o token gerado para seu cluster.
 
 Todo cluster precisa ter um ID específico, um token. Como queremos que ambos o servidores integrem o mesmo cluster, ao criar o token para o primeiro servidor basta usar o mesmo token no arquivo de configuração do segundo servidor. Desta forma o segundo servidor será automaticamente adicionado ao cluster já existente.
@@ -128,9 +100,9 @@ Para gerar o token, basta ir ao endereço <http://discovery.etcd.io/new>. Ao abr
 
 Uma vez com o cloud-config configurado, o próximo passo é executar o script de instalação passando os parâmetros necessários (dispositivo onde será instalado, a versão desejada e o path do cloud-config):
 
-\[cce lang=”bash”\]  
-\# /tmp/coreos-install.sh -d /dev/sda -C stable -c /tmp/cloud-config.yaml  
-\[/cce\]
+```bash
+# /tmp/coreos-install.sh -d /dev/sda -C stable -c /tmp/cloud-config.yaml  
+```
 
 Mais opções de customização do cloud-config estão disponíveis na documentação: <https://coreos.com/docs/cluster-management/setup/cloudinit-cloud-config/>
 
@@ -140,9 +112,9 @@ Você pode notar alguma mensagem de erro dizendo que um componente chamado coreo
 
 Ao término da instalação, basta fazer o restart da máquina virtual e acessar a máquina virtual com a chave SSH:
 
-\[cce lang=”bash”\]  
-\# ssh -i /tmp/CoreOS\_rsa core@192.168.1.130  
-\[/cce\]
+```bash
+# ssh -i /tmp/CoreOS\_rsa core@192.168.1.130  
+```
 
 Finalizada a instalação do primeiro servidor, basta criar o segundo servidor lembrando dos seguintes detalhes:
 
@@ -151,10 +123,10 @@ Finalizada a instalação do primeiro servidor, basta criar o segundo servidor l
 
 Terminada a instalação, basta logar em uma das máquinas e rodar os comandos abaixo. Estes comandos mostrarão os nós integrantes do cluster e a saúde de cada nó:
 
-\[cce lang=”bash”\]  
-\# fleetctl list-machines  
-\# etcdctl cluster-health  
-\[/cce\]
+```bash
+# fleetctl list-machines  
+# etcdctl cluster-health  
+```
 
 Se você quiser conferir as configurações aplicadas pelo cloud-config, basta verificar o arquivo /run/systemd/system/etcd.service.d/20-cloudinit.conf
 
