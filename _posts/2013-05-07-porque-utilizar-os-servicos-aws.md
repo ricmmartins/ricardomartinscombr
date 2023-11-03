@@ -1,54 +1,9 @@
 ---
-id: 4510
 title: 'Porque utilizar os serviços AWS?'
 date: '2013-05-07T09:55:23-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4510'
-permalink: /porque-utilizar-os-servicos-aws/
-bfa_virtual_template:
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-views:
-    - '3366'
-    - '3366'
-    - '3366'
-    - '3366'
-    - '3366'
-    - '3366'
-    - '3366'
-    - '3366'
-dsq_thread_id:
-    - '3277904457'
-    - '3277904457'
-    - '3277904457'
-    - '3277904457'
-    - '3277904457'
-    - '3277904457'
-    - '3277904457'
-    - '3277904457'
-full_width_featured_image:
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-categories:
-    - Uncategorized
 tags:
-    - '37'
     - aws
     - cloud
-    - Uncategorized
 ---
 
 Recentemente estive conversando com um amigo sobre como motivar clientes para migrar para AWS. Como é um assunto interessante e muita gente pode ter interesse, montei este post, descrevendo algumas das principais vantagens.
