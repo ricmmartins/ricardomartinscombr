@@ -47,6 +47,7 @@ mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch
 failovermethod=priority  
 enabled=1  
 gpgcheck=0
+```
 
 ## Adicionando ferramentas úteis
 
