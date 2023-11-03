@@ -28,7 +28,7 @@ Parece interessante? Então confira!
 
 Vamos então ao menu “**Instances**”
 
-[![aws](/uploads/2013/04/14.png)](/wp-content/uploads/2013/04/14.png)
+[![aws](/wp-content/uploads/2013/04/14.png)](/wp-content/uploads/2013/04/14.png)
 
 Selecionamos nossa instância e com o botão direito escolhemos a opção correspondente:
 
