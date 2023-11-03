@@ -1,38 +1,9 @@
 ---
-id: 4545
 title: 'Conhecendo a Plataforma Azure'
 date: '2013-08-05T20:18:39-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4545'
-permalink: /conhecendo-a-plataforma-azure/
-views:
-    - '1183'
-    - '1183'
-    - '1183'
-    - '1183'
-    - '1183'
-    - '1183'
-    - '1183'
-    - '1183'
-dsq_thread_id:
-    - '3277904532'
-    - '3277904532'
-    - '3277904532'
-    - '3277904532'
-    - '3277904532'
-    - '3277904532'
-    - '3277904532'
-    - '3277904532'
-categories:
-    - Uncategorized
 tags:
-    - '172'
-    - '38'
-    - '52'
     - azure
     - cloud
-    - Windows
 ---
 
 Há algum tempo estou trabalhando com a Cloud da Amazon, mas até então ainda não tinha tido a oportunidade de testar a Cloud da Microsoft, a Azure. Há dois meses atrás, eu comecei a preparar este post, mas ainda não tinha finalizado. A idéia aqui é mostrar como criar um site e uma máquina virtual nesta plataforma. Então vamos lá.
@@ -51,7 +22,7 @@ Será solicitado um número de celular, para verificar sua conta. Preencha com o
 
 Clique em “Portal” e vamos criar nosso site na Azure:
 
-Escolha Computação &gt; Site &gt; Criação Personalizada
+Escolha Computação > Site > Criação Personalizada
 
 [![3](/wp-content/uploads/2013/08/3.png)](/wp-content/uploads/2013/08/3.png)
 
@@ -61,7 +32,7 @@ Na próxima tela, escolha a url. No meu caso, ficará <http://rmartins.azurewebs
 
 [![5](/wp-content/uploads/2013/08/5.png)](/wp-content/uploads/2013/08/5.png)
 
-Neste ponto o site já estará pronto e você poderá ver o site padrão se acessar http://\[nomeescolhido\].azurewebsites.net
+Neste ponto o site já estará pronto e você poderá ver o site padrão se acessar http://[nomeescolhido].azurewebsites.net
 
 Voltando ao painel, verificamos mais opções. Tais como como obter ferramentas para administrar o site utilizando o WebMatrix, publicar um aplicativo no site, entre outros:
 
@@ -99,7 +70,7 @@ Vou apagar o arquivo hostingstart.html e substituir por um que vou criar chamado
 
 [![16](/wp-content/uploads/2013/08/16-1.png)](/wp-content/uploads/2013/08/16-1.png)
 
-Agora ao acessar o http://\[nomeescolhido\].azurewebsites.net voc? verá o conteúdo personalizado contido no index.html
+Agora ao acessar o http://[nomeescolhido].azurewebsites.net voc? verá o conteúdo personalizado contido no index.html
 
 Para excluir o site, bata selecionar o site no Portal e clicar em Excluir:
 
@@ -111,7 +82,7 @@ Para excluir o site, bata selecionar o site no Portal e clicar em Excluir:
 
 [![20](/wp-content/uploads/2013/08/20-1.png)](/wp-content/uploads/2013/08/20-1.png)
 
-Através do Portal, selecione a opção correspondente (Máquinas Virtuais) &gt; Computação &gt; Máquina Virtual &gt; Criação Rápida
+Através do Portal, selecione a opção correspondente (Máquinas Virtuais) > Computação > Máquina Virtual > Criação Rápida
 
 Vou escolher a imagem a ser usada:
 
