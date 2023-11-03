@@ -1,46 +1,9 @@
 ---
-id: 5016
 title: 'Implementando a stack ELK (ElasticSearch, Logstash e Kibana) no CentOS'
 date: '2014-06-02T17:47:12-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5016'
-permalink: /implementando-a-stack-elk-elasticsearch-logstash-kibana-no-centos/
-views:
-    - '12019'
-    - '12019'
-    - '12019'
-    - '12019'
-    - '12019'
-    - '12019'
-    - '12019'
-    - '12019'
-dsq_thread_id:
-    - '3277902055'
-    - '3277902055'
-    - '3277902055'
-    - '3277902055'
-    - '3277902055'
-    - '3277902055'
-    - '3277902055'
-    - '3277902055'
-videourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '160'
-    - '60'
-    - elasticsearck
-    - ELK
+    - elasticsearch
+    - elk
     - kibana
     - logstash
 ---
