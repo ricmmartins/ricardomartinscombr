@@ -1,35 +1,9 @@
 ---
-id: 4574
-title: 'SlideShow&#039;s AWS Summit São Paulo'
+title: 'SlideShow's AWS Summit São Paulo'
 date: '2013-08-08T17:14:19-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4574'
-permalink: /slideshows-aws-summit-sao-paulo/
-views:
-    - '478'
-    - '478'
-    - '478'
-    - '478'
-    - '478'
-    - '478'
-    - '478'
-    - '478'
-dsq_thread_id:
-    - '3415298938'
-    - '3415298938'
-    - '3415298938'
-    - '3415298938'
-    - '3415298938'
-    - '3415298938'
-    - '3415298938'
-    - '3415298938'
-categories:
-    - Uncategorized
 tags:
-    - '37'
     - aws
-    - Uncategorized
+    - eventos
 ---
 
 Se assim como eu, você não pode ir ao AWS Summit em São Paulo, não perca esta chance de ficar por dentro do que rolou por lá:
