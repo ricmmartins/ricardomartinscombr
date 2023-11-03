@@ -1,35 +1,9 @@
 ---
-id: 4635
 title: 'Gerenciando suas conexões SSH no MacOS'
 date: '2013-12-03T14:10:27-05:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4635'
-permalink: /gerenciando-suas-conexoes-ssh-macos/
-views:
-    - '1098'
-    - '1098'
-    - '1098'
-    - '1098'
-    - '1098'
-    - '1098'
-    - '1098'
-    - '1098'
-dsq_thread_id:
-    - '3346899239'
-    - '3346899239'
-    - '3346899239'
-    - '3346899239'
-    - '3346899239'
-    - '3346899239'
-    - '3346899239'
-    - '3346899239'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - iterm
-    - Linux
+    - iterm2
+    - linux
     - mac
     - ssh
 ---
@@ -38,7 +12,7 @@ Como sysadmin e novo usuário da plataforma Mac, fiquei perdido em não ter mais
 
 Perguntei a uns e outros e ninguém soube me informar uma boa ferramenta para gerenciar conexões SSH no MacOS. Então comecei a fuçar o iTerm2 (<http://www.iterm2.com/>).
 
-Encontrei uma forma simples de resolver meu problema. Ao abrir o iTerm2, vá em Preferences &gt; Profiles.
+Encontrei uma forma simples de resolver meu problema. Ao abrir o iTerm2, vá em Preferences > Profiles.
 
 Note que só existe o Perfil chamado “Default”.
 
@@ -50,4 +24,4 @@ Salve e pronto! Agora quando selecionar este perfil ele irá automaticamente con
 
 Depois é só ir populando com os perfis de todos os servidores que precisa se conectar e pronto, já tem sue gerenciador de conexões SSH. Basta abrir o iTerm2, ir no menu Profiles e selecionar onde deseja se conectar.
 
-[![iterm2](http://ricardomartins.com.br/media/iterm2.png)](http://ricardomartins.com.br/media/iterm2.png)
+[![iterm2](/media/iterm2.png)](/media/iterm2.png)
