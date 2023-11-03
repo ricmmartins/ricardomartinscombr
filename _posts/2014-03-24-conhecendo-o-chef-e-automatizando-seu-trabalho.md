@@ -1,38 +1,8 @@
 ---
-id: 4840
 title: 'Conhecendo o Chef e automatizando seu trabalho'
 date: '2014-03-24T14:59:38-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4840'
-permalink: /conhecendo-o-chef-e-automatizando-seu-trabalho/
-views:
-    - '2731'
-    - '2731'
-    - '2731'
-    - '2731'
-    - '2731'
-    - '2731'
-    - '2731'
-    - '2731'
-dsq_thread_id:
-    - '3339679155'
-    - '3339679155'
-    - '3339679155'
-    - '3339679155'
-    - '3339679155'
-    - '3339679155'
-    - '3339679155'
-    - '3339679155'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '131'
-    - '48'
-    - '60'
     - chef
-    - Uncategorized
 ---
 
 Hoje em dia muito tem se falado sobre automatização de infraestrutura. Isto está bastante relacionado com o conceito de DevOps, que bem resumidamente posso dizer que é a integração entre desenvolvimento e operação na administração da infraestrutura de TI. Trabalhando juntos, devs e ops com foco no resultado com agilidade e desempenho. A infraestrutura passa a ser gerenciada e orquestrada via código utilizando ferramentas que viabilizam isto.
@@ -49,41 +19,87 @@ No meu pequeno laboratório, eu utilizo [Vagrant](http://www.vagrantup.com/). É
 
 ## 1. Instalando o Chef-Solo:
 
-\[cce lang=”bash”\]# curl -L https://www.opscode.com/chef/install.sh | bash\[/cc\]
+```bash
+# curl -L https://www.opscode.com/chef/install.sh | bash
+```
 
 ## 2. Baixando a estrutura básica do Chef:
 
-\[cce lang=”bash”\]# wget http://github.com/opscode/chef-repo/tarball/master  
-\# tar -zxvf master  
-\# mv opscode-chef-repo-f9d4b0c/ /opt/chef-repo  
-\# mkdir /opt/chef-repo/.chef\[/cc\]  
+```bash
+# wget http://github.com/opscode/chef-repo/tarball/master  
+# tar -zxvf master  
+# mv opscode-chef-repo-f9d4b0c/ /opt/chef-repo  
+# mkdir /opt/chef-repo/.chef
+```
+
 Verifique no diretório “/opt/chef-repo/” a estrutura criada.
 
 Crie e configure o cookbook path, para isso execute o seguinte procedimento:  
-\[cce lang=”bash”\]# vi /opt/chef-repo/.chef/knife.rb\[/cc\]  
-\[cce lang=”bash”\]cookbook\_path \[ ‘/opt/chef-repo/cookbooks’ \]\[/cc\]  
+
+```bash
+# vi /opt/chef-repo/.chef/knife.rb
+```
+
+```bash
+cookbook_path \[ ‘/opt/chef-repo/cookbooks’ ]
+```
+
 Configure o arquivo solo.rb:  
-\[cce lang=”bash”\]# vi /opt/chef-repo/solo.rb\[/cc\]  
+
+```bash
+# vi /opt/chef-repo/solo.rb
+```
+
 Adicione as linhas abaixo:  
-\[cce lang=”bash”\]file\_cache\_path “/opt/chef-solo”  
-cookbook\_path “/opt/chef-repo/cookbooks”\[/cc\]  
+
+```bash
+file_cache_path “/opt/chef-solo”  
+cookbook_path “/opt/chef-repo/cookbooks”
+```
+
 Vamos criar nossa primeira receita de teste:  
-\[cce lang=”bash”\]# cd /opt/chef-repo/cookbooks  
-\# knife cookbook create ricardo-nginx\[/cc\]  
+
+```bash”
+# cd /opt/chef-repo/cookbooks  
+# knife cookbook create ricardo-nginx
+```
+
 Agora vamos abrir o arquivo recipes/default.rb da nossa receita:  
-\[cce lang=”bash”\]# vim /opt/chef-repo/cookbooks/ricardo-nginx/recipes/default.rb\[/cc\]  
+
+```bash
+# vim /opt/chef-repo/cookbooks/ricardo-nginx/recipes/default.rb
+```
+
 Inclua as linhas abaixo:  
-\[cce lang=”bash”\]package “nginx” do  
+
+```bash
+package “nginx” do  
 action :install  
-end\[/cc\]  
+end
+```
+
 Crie o arquivo JSON para execução da receita (/opt/chef-repo/web.json) e adicione a seguinte linha:  
-\[cce lang=”bash”\]{ “run\_list”: \[ “recipe\[ricardo-nginx\]” \] }\[/cc\]  
+
+```bash
+{ “run_list”: [ “recipe[ricardo-nginx]” ] }
+```
+
 Agora, basta executar a receita:  
-\[cce lang=”bash”\]# chef-solo -c /opt/chef-repo/solo.rb -j /opt/chef-repo/web.json\[/cc\]  
+
+```bash
+# chef-solo -c /opt/chef-repo/solo.rb -j /opt/chef-repo/web.json
+
 Conferindo:  
-\[cce lang=”bash”\]# ps fax | grep nginx\[/cc\]  
+
+```bash
+# ps fax | grep nginx
+```
+
 Testando via curl:  
-\[cce lang=”bash”\]# curl -I localhost\[/cc\]  
+```bash
+# curl -I localhost
+```
+
 Este realmente foi um post bem básico. O Chef é uma das ferramentas que ainda estou estudando, e não tenho mesmo muito conhecimento e informação para compartilhar. Em breve novas posts com minhas novas descobertas 😀
 
 Dica de leitura: <http://www.ibm.com/developerworks/br/library/a-devops2/>
