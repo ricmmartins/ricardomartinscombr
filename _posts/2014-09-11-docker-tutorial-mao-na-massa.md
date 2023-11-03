@@ -1,58 +1,12 @@
 ---
-id: 5161
-title: 'Docker: Tutorial mão na massa &#8211; Parte II/III'
+title: 'Docker: Tutorial mão na massa -  Parte II/III'
 date: '2014-09-11T13:21:33-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=5161'
-permalink: /docker-tutorial-mao-na-massa/
-views:
-    - '36947'
-    - '36947'
-    - '36947'
-    - '36947'
-    - '36947'
-    - '36947'
-    - '36947'
-    - '36947'
-dsq_thread_id:
-    - '3277902134'
-    - '3277902134'
-    - '3277902134'
-    - '3277902134'
-    - '3277902134'
-    - '3277902134'
-    - '3277902134'
-    - '3277902134'
-audiourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-videourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-categories:
-    - Uncategorized
 tags:
-    - '60'
-    - '64'
     - docker
     - nginx
-    - Uncategorized
 ---
 
-[![docker](http://www.ricardomartins.com.br/media/docker1.png)](http://www.ricardomartins.com.br/media/docker1.png)
+[![docker](/media/docker1.png)](/media/docker1.png)
 
 Houve centenas de notícias sobre Docker nos últimos meses. É fato que estamos prestes a ver uma grande mudança na maneira de pensar sobre a virtualização.
 
