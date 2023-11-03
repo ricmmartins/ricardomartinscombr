@@ -10,7 +10,7 @@ tags:
 Se você assim como eu não suporta ter que logar com esse usuário ec2-user na Amazon, aqui vai a dica de como logar direto como root:  
 
 ```bash
-# vim /etc/ssh/sshd\_config
+# vim /etc/ssh/sshd_config
 ```
 
 Comente a linha:  
