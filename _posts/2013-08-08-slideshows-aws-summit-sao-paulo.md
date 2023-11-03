@@ -1,5 +1,5 @@
 ---
-title: 'SlideShow's AWS Summit São Paulo'
+title: 'SlideShows AWS Summit São Paulo'
 date: '2013-08-08T17:14:19-04:00'
 tags:
     - aws
