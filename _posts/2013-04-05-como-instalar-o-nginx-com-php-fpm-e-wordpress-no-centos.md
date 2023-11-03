@@ -17,25 +17,36 @@ No final ainda tem um script para rotação de logs, que de hora em hora é exec
 ## Adicionar o repositório oficial do Nginx
 
 Vamos criar o arquivo nginx.repo:  
-\[cce lang=”bash”\]# vim /etc/yum.repos.d/nginx.repo\[/cc\]  
-\[cce lang=”bash”\]\[nginx\]  
+
+```bash
+# vim /etc/yum.repos.d/nginx.repo
+```
+
+ ```bash
+[nginx]  
 name=nginx repo  
 baseurl=http://nginx.org/packages/centos/6/$basearch/  
 gpgcheck=0  
 enabled=1  
-priority=1\[/cc\]
+priority=1
+```
 
 ## Adicionar o repositório Epel
 
 Criando o arquivo repel.repo:  
-\[cce lang=”bash”\]# vim /etc/yum.repos.d/epel.repo\[/cc\]  
-\[cce lang=”bash”\]\[epel\]  
+
+```bash
+# vim /etc/yum.repos.d/epel.repo
+```
+
+```bash
+[epel]  
 name=Extra Packages for Enterprise Linux 6 – $basearch  
-\#baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch  
-mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-6&amp;arch=$basearch  
+#baseurl=http://download.fedoraproject.org/pub/epel/6/$basearch  
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch  
 failovermethod=priority  
 enabled=1  
-gpgcheck=0\[/cc\]
+gpgcheck=0
 
 ## Adicionando ferramentas úteis
 
@@ -51,19 +62,30 @@ Breve descrição de cada uma das ferramentas:
 
 **Monit**: Uma ferramenta que permite monitorar programas, processos, arquivos, diretórios e filesystems. Dependendo de como for configurado, caso um processo morra, ele reinicia ele pra você! – [http://mmonit.com/monit](http://mmonit.com/monit "Monit")
 
-O muultitail, iftop e htop, são utilitários do sistema e sua instalação não requer nenhum tipo de configuração. Então você pode instalar todos de uma vez:  
-\[cce lang=”bash”\]# yum install multitail iftop htop\[/cc\]
+O muultitail, iftop e htop, são utilitários do sistema e sua instalação não requer nenhum tipo de configuração. Então você pode instalar todos de uma vez:
+
+```bash
+# yum install multitail iftop htop
+```
 
 ## Instalando o Monit
 
-\[cce lang=”bash”\]# yum install monit\[/cc\]  
+```bash
+# yum install monit
+```
+
 Neste caso, quero que ele monitore os processos do Nginx e do PHP-FPM. Se por algum motivo estes processos parem de funcionar ele irá reiniciá-los e me enviar um e-mail informando sobre o status da situação.
 
 Calma! Eu sei que ainda não instalamos o Nginx e o PHP-FPM, mas já podemos deixar configurado.
 
 Criamos agora então o arquivo de configuração para monitoração do Nginx.  
-\[cce lang=”bash”\]# vim /etc/monit.d/nginx\[/cc\]  
-\[cce lang=”bash”\]check process nginx with pidfile /var/run/nginx.pid  
+
+```bash
+# vim /etc/monit.d/nginx
+```
+
+```bash
+check process nginx with pidfile /var/run/nginx.pid  
 start program = “/etc/init.d/nginx start”  
 stop program = “/etc/init.d/nginx stop”  
 group nginx  
@@ -75,11 +97,17 @@ message: This event occurred on $HOST at $DATE.
 Event: $EVENT  
 Description: $DESCRIPTION  
 Action: $ACTION  
-}\[/cc\]  
-E agora o arquivo de configuração do PHP-FPM  
-\[cce lang=”bash”\]# vim /etc/monit.d/php-fpm\[/cc\]
+}
+```
 
-\[cce lang=”bash”\]check process php-fpm with pidfile /var/run/php-fpm/php-fpm.pid  
+E agora o arquivo de configuração do PHP-FPM  
+
+```bash
+# vim /etc/monit.d/php-fpm
+```
+
+```bash
+check process php-fpm with pidfile /var/run/php-fpm/php-fpm.pid  
 start program = “/etc/init.d/php-fpm start”  
 stop program = “/etc/init.d/php-fpm stop”  
 group php-fpm  
@@ -91,39 +119,84 @@ message: This event occurred on $HOST at $DATE.
 Event: $EVENT  
 Description: $DESCRIPTION  
 Action: $ACTION  
-}\[/cc\]
+}
+```
 
 ## Configurando o envio dos alertas por e-mail
 
 Vamos ao arquivo de configuração do monit, e informamos para utilizar a porta local 25. Você pode inserir a linha no final do arquivo.  
-\[cce lang=”bash”\]# vim /etc/monit.conf\[/cc\]  
-\[cce lang=”bash”\]set mailserver localhost port 25\[/cc\]  
+
+```bash
+# vim /etc/monit.conf
+```
+
+```bash
+set mailserver localhost port 25```
+
 Agora instalamos o Exim e em seguida removemos o Sendmail (caso esteja instalado – no CentOS vem instalado por padrão). Apenas uma questão de preferência pessoal minha.  
-\[cce lang=”bash”\]# yum install exim\[/cc\]  
+
+```bash
+# yum install exim
+```
+
 A configuração do exim é feita no arquivo /etc/exim/exim.conf. Porém como a configuração padrão atende ao que queremos fazer, não vou modificar nada.
 
 Removendo o Sendmail:  
-\[cce lang=”bash”\]# yum remove sendmail\[/cc\]  
+
+```bash
+# yum remove sendmail
+```
+
 Aqui mais uma configuração útil para economizar espaço em disco. Deixar apenas as duas últimas versões de Kernel utilizadas. Isto evita ficar armazenando kernel antigo após algumas atualizações. Nada impede de deixar apenas a atual, fica a gosto do cliente:  
-\[cce lang=”bash”\]# package-cleanup –-oldkernels –-count=2\[/cc\]  
-\[cce lang=”bash”\]# vim /etc/yum.conf\[/cc\]  
-\[cce lang=”bash”\]installonly\_limit=2\[/cc\]  
+
+```bash
+# package-cleanup –-oldkernels –-count=2
+```
+
+```bash
+# vim /etc/yum.conf```
+
+```bash
+installonly_limit=2
+```
+
 Ajuste fino no Kernel. Adicione as linhas abaixo no final do arquivo:  
-\[cce lang=”bash”\]# vim /etc/sysctl.conf\[/cc\]  
-\[cce lang=”bash”\]net.ipv4.tcp\_tw\_reuse = 1  
-net.ipv4.tcp\_tw\_recycle = 1\[/cc\]
+
+```bash
+# vim /etc/sysctl.conf
+```
+```bash
+net.ipv4.tcp_tw_reuse = 1  
+net.ipv4.tcp_tw_recycle = 1
+```
 
 ## Instalando e configurando o Nginx, PHP-FPM, etc…
 
-\[cce lang=”bash”\]# yum install nginx php-fpm php-gd php-mysqlnd php-mbstring php-xmlrpc php php-mysql\[/cc\]  
+```bash
+# yum install nginx php-fpm php-gd php-mysqlnd php-mbstring php-xmlrpc php php-mysql
+```
+
 Criando o diretório onde estará hospedado o WordPress:  
-\[cce lang=”bash”\]# mkdir /usr/share/nginx/www\[/cc\]  
+
+```bash
+# mkdir /usr/share/nginx/www
+```
+
 Configurando o PHP-FPM:  
-\[cce lang=”bash”\]# cd /etc/php-fpm.d  
-\# mv www.conf www.disabled\[/cc\]  
+
+```bash
+# cd /etc/php-fpm.d  
+# mv www.conf www.disabled
+```
+
 Criar o arquivo de configuração do Nginx no PHP-FPM:  
-\[cce lang=”bash”\]# vim /etc/php-fpm.d/nginx.conf\[/cc\]  
-\[cce lang=”bash”\]\[nginx\]  
+
+```bash
+# vim /etc/php-fpm.d/nginx.conf
+```
+
+```bash
+[nginx]  
 listen = /var/run/php-fpm/php-fpm.sock  
 listen.owner = nginx  
 listen.group = nginx  
@@ -131,59 +204,87 @@ listen.mode = 0660
 user = nginx  
 group = nginx  
 pm = dynamic  
-pm.max\_children = 10  
-pm.start\_servers = 1  
-pm.min\_spare\_servers = 1  
-pm.max\_spare\_servers = 3  
-pm.max\_requests = 500  
+pm.max_children = 10  
+pm.start_servers = 1  
+pm.min_spare_servers = 1  
+pm.max_spare_servers = 3  
+pm.max_requests = 500  
 chdir = /usr/share/nginx/www  
-php\_admin\_value\[open\_basedir\] = /usr/share/nginx/www/:/tmp\[/cc\]  
+php_admin_value[open_basedir] = /usr/share/nginx/www/:/tmp
+```
+
 Ajustando parâmetros no PHP:  
-\[cce lang=”bash”\]# vim /etc/php.ini\[/cc\]  
-\[cce lang=”bash”\]cgi.fix\_pathinfo=0  
-upload\_max\_filesize = 64M\[/cc\]  
+
+```bash
+# vim /etc/php.ini
+```
+
+```bash
+cgi.fix_pathinfo=0  
+upload_max_filesize = 64M
+```
+
 Inicializar o PHP-FPM:  
-\[cce lang=”bash”\]# service php-fpm start  
-\# chkconfig php-fpm on\[/cc\]  
+
+```bash
+# service php-fpm start  
+# chkconfig php-fpm on
+```
+
 Configurando o Nginx:
 
 Você pode substituir o conteúdo original do arquivo por este. Se comparar com o original vai ver algumas diferenças. São modificações que fiz para melhorar a performance.  
-\[cce lang=”bash”\]# vim /etc/nginx/nginx.conf\[/cc\]  
-\[cce lang=”bash”\]user nginx;  
-worker\_processes 1;  
-worker\_rlimit\_nofile 16384;  
-error\_log /var/log/nginx/error.log warn;  
+
+```bash
+# vim /etc/nginx/nginx.conf
+```
+
+```bash
+user nginx;  
+worker_processes 1;  
+worker_rlimit_nofile 16384;  
+error_log /var/log/nginx/error.log warn;  
 pid /var/run/nginx.pid;  
 events {  
-worker\_connections 16384;  
+worker_connections 16384;  
 }  
 http {  
 include /etc/nginx/mime.types;  
-default\_type application/octet-stream;  
-log\_format main ‘$remote\_addr – $remote\_user \[$time\_local\] “$request” ‘  
-‘$status $body\_bytes\_sent “$http\_referer” ‘  
-‘”$http\_user\_agent” “$http\_x\_forwarded\_for”‘;  
-access\_log /var/log/nginx/access.log main;  
+default_type application/octet-stream;  
+log_format main ‘$remote_addr – $remote_user [$time_local] “$request” ‘  
+‘$status $body_bytes_sent “$http_referer” ‘  
+‘”$http_user_agent” “$http_x_forwarded_for”‘;  
+access_log /var/log/nginx/access.log main;  
 sendfile on;  
-\#tcp\_nopush on;  
-keepalive\_timeout 65;  
+keepalive_timeout 65;  
 gzip on;  
-include /etc/nginx/conf.d/\*.conf;  
-}\[/cc\]  
+include /etc/nginx/conf.d/*.conf;  
+}
+```
+
 Removendo a configuração default:  
-\[cce lang=”bash”\]# rm -rf /etc/nginx/conf.d/default.conf  
-\# rm -rf /etc/nginx/conf.d/example\_ssl.conf  
-\# rm -rf /usr/share/nginx/html\[/cc\]  
+
+```bash
+# rm -rf /etc/nginx/conf.d/default.conf  
+# rm -rf /etc/nginx/conf.d/example_ssl.conf  
+# rm -rf /usr/share/nginx/html
+```
+
 Colocando a configuração para nosso WordPress no Nginx  
-\[cce lang=”bash”\]# vim /etc/nginx/conf.d/www.conf\[/cc\]  
-\[cce lang=”bash”\]server {  
+
+```bash
+# vim /etc/nginx/conf.d/www.conf
+```
+
+```bash
+server {  
 listen 80;  
-server\_name ricardomartins.com.br;  
+server_name ricardomartins.com.br;  
 root /usr/share/nginx/www/ ;
 
-client\_max\_body\_size 64M;
+client_max_body_size 64M;
 
-\# Deny access to any files with a .php extension in the uploads directory  
+# Deny access to any files with a .php extension in the uploads directory  
 location ~\* /(?:uploads|files)/.\*.php$ {  
 deny all;  
 }
@@ -198,60 +299,106 @@ expires max;
 }
 
 location ~ .php$ {  
-try\_files $uri =404;  
-fastcgi\_split\_path\_info ^(.+.php)(/.+)$;  
-fastcgi\_index index.php;  
-fastcgi\_pass unix:/var/run/php-fpm/php-fpm.sock;  
-fastcgi\_param SCRIPT\_FILENAME  
-$document\_root$fastcgi\_script\_name;  
-include fastcgi\_params;  
+try_files $uri =404;  
+fastcgi_split_path_info ^(.+.php)(/.+)$;  
+fastcgi_index index.php;  
+fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;  
+fastcgi_param SCRIPT_FILENAME  
+$document_root$fastcgi_script_name;  
+include fastcgi_params;  
 }  
-}\[/cc\]  
+}
+```
+
 Alguns ajustes de Tunning para permitir grandes números de acessos:  
-\[cce lang=”bash”\]# vim /etc/security/limits.conf\[/cc\]  
-\[cce lang=”bash”\]nginx soft nofile 20000  
-nginx hard nofile 20000\[/cc\]  
+
+```bash
+# vim /etc/security/limits.conf
+```
+
+```bash
+nginx soft nofile 20000  
+nginx hard nofile 20000
+```
+
 Criar o arquivo /etc/default/nginx com o valor de ulimit conforme abaixo, para aumentar a quantidade de conexões simultâneas abertas:  
-\[cce lang=”bash”\]# vim /etc/default/nginx\[/cc\]  
-\[cce lang=”bash”\]ulimit -a 65535\[/cc\]  
+
+```bash
+# vim /etc/default/nginx
+```
+
+```bash
+ulimit -a 65535
+```
+
 Inicializar os serviços e garantir que sejam iniciados no boot:  
-\[cce lang=”bash”\]# service nginx start  
-\# chkconfig nginx on\[/cc\]  
-\[cce lang=”bash”\]# service monit start  
-\# chkconfig monit on\[/cc\]  
-\[cce lang=”bash”\]# service exim start  
-\# chkconfig exim on\[/cc\]  
+
+```bash
+# service nginx start  
+# chkconfig nginx on
+```
+
+```bash
+# service monit start  
+# chkconfig monit on
+```
+
+```bash
+# service exim start  
+# chkconfig exim on
+```
+
 Se tudo estiver correto até aqui, seu Nginx já está rodando. Você pode acessar o ip do servidor para conferir. Provavelmente você vai receber uma mensagem de erro 403. Isto é normal, já que o diretório que definimos como raiz do site (/usr/share/nginx/www/), ainda não tem nada.
 
 ## Instalando e configurando o MySQL
 
-\[cce lang=”bash”\]# yum -y install mysql-server mysql  
-\# service mysqld start  
-\# mysqladmin -u root password ‘definaumasenhaparaorootnomysql’  
-\# chkconfig mysqld on\[/cc\]  
+```bash
+# yum -y install mysql-server mysql  
+# service mysqld start  
+# mysqladmin -u root password ‘definaumasenhaparaorootnomysql’  
+# chkconfig mysqld on
+```
+
 Agora vamos logar no mysql e criar um usuário. Este usuário, será o que vamos definir para ser utilizado pelo WordPress. Mais tarde vamos informar este usuário e senha para o WordPress  
-\[cce lang=”bash”\]# mysql -u root -p  
-&gt; create database wordpress;  
-&gt; grant all privileges on wordpress.\* to ‘usuarioquedesejacriarnomysql’@’localhost’ identified by ‘senhadousuarioquedesejacriarnomysql’;  
-&gt; exit\[/cc\]
+
+```bash
+# mysql -u root -p  
+> create database wordpress;  
+> grant all privileges on wordpress.\* to ‘usuarioquedesejacriarnomysql’@’localhost’ identified by ‘senhadousuarioquedesejacriarnomysql’;  
+> exit
+```
 
 ## Instalar e configurar o WordPress
 
-\[cce lang=”bash”\]# cd /tmp  
-\# wget http://wordpress.org/latest.zip  
-\# unzip -q latest.zip  
-\# mv wordpress/\* /usr/share/nginx/www/  
-\# rm -rf wordpress latest.zip  
-\# cd /usr/share/nginx/www/\[/cc\]  
+```bash
+# cd /tmp  
+# wget http://wordpress.org/latest.zip  
+# unzip -q latest.zip  
+# mv wordpress/* /usr/share/nginx/www/  
+# rm -rf wordpress latest.zip  
+# cd /usr/share/nginx/www
+```
+
 Copiar o arquivo de modelo para o wp-config.php:  
-\[cce lang=”bash”\]# cp wp-config-sample.php wp-config.php\[/cc\]  
+
+```bash
+# cp wp-config-sample.php wp-config.php
+```
+
 Editar o arquivo e informar o nome do database, usuário, senha e endereço do host:  
-\[cce lang=”bash”\]# vim wp-config.php\[/cc\]  
-\[cce lang=”bash”\]define(‘DB\_NAME’, ‘wordpress’);  
-/\*\* MySQL database username \*/  
-define(‘DB\_USER’, ‘seuusuariomysql’);  
-/\*\* MySQL database password \*/  
-define(‘DB\_PASSWORD’, ‘senhadoseuusuariomysql’);\[/cc\]  
+
+```bash
+# vim wp-config.php
+```
+
+```bash
+define(‘DB\_NAME’, ‘wordpress’);  
+/** MySQL database username */  
+define(‘DB_USER’, ‘seuusuariomysql’);  
+/** MySQL database password */  
+define(‘DB\_PASSWORD’, ‘senhadoseuusuariomysql’);
+```
+
 Finalizando a configuração do WordPress:
 
 Acesse http://endereco-do-site/ e finalize as configurações definindo o título do site, usuário para administração, senha deste usuário e um endereço de e-mail.
@@ -259,8 +406,13 @@ Acesse http://endereco-do-site/ e finalize as configurações definindo o títul
 ## Configurar rotação de logs do Nginx
 
 Finalizada a parte do WordPress, agora vamos criar um script, que será executado de hora em hora, para compactar os arquivos de log e remover arquivos de log antigos. No exemplo, a cada hora ele irá procurar arquivos de log criados há mais de 30 dias e apagá-los.  
-\[cce lang=”bash”\]# vim /etc/cron.hourly/log.nginx\[/cc\]  
-\[cce lang=”bash”\]#!/bin/bash  
+
+```bash
+# vim /etc/cron.hourly/log.nginx
+```
+
+```bash
+#!/bin/bash  
 cd /var/log/nginx  
 rm -f access.log.`date +%H`.gz  
 rm -f error.log.`date +%H`.gz  
@@ -270,16 +422,25 @@ kill -USR1 `cat /var/run/nginx.pid`
 sleep 2  
 gzip access.log.`date +%H`  
 gzip error.log.`date +%H`  
-for lista in `find /var/log/nginx/\*.gz -mtime +30`; do  
+for lista in `find /var/log/nginx/*.gz -mtime +30`; do  
 rm -rf ${lista}  
-done\[/cc\]  
+done
+```
+
 Ajustar permissões do script:  
-\[cce lang=”bash”\]# chmod 700 /etc/cron.hourly/log.nginx\[/cc\]
+
+```bash
+# chmod 700 /etc/cron.hourly/log.nginx
+```
 
 ## Para finalizar, vamos testar se está recebendo os alertas?
 
 Faça o seguinte:  
-\[cce lang=”bash”\]# /etc/init.d/nginx restart\[/cc\]  
+
+```bash
+# /etc/init.d/nginx restart
+```
+
 Você deverá receber um e-mail informando que o PID do processo do nginx foi alterado, ou seja, o Nginx foi reiniciado.
 
 Por hoje é só. Espero que tenham gostado desse tutorial.
