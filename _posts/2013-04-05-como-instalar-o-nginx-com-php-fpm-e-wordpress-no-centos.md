@@ -1,47 +1,10 @@
 ---
-id: 4411
 title: 'Como instalar o Nginx com PHP-FPM e WordPress no CentOS'
 date: '2013-04-05T13:00:57-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4411'
-permalink: /como-instalar-o-nginx-com-php-fpm-e-wordpress-no-centos/
-bfa_virtual_template:
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-views:
-    - '4396'
-    - '4396'
-    - '4396'
-    - '4396'
-    - '4396'
-    - '4396'
-    - '4396'
-    - '4396'
-dsq_thread_id:
-    - '3277904366'
-    - '3277904366'
-    - '3277904366'
-    - '3277904366'
-    - '3277904366'
-    - '3277904366'
-    - '3277904366'
-    - '3277904366'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '111'
     - centos
     - nginx
     - php-fpm
-    - Uncategorized
     - wordpress
 ---
 
