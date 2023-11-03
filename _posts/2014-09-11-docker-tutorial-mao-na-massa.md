@@ -26,7 +26,7 @@ De grosso modo, containers podem ser comparados com pequenas VMs. E eles permite
 
 Comparação entre virtualização tradicional e containers:
 
-[![difference](http://www.ricardomartins.com.br/media/difference.png)](http://www.ricardomartins.com.br/media/difference.png)
+[![difference](/media/difference.png)](/media/difference.png)
 
 A base do sistema que envolve o hardware e o sistema operacional é a mesma. O que muda é que no caso de um container, eles fazem uso de funcionalidades do kernel chamadas namespaces, cgroups e chroots que permitem a criação de pequenas áreas operacionais, que podem ser comparadas às máquinas virtuais, porém sem o hypervisor.
 
