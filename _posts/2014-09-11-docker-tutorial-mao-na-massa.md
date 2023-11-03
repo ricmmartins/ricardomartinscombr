@@ -52,47 +52,148 @@ De forma geral e resumida, funciona assim: O cliente informa ao servidor qual im
 
 Neste teste, estou rodando a partir de um CentOS 7, 64 bits. Então você verá algumas diferenças por ele usar o SystemD, ao invés do tradicional SysVInit. Aproveitando, [aqui](http://linoxide.com/linux-command/systemd-vs-sysvinit-cheatsheet/) tem uma tabela comparativa de comandos e [aqui](http://linoxide.com/linux-command/linux-systemd-commands/) também tem um artigo interessante à respeito desse assunto.
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-1-install-docker-sh
-
+```bash
+[root@localhost ~]# yum install docker docker-registry
+```
 **Iniciando o docker, e garantindo a inicialização dele no boot**
 
 Habilitando no boot:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-2-enable-on-boot-sh
+```bash
+[root@localhost ~]# systemctl enable docker.service
+ln -s '/usr/lib/systemd/system/docker.service' '/etc/systemd/system/multi-user.target.wants/docker.service'
+```
 
 Iniciando o docker:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-2-start-docker-sh
+```bash
+[root@localhost ~]# systemctl start docker.service
+```
 
 Verificando o status:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-3-check-status-sh
+```bash
+[root@localhost ~]# systemctl status docker.service
+
+docker.service - Docker Application Container Engine
+Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled)
+Active: active (running) since Tue 2014-09-09 13:55:47 BRT; 5s ago
+Docs: http://docs.docker.io
+Main PID: 2367 (docker)
+CGroup: /system.slice/docker.service
+??2367 /usr/bin/docker -d --selinux-enabled
+
+Sep 09 13:55:46 localhost.localdomain docker[2367]: [0ab6a91d.init_networkdriver()] creating new bridge for...ker0
+Sep 09 13:55:46 localhost.localdomain docker[2367]: [0ab6a91d.init_networkdriver()] getting iface addr
+Sep 09 13:55:47 localhost.localdomain docker[2367]: [0ab6a91d] -job init_networkdriver() = OK (0)
+Sep 09 13:55:47 localhost.localdomain docker[2367]: Loading containers: : done.
+Sep 09 13:55:47 localhost.localdomain docker[2367]: [0ab6a91d.initserver()] Creating pidfile
+Sep 09 13:55:47 localhost.localdomain docker[2367]: [0ab6a91d.initserver()] Setting up signal traps
+Sep 09 13:55:47 localhost.localdomain docker[2367]: [0ab6a91d] -job initserver() = OK (0)
+Sep 09 13:55:47 localhost.localdomain docker[2367]: [0ab6a91d] +job acceptconnections()
+Sep 09 13:55:47 localhost.localdomain docker[2367]: [0ab6a91d] -job acceptconnections() = OK (0)
+Sep 09 13:55:47 localhost.localdomain systemd[1]: Started Docker Application Container Engine.
+Hint: Some lines were ellipsized, use -l to show in full.
+```
 
 Depois de instalado, podemos começar a brincadeira com o Docker. Primeiro vamos rodar o comando sem argumentos, apenas para ver as opções disponíveis:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-4-docker-sh
+```bash
+[root@localhost ~]# docker
+
+Usage: docker [OPTIONS] COMMAND [arg...]
+-H=[unix:///var/run/docker.sock]: tcp://host:port to bind/connect to or unix://path/to/socket to use
+
+A self-sufficient runtime for linux containers.
+
+Commands:
+attach Attach to a running container
+build Build a container from a Dockerfile
+commit Create a new image from a container's changes
+cp Copy files/folders from the containers filesystem to the host path
+diff Inspect changes on a container's filesystem
+events Get real time events from the server
+export Stream the contents of a container as a tar archive
+history Show the history of an image
+images List images
+import Create a new filesystem image from the contents of a tarball
+info Display system-wide information
+inspect Return low-level information on a container
+kill Kill a running container
+load Load an image from a tar archive
+login Register or Login to the docker registry server
+logs Fetch the logs of a container
+port Lookup the public-facing port which is NAT-ed to PRIVATE_PORT
+ps List containers
+pull Pull an image or a repository from the docker registry server
+push Push an image or a repository to the docker registry server
+restart Restart a running container
+rm Remove one or more containers
+rmi Remove one or more images
+run Run a command in a new container
+save Save an image to a tar archive
+search Search for an image in the docker index
+start Start a stopped container
+stop Stop a running container
+tag Tag an image into a repository
+top Lookup the running processes of a container
+version Show the docker version information
+wait Block until a container stops, then print its exit code
+```
 
 Estes comandos permitem gerenciar todo o ciclo de vida de um container, coisas como criar, compartilhar, iniciar, inspecionar, parar, matar e remover containers.
 
 Vamos ver a versão instalada:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-5-docker-version-sh
+```bash
+[root@localhost ~]# docker version
+
+Client version: 0.11.1-dev
+Client API version: 1.12
+Go version (client): go1.2
+Git commit (client): 02d20af/0.11.1
+Server version: 0.11.1-dev
+Server API version: 1.12
+Go version (server): go1.2
+Git commit (server): 02d20af/0.11.1
+```
 
 Vamos trabalhar como no exemplo explicado lá em cima, onde dizemos ao docker para acionar o Registro, fazer o download de um container ubuntu, e rodar o shell dentro do container.
 
 Damos o comando de run, -t para chamar um tty e o -i para permitir nossa interação com o container, pois por padrão, ele iria rodar em background. Em seguida, precisamos informar um nome para a imagem do container que queremos rodar (no caso, ubuntu:12.04) e finalmente o comando que queremos executar no container. (/bin/bash).
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-6-docker-run-sh
+```bash
+[root@localhost ~]# docker run -t -i ubuntu:12.04 /bin/bash
+
+Unable to find image 'ubuntu:12.04' locally
+Pulling repository ubuntu
+c17f3f519388: Download complete
+511136ea3c5a: Download complete
+077c3931a6e9: Download complete
+e6d0d23ca3e9: Download complete
+4e6621283e98: Download complete
+f51528fc5eae: Download complete
+2124c4204a05: Download complete
+root@28ad8f0dd83f:/#
+```
 
 Após dar o enter, o Docker procurou por imagem do Ubuntu 12.04 no cache local. Como não tinha, fez download no Registro.
 
 Note que o prompt mudou para:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-7-new-prompt-sh
+```bash
+root@28ad8f0dd83f:/#
+```
 
 Onde 28ad8f0dd83f, é o ID do container. Sendo assim, significa que estamos dentro do container rodando Ubuntu. Vamos rodar o ps para ver o que temos em execução:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-8-new-prompt-ps-sh
+```bash
+root@28ad8f0dd83f:/# ps
+
+PID TTY TIME CMD
+1 ? 00:00:00 bash
+8 ? 00:00:00 ps
+```
 
 Note que não existem outros processos do sistema operacional rodando. Você só tem dois processos, o bash e o ps.
 
@@ -100,27 +201,48 @@ Para sair, não use exit. Use ctrl+p+q. O exit sai do container colocando ele em
 
 Voltando ao console do CentOS, rode o comando docker ps:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-9-docker-ps-sh
+```bash
+[root@localhost ~]# docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+28ad8f0dd83f ubuntu:12.04 /bin/bash 17 minutes ago Up 4 minutes cocky_kirch5
+```
 
 Conseguimos ver o id do nosso container e o que está em execução nele. Como temos apenas um rodando o bash, é o que vemos acima.
 
 Agora vamos voltar para o nosso container. Basta rodar o comando docker attach &lt;ID do Container&gt;
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-10-docker-attach-sh
+```bash
+[root@localhost ~]# docker attach 28ad8f0dd83f
+
+root@28ad8f0dd83f:/#
+```
 
 Se você ainda tem dúvidas, vamos dar um ls no /:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-11-ls-sh
+```bash
+root@28ad8f0dd83f:/# ls /
+
+bin boot dev etc home lib lib64 media mnt opt proc root run sbin selinux srv sys tmp usr var
+```
 
 Para os que ainda não acreditam, um cat no /etc/issue.net:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-12-issue-sh
+```bash
+root@28ad8f0dd83f:/# cat /etc/issue.net
+
+Ubuntu 12.04.5 LTS
+```
 
 Uma outra coisa interessante é que o docker faz um tracking de tudo que fazemos em nosso container, muito similar à sistemas de controle de versões. Então você pode passar o ID e ver todas as alterações feitas.
 
 Por exemplo:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-13-docker-diff-sh
+```bash
+[root@localhost ~]# docker diff 28ad8f0dd83f
+
+A /.bash_history
+```
 
 Ou seja, como só rodamos alguns comandos no shell, apenas o que alteramos foi o conteúdo do history, salvo no /root/.bash\_history.
 
@@ -128,19 +250,34 @@ Agora vamos fazer o seguinte. Vamos criar um container instalar algumas coisas n
 
 Voltado para o container:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-14-docker-attach-sh
+```bash
+[root@localhost ~]# docker attach 28ad8f0dd83f
+root@28ad8f0dd83f:/# apt-get update
+root@28ad8f0dd83f:/# apt-get install -y vim curl wget multitail
+```
 
-Depois de finalizado, saia (ctrl+p+q) e rode o comando docker ps -a para pegar o ID do seu container (caso já não tenha tomado nota). Agora rode outro diff (docker diff &lt;ID&gt;). Verifique a quantidade de coisas adicionadas (A) e alteradas (C). Bacana né?!
+Depois de finalizado, saia (ctrl+p+q) e rode o comando docker ps -a para pegar o ID do seu container (caso já não tenha tomado nota). Agora rode outro diff (docker diff <ID>). Verifique a quantidade de coisas adicionadas (A) e alteradas (C). Bacana né?!
 
 Agora vamos salvar esta versão para ser nossa imagem base de modo a usarmos ela mais tarde. Nós vamos fazer commit das mudanças, dar um nome e uma tag para elas. Execute:
 
-docker commit &lt;ID&gt; &lt;Nome&gt;:&lt;Tag&gt;
+docker commit <ID> <Nome>:<Tag>
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-15-docker-commit-sh
+```bash
+[root@localhost ~]# docker commit 28ad8f0dd83f ricardo/teste:0.1
+
+eacfb1e33a194803c5c2be11f8bd159424bd4b938123f9f70530d14676d6382b
+```
 
 Agora Vamos ver as imagens disponíveis:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-16-docker-images-sh
+```bash
+[root@localhost ~]# docker images
+
+REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE
+ricardo/teste 0.1 eacfb1e33a19 40 seconds ago 192.4 MB
+ubuntu latest 826544226fdc 5 days ago 194.2 MB
+ubuntu 12.04 c17f3f519388 5 days ago 106.2 MB
+```
 
 Todas as que você já tenha usado aparecerão aqui. Mas o legal é que também temos nossa própria imagem agora.
 
@@ -150,11 +287,32 @@ Vamos criar nosso servidor web com o Dockerfile agora. O docker file disponibili
 
 Crie um novo diretório e entre nele. Como vamos instalar o Nginx, vou criar um arquivo de conrfiguração que vamos usar nele.
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-17-mkdir-nginx-sh
+```bash
+[root@localhost ~]# mkdir nginx; cd nginx
+
+[root@localhost nginx]# pwd
+
+/root/nginx
+```
 
 Agora vamos criar um arquivo chamado Dockerfile. Nele vamos inserir o conteúdo abaixo alterando a seção FROM pelo nome dado à sua imagem:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-18-vim-docker-file-sh
+```bash
+[root@localhost ~]# vim /root/nginx/Dockerfile
+
+FROM ricardo/teste:0.1
+# Install Nginx.
+RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/* && echo "daemon off;" >> /etc/nginx/nginx.conf
+
+# Define working directory.
+WORKDIR /etc/nginx
+
+# Define default command.
+CMD ["nginx"]
+
+# Expose ports.
+EXPOSE 80
+```
 
 O que estamos fazendo?
 
@@ -166,13 +324,23 @@ O que estamos fazendo?
 
 Uma vez salvo, podemos gerar o nova imagem à partir do Dockerfile:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-19-docker-build-sh
+```bash
+[root@localhost ~]# docker build -t nginx-exemplo .
+```
 
 Se funcionar, você verá: Successfully built fc9d3f802962 (O ID do seu container será diferente).
 
 Vamos ver o que temos agora:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-20-docker-images-sh
+```bash
+[root@localhost nginx]# docker images
+
+REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE
+nginx-exemplo latest fc9d3f802962 29 seconds ago 205.4 MB
+ricardo/teste 0.1 eacfb1e33a19 47 minutes ago 192.4 MB
+ubuntu latest 826544226fdc 5 days ago 194.2 MB
+ubuntu 12.04 c17f3f519388 5 days ago 106.2 MB
+```
 
 Finalmente, vamos executar o webserver:
 
@@ -180,7 +348,11 @@ Use o comando docker run -p 80:80 -d nginx-exemplo (Assumindo que você tenha da
 
 O -p 80:80 faz o bind entre a porta 80 do container e das máquinas que forem acessá-lo. Então se fizermos um curl localhost ou formos ao endereço IP do servidor no browser, iremos ver o resultado do processamento das requests do Nginx na porta 80 do container.
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-21-docker-run-sh
+```bash
+[root@localhost nginx]# docker run -p 80:80 -d nginx-exemplo
+
+102326cfb0e85a50b1d358c4a92ad4770d00d8b1383a0d113dfcb88a6ea68a86
+```
 
 Explicando:
 
@@ -188,25 +360,80 @@ Explicando:
 - -p 80:80 – Fazer o bind entre a porta 80 do host e do container;
 - -d nginx-exemplo – Rodar nossa imagem nginx-exemplo, onde temos o “CMD” para rodar o nginx.
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-22-docker-ps-sh
+```bash
+[root@localhost nginx]# docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+102326cfb0e8 nginx-exemplo:latest nginx 30 seconds ago Up 29 seconds 0.0.0.0:80-&gt;80/tcp hungry_feynman1
+28ad8f0dd83f ubuntu:12.04 /bin/bash 3 hours ago Up About an hour cocky_kirch5
+```
 
 Como podemos ver, temos dois containers em execução. O que criamos inicialmente e o que acabamos de criar à partir da nossa imagem customizada com nginx. Vamos verificar se o Nginx está funcionando?
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-23-curl-sh
+```bash
+[root@localhost nginx]# curl localhost
+
+<center></center>
+<h1>Welcome to nginx</h1>
+```
 
 Beleza! Temos o Nginx funcionando corretamente!
 
 Agora vamos customizar o conteúdo exibido? Primeiro, vamos criar um arquivo chamado default dentro do nosso diretório onde estamos trabalhando (/root/nginx) e adicionar o seguinte conteúdo:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-24-vim-nginx-sh
+```bash
+[root@localhost nginx]# vim /root/nginx/default
+  server {
+
+  root /var/www;
+  index index.html index.htm;
+  server_name localhost;
+
+  location / {
+  try_files $uri $uri/ /index.html;
+  }
+}
+```
 
 Em seguida vamos criar um arquivo index.html com conteúdo customizado para ser exibido:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-25-vim-index-sh
+```bash
+[root@localhost nginx]# vim /root/nginx/index.html
+
+<center></center>
+<h1>Docker | Nginx!</h1>
+&nbsp;
+
+<center></center>
+<h1>http://ricardomartins.com.br</h1>
+```
 
 Vamos fazer uma modificação no nosso Docker file, adicionando o comando add, deixando ele assim:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-26-vim-docker-file-sh
+```bash
+[root@localhost nginx]# vim /root/nginx/Dockerfile
+
+FROM ricardo/teste:0.1
+# Install Nginx.
+RUN
+apt-get update &&
+apt-get install -y nginx &&
+rm -rf /var/lib/apt/lists/* &&
+echo "daemon off;" >> /etc/nginx/nginx.conf
+
+# Define working directory.
+WORKDIR /etc/nginx
+
+# Define default command.
+CMD ["nginx"]
+
+# Add custom content
+ADD default /etc/nginx/sites-available/default
+ADD index.html /var/www/
+
+# Expose ports.
+EXPOSE 80
+```
 
 O que faz o add:
 
@@ -214,31 +441,85 @@ O que faz o add:
 
 Agora vamos gerar uma nova imagem com nosso conteúdo customizado no Nginx:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-27-docker-build-sh
+```bash
+[root@localhost nginx]# $ docker build -t nginx-exemplo-custom .
+
+Uploading context 4.608 kB
+Uploading context
+Step 0 : FROM ricardo/teste:0.1
+---> eacfb1e33a19
+Step 1 : RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/* && echo "daemon off;" >> /etc/nginx/nginx.conf
+---> Using cache
+---> f11f100bab8f
+Step 2 : WORKDIR /etc/nginx
+---> Using cache
+---> 9af9478528d0
+Step 3 : CMD ["nginx"]
+---> Using cache
+---> df3975d470d3
+Step 4 : ADD default /etc/nginx/sites-available/default
+---> Using cache
+---> 4681201a599d
+Step 5 : ADD index.html /var/www/
+---> Using cache
+---> 21fc710d7cc8
+Step 6 : EXPOSE 80
+---> Using cache
+--->; 8c9b0d33f68a
+Successfully built 8c9b0d33f68a
+```
 
 Agora vamos iniciar nosso novo container. Primeiro você precisa dar um stop no container iniciado antes, caso contrário irá dar um erro informando que a porta 80 já está em uso. (Ou se preferir, rode o novo container em outra porta). Para dar stop, rode o comando:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-28-docker-stop-sh
+```bash
+[root@localhost nginx]# docker stop
+```
 
 Iniciando o novo container:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-29-docker-run-sh
+```bash
+[root@localhost nginx]# docker run -p 80:80 -d nginx-exemplo-custom
+
+84e770995a853cdd913195c6498e72ee8e8a3f0ad4196046fdae6c571a99d5ec
+```
 
 Agora rodamos novamente o curl:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-30-curl-sh
+```bash
+[root@localhost nginx]# curl localhost
+
+<center></center>
+<h1>Docker | Nginx!</h1>
+
+
+<center></center>
+<h1>http://ricardomartins.com.br</h1>
+```
 
 … ou melhor ainda, aponte seu browser para o endereço IP do servidor:
 
-[![screen-nginx](http://www.ricardomartins.com.br/media/screen-nginx.png)](http://www.ricardomartins.com.br/media/screen-nginx.png)Note que o endereço IP é o endereço do meu servidor de teste com CentOS instalado. Você poderia ter seu container com a própria configuração de rede, mas isto fica para um próximo post 😀
+[![screen-nginx](/media/screen-nginx.png)](/media/screen-nginx.png)
+
+Note que o endereço IP é o endereço do meu servidor de teste com CentOS instalado. Você poderia ter seu container com a própria configuração de rede, mas isto fica para um próximo post 😀
 
 Ahh, já ia esquecendo. Você pode rodar comandos dentro do seu container. Por exemplo, vamos conferir o nosso arquivo index.html dentro do container:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-31-docker-run-sh
+```bash
+[root@localhost nginx]# docker run -t -i nginx-exemplo-custom cat /var/www/index.html
 
+<center></center>
+<h1>Docker | Nginx!</h1>
+<center></center>
+<h1>http://ricardomartins.com.br</h1>
+```
 Note que não subimos um novo container, é o mesmo que está em execução:
 
-https://gist.github.com/rmmartins/f06609acff847d37516cd2ae2597ec98#file-32-docker-ps-sh
+```bash
+[root@localhost nginx]# docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+cb41e8f2b62b nginx-exemplo-custom:latest nginx 10 minutes ago Up 10 minutes 0.0.0.0:80 > 80/tcp trusting_ptolemy9
+```
 
 Dicas úteis
 
