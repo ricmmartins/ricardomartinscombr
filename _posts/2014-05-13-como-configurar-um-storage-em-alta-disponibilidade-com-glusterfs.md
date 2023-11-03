@@ -1,67 +1,14 @@
 ---
-id: 4982
 title: 'Como configurar um storage em alta disponibilidade com GlusterFS'
 date: '2014-05-13T23:17:14-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4982'
-permalink: /como-configurar-um-storage-em-alta-disponibilidade-com-glusterfs/
-dsq_thread_id:
-    - '3277905172'
-    - '3277905172'
-    - '3277905172'
-    - '3277905172'
-    - '3277905172'
-    - '3277905172'
-    - '3277905172'
-    - '3277905172'
-views:
-    - '3202'
-    - '3202'
-    - '3202'
-    - '3202'
-    - '3202'
-    - '3202'
-    - '3202'
-    - '3202'
-sharing_disabled:
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-switch_like_status:
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-    - '1'
-videourl:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - Clusters
-    - Uncategorized
+    - glusterfs
+    - storage
 ---
 
 ## Aprenda a implementar esta excelente ferramenta.
 
-![glusterfs](http://www.ricardomartins.com.br/media/orange-ant-glusterfs.png)
+![glusterfs](/media/orange-ant-glusterfs.png)
 
 Recentemente eu mostrei como configurar balanceamento de carga com o HAProxy. Caso você não tenha visto, pode acessá-lo [aqui](http://www.ricardomartins.com.br/balanceamento-de-carga-com-haproxy/).
 
@@ -91,76 +38,169 @@ client.ricardomartins.com.br (192.168.1.130)
 ### Configuração do Storage
 
 Criar partição:  
-\[cce lang=”bash”\]# cfdisk /dev/sdb  
- New &gt; Primary &gt; Size: (Deixe o padrão) &gt; Write &gt; Yes &gt; Quit\[/cc\]  
+
+```bash
+# cfdisk /dev/sdb  
+ New > Primary > Size: (Deixe o padrão) > Write > Yes > Quit
+```
+
 Criar sistema de arquivos e formatar:  
-\[cce lang=”bash”\]# mkfs.ext4 /dev/sdb1\[/cc\]  
+
+```bash
+# mkfs.ext4 /dev/sdb1
+```
+
 Criar diretório do cluster:  
-\[cce lang=”bash”\]# mkdir -p /dados/cluster\[/cc\]  
+
+```bash
+# mkdir -p /dados/cluster
+```
+
 Configurar o Fstab:  
-\[cce lang=”bash”\]# vi /etc/fstab\[/cc\]  
+
+```bash
+# vi /etc/fstab
+```
+
 Adicionar:  
-\[cce lang=”bash”\]/dev/sdb1 /dados/cluster ext4 defaults 1 2\[/cc\]  
+
+```bash
+/dev/sdb1 /dados/cluster ext4 defaults 1 2
+```
+
 Montar:  
-\[cce lang=”bash”\]# mount -a &amp;&amp; mount\[/cc\]
+
+```bash
+# mount -a && mount
+```
 
 ### Habilitar EPEL e o repositório do GlusterFS
 
-\[cce lang=”bash”\]# wget -P /etc/yum.repos.d http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo\[/cc\]
+```bash
+# wget -P /etc/yum.repos.d http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo
+```
 
 ### Instalação do GlusterFS
 
-\[cce lang=”bash”\]# yum install glusterfs-server\[/cc\]  
+```bash
+# yum install glusterfs-server
+```
+
 Iniciar o daemon de gerenciamento do GlusterFS  
-\[cce lang=”bash”\]# service glusterd start\[/cc\]  
+
+```bash
+# service glusterd start
+```
+
 Garantir que ele seja iniciado durante o boot  
-\[cce lang=”bash”\]# chkconfig glusterd on\[/cc\]  
+
+```bash
+# chkconfig glusterd on
+```
+
 Para evitar erros por conta de regras de Firewall e do Selinux, vamos desabilitá-lo:
 
 Abra o /etc/sysconfig/selinux e deixe da seguinte forma:  
-\[cce lang=”bash”\]SELINUX=disabled\[/cc\]  
+
+```bash
+SELINUX=disabled
+```
+
 Agora faça um flush nas regras de iptables ou pare o serviço:  
-\[cce lang=”bash”\]# iptables -F\[/cc\]  
+
+```bash
+# iptables -F
+```
+
 ou  
-\[cce lang=”bash”\]# /etc/init.d/iptables stop\[/cc\]
+
+```bash
+# /etc/init.d/iptables stop
+```
 
 ### Configurar o Trusted Pool
 
 Rodar o seguinte comando no Server1:  
-\[cce lang=”bash”\]# gluster peer probe server2\[/cc\]  
+
+```bash
+# gluster peer probe server2
+```
+
 Rodar o seguinte comando no Server2:  
-\[cce lang=”bash”\]# gluster peer probe server1\[/cc\]
+
+```bash
+# gluster peer probe server1
+```
 
 > Nota: Uma vez que o pool já estiver conectado, apenas servidores “Trusted” podem adicionar novos servidores no Pool.
 
 ### Configurar o Volume do GlusterFS
 
 Criar em ambos os servidores:  
-\[cce lang=”bash”\]# mkdir /dados/cluster/vg\[/cc\]  
+
+```bash
+# mkdir /dados/cluster/vg
+```
+
 Criar o volume em qualquer um dos servidores e iniciar o volume. Eu fiz no Server1  
-\[cce lang=”bash”\]# gluster volume create vg replica 2 server1:/dados/cluster/vg server2:/dados/cluster/vg  
-\# gluster volume start vg\[/cc\]  
+
+```bash
+# gluster volume create vg replica 2 server1:/dados/cluster/vg server2:/dados/cluster/vg  
+```
+
+```bash
+# gluster volume start vg
+```
+
 Agora vamos confirmar o estado do volume criado:  
-\[cce lang=”bash”\]# gluster volume info\[/cc\]  
+
+```bash
+# gluster volume info
+```
+
 Caso o volume não for iniciado, as mensagens de erro estarão em /var/log/glusterfs em ambos os servidores.
 
 ### Testando nos clientes
 
-Agora no Client, vamos testar.
+Agora no Client, vamos testar. Instale o cliente do glusterfs:  
 
-Instale o cliente do glusterfs:  
-\[cce lang=”bash”\]# yum install glusterfs-client\[/cc\]  
+```bash
+# yum install glusterfs-client
+```
+
 Em seguida vamos criar um diretório onde montaremos o cluster:  
-\[cce lang=”bash”\]# mkdir /clusterfs\[/cc\]  
+
+```bash
+# mkdir /clusterfs
+```
+
 E agora montamos o cluster nesse diretório:  
-\[cce lang=”bash”\]# mount -t glusterfs server1:/dados/cluster/vg /clusterfs\[/cc\]  
+
+```bash
+# mount -t glusterfs server1:/dados/cluster/vg /clusterfs
+```
+
 Para montar automaticamente, basta inserir no /etc/fstab da seguinte maneira:  
-\[cce lang=”bash”\]server1.ricardomartins.com.br:/dados/cluster/vg /cluster glusterfs defaults,\_netdev 0 0\[/cc\]  
+
+```bash
+server1.ricardomartins.com.br:/dados/cluster/vg /cluster glusterfs defaults,_netdev 0 0
+```
+
 Agora vamos criar arquivos neste diretório:  
-\[cce lang=”bash”\]# cd /clusterfs  
-\# touch arquivo{1..10}\[/cc\]  
+
+```bash
+# cd /clusterfs
+```
+
+```bash
+# touch arquivo{1..10}
+```
+
 Para validar, vamos em um dos outros servidores, e dê um ls no diretório do cluster. Os arquivos estarão lá!  
-\[cce lang=”bash”\]# ls /dados/cluster/vg/\[/cc\]
+
+```bash
+# ls /dados/cluster/vg
+```
 
 > Nota: Se você quiser testar dentro de um dos servidores, você precisa instalar o cliente do glusterfs (glusterfs-client) e usar o mesmo procedimento acima. Escrever diretamente em /dados/cluster/vg/ não irá replicar a configuração para o outro servidor.
 
@@ -179,21 +219,47 @@ Se estiver tudo conforme acima, seu Raid via rede está totalmente funcional ago
 Agora que nós verificamos que nosso storage pool está disponível e replicando os dados entre as máquinas do cluster, nos podemos querer proteger nosso pool. Atualmente, qualquer computador cliente pode se conectar ao nosso storage sem nenhuma restrição. Nós podemos alterar isso definindo uma opção no nosso volume.
 
 Em um dos servidores, digite:  
-\[cce lang=”bash”\]# gluster volume set volume1 auth.allow ip.do.cliente1,ip.do.cliente2\[/cc\]
+
+```bash
+# gluster volume set volume1 auth.allow ip.do.cliente1,ip.do.cliente2
+```
 
 ### Alguns comandos importantes do glusterfs
 
 Obtendo informações sobre ós volumes:  
-\[cce lang=”bash”\]# gluster volume info\[/cc\]  
+
+```bash
+# gluster volume info
+```
+
 Obtendo informações sobre os nós integrantes do cluster que estão conectados ao servidor que você estiver logado:  
-\[cce lang=”bash”\]# gluster peer status\[/cc\]  
+
+```bash
+# gluster peer status
+```
+
 Se você quiser informações detalhadas sobre o que cada nó está fazendo, você pode traçar um perfil sobre o volume:  
-\[cce lang=”bash”\]# gluster volume profile nome\_do\_volume start  
-\# gluster volume profile nome\_do\_volume info\[/cc\]  
+
+```bash
+# gluster volume profile nome_do_volume start
+```
+
+```bash
+# gluster volume profile nome_do_volume info
+```
+
 Para obter uma lista de todos os componentes associados ao GlusterFS rodando em cada um dos nós (servidores):  
-\[cce lang=”bash”\]# gluster volume status\[/cc\]  
+
+```bash
+# gluster volume status
+```
+
 Para entrar no console de administração do GlusterFS  
-\[cce lang=”bash”\]# gluster\[/cc\]  
+
+```bash
+# gluster
+```
+
 Um prompt de comandos será aberto. Digite “help” para ver todas as opções disponíveis para você. Para sair, digite “exit”.
 
 ### Plus: Conceitos de Storage
