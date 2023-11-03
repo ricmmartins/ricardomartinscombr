@@ -1,45 +1,9 @@
 ---
-id: 4504
 title: 'Configurando uma interface web alternativa para a AWS'
 date: '2013-05-06T14:34:26-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4504'
-permalink: /interface-web-alternativa-aws/
-bfa_virtual_template:
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-    - hierarchy
-views:
-    - '861'
-    - '861'
-    - '861'
-    - '861'
-    - '861'
-    - '861'
-    - '861'
-    - '861'
-dsq_thread_id:
-    - '3344107462'
-    - '3344107462'
-    - '3344107462'
-    - '3344107462'
-    - '3344107462'
-    - '3344107462'
-    - '3344107462'
-    - '3344107462'
-categories:
-    - Uncategorized
 tags:
-    - '37'
     - aws
     - cloud
-    - Uncategorized
 ---
 
 Atualmente a Netflix é um dos maiores heavy users dos serviços AWS no mundo. E eles possuem todo um conjunto de ferramentas desenvolvidas por eles mesmos para otimizar o trabalho que desenvolvem e a utlização dos serviços da Amazon. Diversas das ferramentas deles estão disponiblizadas no formato open source em <https://github.com/Netflix>
@@ -73,21 +37,21 @@ Aqui você deve informar seu Access Key ID, Secret Access Key e seu AWS Account 
 
 Assim que abrir a url, você verá a tela abaixo:
 
-[![asgard](http://ricardomartins.com.br/wp-content/uploads/2013/05/19-1024x611.png)](http://ricardomartins.com.br/wp-content/uploads/2013/05/19.png)
+[![asgard](wp-content/uploads/2013/05/19-1024x611.png)](/wp-content/uploads/2013/05/19.png)
 
 Em alguns instantes será exibido os campos que devem ser preenchidos com as informações da sua conta.
 
 Depois de preencher os campos, você verá a tela abaixo:
 
-[![2](http://ricardomartins.com.br/wp-content/uploads/2013/05/2-1024x611.png)](http://ricardomartins.com.br/wp-content/uploads/2013/05/2.png)
+[![2](wp-content/uploads/2013/05/2-1024x611.png)](/wp-content/uploads/2013/05/2.png)
 
 Visualizando minha instância:
 
-[![3](http://ricardomartins.com.br/wp-content/uploads/2013/05/3-1024x611.png)](http://ricardomartins.com.br/wp-content/uploads/2013/05/3.png)
+[![3](/wp-content/uploads/2013/05/3-1024x611.png)](/wp-content/uploads/2013/05/3.png)
 
 Clicando no “Instance ID” em azul acima, vamos para a próxima tela com todos os detalhes sobre ela.
 
-[![4](http://ricardomartins.com.br/wp-content/uploads/2013/05/4-1024x611.png)](http://ricardomartins.com.br/wp-content/uploads/2013/05/4.png)
+[![4](/wp-content/uploads/2013/05/4-1024x611.png)](h/wp-content/uploads/2013/05/4.png)
 
 Gostou? Tá esperando o que pra testar também?
 
