@@ -129,7 +129,8 @@ Explicando:
 Agora iremos criar nosso **Auto Scaling Group**  
 
 ```bash
-as-create-auto-scaling-group asg-ricardomartins –launch-configuration lc-ricardomartins –availability-zones “us-east-1a” –min-size 1 –max-size 2 –load-balancers ricardomartins –tag “k=Name,v=rmartins_AS”```
+as-create-auto-scaling-group asg-ricardomartins –launch-configuration lc-ricardomartins –availability-zones “us-east-1a” –min-size 1 –max-size 2 –load-balancers ricardomartins –tag “k=Name,v=rmartins_AS”
+```
 
 Explicando:
 
