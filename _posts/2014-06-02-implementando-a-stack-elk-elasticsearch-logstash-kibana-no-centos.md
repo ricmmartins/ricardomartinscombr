@@ -114,7 +114,7 @@ Procure pelo parâmetro “elasticsearch:” e modifique de acordo com seu ambie
 elk.ricardomartins.com.br (192.168.33.100)  
 
 ```bash
-elasticsearch: “http://192.168.33.100:9200″
+elasticsearch: "http://192.168.33.100:9200"
 ```
 
 Você também precisa modificar o parâmetro da rota padrão para que o Dashboard do Logstash seja utilizado por padrão ao invés da tela de boas vindas do Kibana:  
