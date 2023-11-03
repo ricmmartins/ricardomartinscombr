@@ -1,30 +1,11 @@
 ---
-id: 4601
 title: 'Instalando o WordPress sobre Nginx, PHP-FPM e Varnish no Centos'
 date: '2013-09-11T18:11:23-04:00'
-author: rmmartins
-layout: post
-guid: 'http://www.ricardomartins.com.br/?p=4601'
-permalink: /instalando-wordpress-nginx-php-fpm-varnish-no-centos/
-views:
-    - '3961'
-    - '3961'
-    - '3961'
-    - '3961'
-dsq_thread_id:
-    - '3277904935'
-    - '3277904935'
-    - '3277904935'
-    - '3277904935'
-categories:
-    - Uncategorized
 tags:
-    - '103'
     - centos
-    - Linux
+    - linux
     - nginx
     - php-fpm
-    - Uncategorized
     - varnish
     - wordpress
 ---
@@ -35,13 +16,21 @@ Olá pessoal, o Varnish é um excelente acelerador HTTP para sites dinâmicos co
 
 ## Instalação do Varnish, Nginx e Php-Fpm
 
-\[cce lang=”bash”\]yum install varnish nginx php-fpm\[/cc\]
+```bash
+yum install varnish nginx php-fpm
+```
 
 ## Configuração do PHP-FPM
 
-\[cce lang=”bash”\]cd /etc/php-fpm.d/  
-mv www.conf www.disabled\[/cc\]  
-\[cce lang=”bash”\]vim /etc/php-fpm.d/nginx.conf\[/cc\]  
+```bash
+cd /etc/php-fpm.d/  
+mv www.conf www.disabled
+```
+
+```bash
+vim /etc/php-fpm.d/nginx.conf
+```
+
 \[cce lang=”bash”\]\[nginx\]  
 listen = /var/run/php-fpm/php-fpm.sock  
 listen.owner = nginx  
