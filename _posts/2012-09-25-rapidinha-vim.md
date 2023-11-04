@@ -7,6 +7,6 @@ tags:
 
 Só pra compartilhar um arquivo muito maneiro que encontrei. Uma tabelinha, com o mapa de diversas funções e comandos do VIM.
 
-[Baixe aqui.](http://www.ricardomartins.com.br/wp-content/uploads/2012/09/Vim.pdf)
+[Baixe aqui.](http://jrmiii.com/attachments/Vim.pdf)
 
 Fonte: <http://jrmiii.com>
