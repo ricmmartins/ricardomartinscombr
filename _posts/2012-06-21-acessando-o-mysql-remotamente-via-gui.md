@@ -109,7 +109,7 @@ Abra o HeidiSQL e configure a conexão conforme a imagem abaixo:
 
 (Troque as informações conforme seu ambiente)
 
-[![](/wp-content/uploads/2012/06/HeidiSQL1.png "HeidiSQL")](/wp-content/uploads/2012/06/HeidiSQL1.png)
+[![1](/wp-content/uploads/2012/06/HeidiSQL1.png)](/wp-content/uploads/2012/06/HeidiSQL1.png)
 
 Tela do Heidi logado no banco:
 
