@@ -101,7 +101,7 @@ mysql> grant all privileges on *.* to root@’192.168.10.200′ identified by �
 ```
 Onde fizemos:
 
-**“conceda todos os privilégios em todos os databases (\*.\*) para o usuário root com acesso originado do endereço ip 192.168.10.200 utilizando a senha P@ssw0rd”**
+**“conceda todos os privilégios em todos os databases (*.*) para o usuário root com acesso originado do endereço ip 192.168.10.200 utilizando a senha P@ssw0rd”**
 
 ## 6- Acessando remotamente pelo HeidiSQL
 
