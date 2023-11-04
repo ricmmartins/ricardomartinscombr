@@ -1,81 +1,6 @@
 ---
-id: 3110
 title: 'Instalando os adicionais para convidado (Guest Additions) na VM CentOS 6.2 do Virtualbox'
 date: '2012-06-04T14:35:42-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=3110'
-permalink: /instalando-os-adicionais-para-convidado-guest-additions-na-vm-centos-6-2-do-virtualbox/
-'Hide SexyBookmarks':
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-'Hide OgTags':
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-    - '0'
-views:
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-    - '3789'
-dsq_thread_id:
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-    - '3334764050'
-categories:
-    - Uncategorized
 tags:
     - virtualbox
     - Virtualização
@@ -83,7 +8,7 @@ tags:
 
 Neste artigo demostro como instalar o Guest Additions no CentoS 6.2. Pode ser bastante útil se você tentou instalar e encontrou a mensagem de erro abaixo:
 
-> /tmp/vbox.0/Makefile.include.header:97: \*\*\* Error: unable to find the sources of your current Linux kernel. Specify KERN\_DIR=&lt;directory&gt; and run Make again.
+> /tmp/vbox.0/Makefile.include.header:97: *** Error: unable to find the sources of your current Linux kernel. Specify KERN_DIR=<directory> and run Make again.
 
 Os adicionais para convidado, também conhecidos como guest additions, são um conjunto de dispositivos de drivers e aplicativos de sistema que otimizam o sistema operacional convidado (guest) para um melhor desempenho e usabilidade.
 
@@ -107,11 +32,19 @@ Pacotes requeridos:
 • kernel-devel  
 • kernel-headers
 
-`[root@ricardo /root]# yum install gcc kernel-devel kernel-headers`
+```bash
+[root@ricardo /root]# yum install gcc kernel-devel kernel-headers
+```
 
 Em seguida adicione a variável KERN\_DIR ao /etc/profile da seguinte forma:
 
-`[root@ricardo /root]# echo KERN_DIR=/usr/src/kernels/`uname -r`-`uname -m` >> /etc/profile<br></br>[root@ricardo /root]# echo export KERN_DIR >> /etc/profile<br></br>[root@ricardo /root]# mount /dev/cdrom /media/<br></br>[root@ricardo /root]# cd /media<br></br>[root@ricardo /root]# ./VboxLinuxAdditions.run`
+```bash
+[root@ricardo /root]# echo KERN_DIR=/usr/src/kernels/`uname -r`-`uname -m` >> /etc/profile
+[root@ricardo /root]# echo export KERN_DIR >> /etc/profile
+[root@ricardo /root]# mount /dev/cdrom /media/
+[root@ricardo /root]# cd /media
+[root@ricardo /root]# ./VboxLinuxAdditions.run
+```
 
 Depois de executar o script de instalação, basta reiniciar o sistema e pronto! Guest Additions instalado e funcionando!
 
