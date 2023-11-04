@@ -64,7 +64,7 @@ mysql> create database meudb;
 ## 4- Criando um usuário com permissões de total controle sobre o banco “meudb”
 
 ```bash
-mysql> grant all privileges on meudb.\* to ‘ricardo’@’localhost’ identified by ‘ricardopassword’;
+mysql> grant all privileges on meudb.* to ‘ricardo’@’localhost’ identified by ‘ricardopassword’;
 ```
 
 Explicando: Criamos o usuário ricardo com a senha **ricardopassword**.  
