@@ -1,68 +1,8 @@
 ---
 id: 2847
 title: 'Conheça o Microsoft Diagnostics and Recovery Toolset – DaRT 7.0 (Beta)'
-date: '2011-04-06T13:36:34-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2847'
-permalink: /conheca-o-microsoft-diagnostics-and-recovery-toolset-dart-7-0-beta/
-views:
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-    - '5591'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-    - '3277904262'
-categories:
-    - Uncategorized
 tags:
-    - '172'
-    - ferramentas
-    - Windows
+    - windows
 ---
 
 Por [Marcelo Matias](http://marcelomatias.wordpress.com/)
