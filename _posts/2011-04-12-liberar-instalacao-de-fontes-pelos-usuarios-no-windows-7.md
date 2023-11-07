@@ -1,68 +1,8 @@
 ---
-id: 2849
 title: 'Liberar instalação de fontes pelos usuários no Windows 7'
 date: '2011-04-12T20:31:12-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2849'
-permalink: /liberar-instalacao-de-fontes-pelos-usuarios-no-windows-7/
-views:
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-    - '13681'
-bb-custom-tags:
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-    - 'windows, dicas'
-dsq_thread_id:
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-    - '3277901863'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - dicas
-    - Windows
+    - windows
 ---
 
 Aqui no trabalho, dentre outras atividades, trabalhamos dando suporte e criando soluções para profissionais de criação. Sabe este povo criativo que usa Photoshop, 3DMax, After Effects? É uma tarefa divertida e ótima para tornar uma pessoa cartesiana em algo muito mais prático! Não que eu seja cartesiano.
@@ -75,26 +15,26 @@ Vamos então ao que interessa:
 
 **Primeiro, desabilitar o UAC:**
 
-Control Panel &gt; User Accounts &gt; Change User Account Control Settings, selecionar “Nunca Notificar”
+Control Panel > User Accounts > Change User Account Control Settings, selecionar “Nunca Notificar”
 
 **Depois liberar acesso ao diretório fontes:**
 
-1\. Abra o prompt de comando com privilégios de administrador (clique com o botão direito do mouse, executar como administrador)  
-2\. Digite “attrib –r –s c:WindowsFonts” (sem aspas), tecle Enter  
-3\. Clique com o botão direito do mouse na pasta Fonts e escolha propriedades  
-4\. Clique na aba segurança  
-5\. Clique em avançado  
-6\. Clique na aba proprietário  
-7\. Clique em editar  
-8\. Altere o proprietário atual para o administrador  
-9\. Marque a opção para substituir proprietário em subcontainers e objetos  
-10\. Clique em ok.
+1. Abra o prompt de comando com privilégios de administrador (clique com o botão direito do mouse, executar como administrador)  
+2. Digite “attrib –r –s c:WindowsFonts” (sem aspas), tecle Enter  
+3. Clique com o botão direito do mouse na pasta Fonts e escolha propriedades  
+4. Clique na aba segurança  
+5. Clique em avançado  
+6. Clique na aba proprietário  
+7. Clique em editar  
+8. Altere o proprietário atual para o administrador  
+9. Marque a opção para substituir proprietário em subcontainers e objetos  
+10. Clique em ok.
 
 **Agora liberar chave do registro**
 
-1\. Execute o regedit  
-2\. Procure pela chave: HKEY\_LOCAL\_MACHINESOFTWAREMICROSOFTWINDOWS NTCURRENT VERSIONFONTS  
-3\. Clique com o botão direito em cima de Fonts, permissões e em seguida dar permissões de controle total para o grupo “usuários”
+1. Execute o regedit  
+2. Procure pela chave: HKEY_LOCAL_MACHINESOFTWAREMICROSOFTWINDOWS NTCURRENT VERSIONFONTS  
+3. Clique com o botão direito em cima de Fonts, permissões e em seguida dar permissões de controle total para o grupo “usuários”
 
 Reinicie o computador e agora sera possível definir as permissões NTFS concedendo as permissões de “modificar” para o grupo usuários em C:WindowsFonts. Isto irá permitir que usuários restritos instalem fontes.
 
