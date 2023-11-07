@@ -17,4 +17,4 @@ Faça uma análise de seus afazeres para verificar se não desenvolveu (às veze
 
 É preciso ter a percepção que o famoso “do it now” (“faça agora”) dos americanos é um grande fator de sucesso profissional.
 
-Não se esqueça, [use o follow-up](http://ricardomartins.com.br/2010/01/21/termine-o-que-comecar-use-o-follow-up/), e [escreva seus objetivos e metas](http://ricardomartins.com.br/2009/10/01/escreva-seus-objetivos-e-metas/).
+Não se esqueça, [use o follow-up](http://ricardomartins.com.br/termine-o-que-comecar-use-o-follow-up/), e [escreva seus objetivos e metas](http://ricardomartins.com.br/2009/10/01/escreva-seus-objetivos-e-metas/).
