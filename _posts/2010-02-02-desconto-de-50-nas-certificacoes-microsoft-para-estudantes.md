@@ -1,85 +1,11 @@
 ---
-id: 1925
 title: 'Desconto de 50% nas Certificações Microsoft para Estudantes'
 date: '2010-02-02T20:30:10-05:00'
-author: rmmartins
-excerpt: 'Promoão Microsoft'
-layout: post
-guid: 'http://ricardomartins.com.br/?p=1925'
-permalink: /desconto-de-50-nas-certificacoes-microsoft-para-estudantes/
-views:
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-    - '2822'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-    - '3321814286'
-categories:
-    - Uncategorized
 tags:
-    - '44'
-    - Carreira
-    - dicas
-    - Uncategorized
+    - certificação
 ---
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/02/Prometric-Student-Priced-Exams4.jpg "Prometric Student Priced Exams[4]")](http://www.ricardomartins.com.br/wp-content/uploads/2010/02/Prometric-Student-Priced-Exams4.jpg)
+[![](/wp-content/uploads/2010/02/Prometric-Student-Priced-Exams4.jpg "Prometric Student Priced Exams[4]")](/wp-content/uploads/2010/02/Prometric-Student-Priced-Exams4.jpg)
 
 Você sabia? Desde Novembro/2009 a Microsoft está com uma promoção oferecendo 50% de desconto para estudantes em suas provas de certificação?
 
