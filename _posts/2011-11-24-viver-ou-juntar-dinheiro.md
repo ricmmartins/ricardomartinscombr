@@ -7,6 +7,7 @@ tags:
 
 * Texto enviado a Max Gehringer na Rádio CBN.
 
+{: .notice--info}
 Recebi uma mensagem muito interessante de um ouvinte da CBN e peço licença para lê-la na íntegra, porque ela nem precisa dos meus comentários. Lá vai:
 
 {: .notice--info}
