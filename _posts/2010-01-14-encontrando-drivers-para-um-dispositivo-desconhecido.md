@@ -1,118 +1,8 @@
 ---
-id: 1910
 title: 'Encontrando drivers para um dispositivo desconhecido'
 date: '2010-01-14T22:07:36-05:00'
-author: rmmartins
-excerpt: 'Software para reconhecer dispositivos não instalados'
-layout: post
-guid: 'http://ricardomartins.com.br/?p=1910'
-permalink: /encontrando-drivers-para-um-dispositivo-desconhecido/
-views:
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-    - '9104'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-    - '3277903461'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - '172'
-    - dicas
-    - Utilidades
+    - windows
 ---
 
 A pior coisa depois de um format é a busca por drivers para reinstalação. Geralmente perdemos os cd’s com os drivers, ou nos deparamos com computadores xingue-lingue que nem cd de drivers possui. Realmente isso é desanimador…
@@ -123,10 +13,10 @@ Quando você baixá-lo, certifique-se de extrair o .exe e o arquivo .zip … e d
 
 Uma olhada no gerenciador de dispositivos mostra os dispositivos desconhecidos:
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/01/Unknown-Device-Manager-20100113.jpg "Unknown Device Manager 20100113")](http://www.ricardomartins.com.br/wp-content/uploads/2010/01/Unknown-Device-Manager-20100113.jpg)
+[![](/wp-content/uploads/2010/01/Unknown-Device-Manager-20100113.jpg "Unknown Device Manager 20100113")](/wp-content/uploads/2010/01/Unknown-Device-Manager-20100113.jpg)
 
 E com este pequeno utilitário, facilmente você descobre quais são os dispositivos. Basta executá-lo e PRONTO! Ele mostra uma lista:
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/01/Unknown-Devices-20100113.jpg "Unknown Devices 20100113")](http://www.ricardomartins.com.br/wp-content/uploads/2010/01/Unknown-Devices-20100113.jpg)
+[![](/wp-content/uploads/2010/01/Unknown-Devices-20100113.jpg "Unknown Devices 20100113")](/wp-content/uploads/2010/01/Unknown-Devices-20100113.jpg)
 
 Depois disso, basta clicar com o botão direito sobre eles e fazer uma busca no Google. Dentro de 30 minutos você vai conseguir baixar todos os drivers instalá-los. Ele vai lhe poupar bastante tempo ao tentar encontrar os drivers após uma formatação e evitar ficar tendo que abrir a máquina para ler a identificação de cada modelo de hardware.
