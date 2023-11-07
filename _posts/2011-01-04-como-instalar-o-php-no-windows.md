@@ -1,57 +1,9 @@
 ---
-id: 2514
 title: 'Como instalar o PHP no Windows'
 date: '2011-01-04T21:27:03-05:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2514'
-permalink: /como-instalar-o-php-no-windows/
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-views:
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-    - '2472'
-dsq_thread_id:
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-    - '3396039355'
-categories:
-    - Uncategorized
 tags:
-    - '172'
-    - dicas
     - php
-    - tutorial
+    - windows
 ---
 
 Olá pessoas!
