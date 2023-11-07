@@ -5,7 +5,9 @@ tags:
     - carreira
 ---
 
-![](/wp-content/uploads/2010/02/art.sleep_.atwork.gi_-150x150.jpg "art.sleep.atwork.gi") Quantas vezes já ocorreu de você deixa alguma coisa pra depois e aoportunidade passar? Quantas idéias você teve, não implementou e, quando se deu conta, elas não teriam mais o mesmo efeito se fossem implementadas?
+![](/wp-content/uploads/2010/02/art.sleep_.atwork.gi_-292x180.jpg "art.sleep.atwork.gi") 
+
+Quantas vezes já ocorreu de você deixa alguma coisa pra depois e aoportunidade passar? Quantas idéias você teve, não implementou e, quando se deu conta, elas não teriam mais o mesmo efeito se fossem implementadas?
 
 Segundo o dicionário Aurélio, procrastinar é “transferir para outro dia; adiar; delongar, demorar”.
 
