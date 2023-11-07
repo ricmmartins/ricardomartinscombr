@@ -43,7 +43,7 @@ Legal, então vamos ao que interessa:
 
 Vamos começar com o caminho. Queremos que ele procure em c:windowstemp
 
-`forfiles  -p "c:windowstemp"`
+```bashforfiles  -p "c:windowstemp"```
 
 Quero incluir subpastas:
 
