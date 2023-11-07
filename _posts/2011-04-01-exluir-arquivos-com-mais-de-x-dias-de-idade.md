@@ -49,25 +49,35 @@ forfiles  -p "c:windowstemp"
 
 Quero incluir subpastas:
 
-`forfiles -p "c:windowstemp" -s`
+```bash
+forfiles -p "c:windowstemp" -s
+```
 
 Usando a opção de data, eu quero qualquer coisa com mais de um dia de idade:
 
-`forfiles -p "c:windowstemp" -s -d -1`
+```bash
+forfiles -p "c:windowstemp" -s -d -1
+```
 
 Eu só quero apagar os arquivos que terminam com .tmp:
 
-`forfiles -p "c:windowstemp" -s -d -1 -m *.tmp`
+```bash
+forfiles -p "c:windowstemp" -s -d -1 -m *.tmp
+```
 
 E, finalmente, o comando que desejo executar nos arquivos encontrados, no caso é o DEL:
 
-`forfiles -p "c:windowstemp" -s -d -1 -m *.tmp -c "cmd /c del /f /q @path"`
+```bash
+forfiles -p "c:windowstemp" -s -d -1 -m *.tmp -c "cmd /c del /f /q @path"
+```
 
 Observe o uso da variável @path – é uma das muitas variáveis que o Forfiles reconhece.
 
 Então é isso – uma linha de comando que vai apagar arquivos da nossa pasta temp com mais de 1 dia de idade:
 
-`forfiles -p "c:windowstemp" -s -d -1 -m *.tmp -c "cmd /c del /f /q @path"`
+```bash
+forfiles -p "c:windowstemp" -s -d -1 -m *.tmp -c "cmd /c del /f /q @path"
+```
 
 E pronto! Agora é só você criar uma tarefa agendada para rodar o comando acima uma vez por semana.
 
