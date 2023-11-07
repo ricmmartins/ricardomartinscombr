@@ -1,56 +1,8 @@
 ---
-id: 2838
 title: 'Exluir arquivos com mais de X dias de idade'
 date: '2011-04-01T20:44:58-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2838'
-permalink: /exluir-arquivos-com-mais-de-x-dias-de-idade/
-views:
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-    - '24643'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-    - '3277901838'
-categories:
-    - Uncategorized
 tags:
-    - '172'
-    - ferramentas
-    - Windows
+    - windows
 ---
 
 Todos nós, administradores de sistema, temos problemas com arquivos de log lotando o disco rígido. Mas agora você vai poder determinar que os arquivos com mais de X dias sejam deletados do seu sistema de forma simples.
