@@ -71,7 +71,7 @@ E pronto! Agora é só você criar uma tarefa agendada para rodar o comando acim
 
 Se sua cópia do Windows não tem o Forfiles, você pode baixá-lo a partir do servidor FTP da Microsoft aqui:
 
-<ftp://ftp.microsoft.com/ResKit/y2kfix/x86/>
+[ftp://ftp.microsoft.com/ResKit/y2kfix/x86/](ftp://ftp.microsoft.com/ResKit/y2kfix/x86/)
 
 Estou realmente impressionado com este pequeno utilitário e as suas infinitas possibilidades.
 
