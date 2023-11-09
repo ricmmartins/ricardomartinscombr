@@ -38,11 +38,16 @@ Por padrão, vem embutido no arquivo io.sys uma splashscreen do Windows98. Caso 
 
 Agora crie um arquivo chamado autoexec.bat com o seguinte conteúdo:
 
-`@ECHO OFF<br></br>ghost.bat`
+```bash
+@ECHO OFF
+ghost.bat
+```
 
 E agora crie um arquivo chamado ghost.bat com o seguinte conteúdo:
 
-`GHOST.EXE -clone,MODE=pload,SRC=imagem.gho:1,DST=2:1`
+```bash
+GHOST.EXE -clone,MODE=pload,SRC=imagem.gho:1,DST=2:1
+```
 
 Explicando:
 
