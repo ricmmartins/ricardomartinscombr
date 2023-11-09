@@ -37,25 +37,56 @@ Jun 2 14:49:46 crazymom sshd[5866]: Failed password for invalid user invuser fro
 Note que os logs gerados pelo SSH fornecem o nome de usuário e o endereço IP relacionados áquela conexão. Porém, o nome de usuário é informado pelo usuário!
 
 E se nós informarmos o seguinte como sendo o nome de usuário:  
-`<br></br>[dcid@enigma log]$ ssh “myfakeuser from 10.1.1.1 port 123 ssh2 “@192.168.5.1<br></br>`
+
+```bash
+[dcid@enigma log]$ ssh “myfakeuser from 10.1.1.1 port 123 ssh2 “@192.168.5.1
+```
 
 Como ficariam os logs?  
-`<br></br>Jun 2 14:54:00 crazymom sshd[5870]: Invalid user myfakeuser from 10.1.1.1 port 123 ssh2 from 192.168.50.65<br></br>Jun 2 14:54:03 crazymom sshd[5870]: Failed password for invalid user myfakeuser from 10.1.1.1 port 123 ssh2 from 192.168.50.65 port 34813 ssh2<br></br>`
+
+```bash
+Jun 2 14:54:00 crazymom sshd[5870]: Invalid user myfakeuser from 10.1.1.1 port 123 ssh2 from 192.168.50.65
+Jun 2 14:54:03 crazymom sshd[5870]: Failed password for invalid user myfakeuser from 10.1.1.1 port 123 ssh2 from 192.168.50.65 port 34813 ssh2
+```
 
 E um log FTP? Aqui, eu utilizei o vsftpd como um exemplo, mas isto se aplica a todas as aplicações. Dê uma olhada nos logs quando nós tentamos modificar o nome de usuário:  
-`<br></br>root@slacker:~# ftp 192.168.3.4<br></br>220 Welcome to labs ossec candy FTP service.<br></br>Name (192.168.2.3:root): myuser<br></br>..<br></br>`  
-`<br></br>root@slacker:~# ftp 192.168.3.4<br></br>220 Welcome to labs ossec candy FTP service.<br></br>Name (192.168.2.3:root): lala] FAIL LOGIN: Client “2.3.4.54?<br></br>..<br></br>`
+
+```bash
+root@slacker:~# ftp 192.168.3.4
+220 Welcome to labs ossec candy FTP service.
+Name (192.168.2.3:root): myuser
+..
+```
+
+```bash
+root@slacker:~# ftp 192.168.3.4
+220 Welcome to labs ossec candy FTP service
+Name (192.168.2.3:root): lala] FAIL LOGIN: Client “2.3.4.54?
+..
+```
 
 Dando uma olhada nos logs:  
-`<br></br>Mon Jun 2 21:05:30 2007 [pid 1448] [myuser] FAIL LOGIN: Client “192.168.3.1?<br></br>Mon Jun 2 21:06:02 2007 [pid 1452] [lala] FAIL LOGIN: Client “2.3.4.54? ] FAIL LOGIN: Client “192.168.3.1?<br></br>`
+```bash
+Mon Jun 2 21:05:30 2007 [pid 1448] [myuser] FAIL LOGIN: Client “192.168.3.1?
+Mon Jun 2 21:06:02 2007 [pid 1452] [lala] FAIL LOGIN: Client “2.3.4.54? ] FAIL LOGIN: Client “192.168.3.1?
+```
 
 Todos nós conhecemos SQL Injection, a idéia aqui não é tão diferente. Nós estamos apenas enviando o nome de usuário de uma forma que engane uma ferramenta de análise de logs, fazendo com que a ferramenta pense que o IP de origem é outro completamente diferente do endereço real.
 
 Outra coisa muito interessante que nós vamos utilizar um pouco mais à frente, é o modo como o SSH loga eventos de protocolos inválidos:  
-`<br></br>root@slacker:~# nc 192.168.3.4 22<br></br>SSH-1.99-OpenSSH_4.2<br></br>hi me<br></br>Protocol mismatch.<br></br>`
+
+```bash
+root@slacker:~# nc 192.168.3.4 22
+SSH-1.99-OpenSSH_4.2
+hi me
+Protocol mismatch.
+```
 
 Dando uma olhada nos logs:  
-`<br></br>Jun 2 21:27:37 slacker sshd[1457]: Bad protocol version identification ‘hi me’ from 192.168.3.1<br></br>`
+
+```bash
+Jun 2 21:27:37 slacker sshd[1457]: Bad protocol version identification ‘hi me’ from 192.168.3.1
+```
 
 Você consegue encontrar a string fornecida pelo usuário no log acima? A questão é: como a sua ferramenta de análise de logs lida com estas alterações nos logs?
 
