@@ -49,7 +49,7 @@ De acordo com a **Figura 1** percebemos as seguintes opções:
 
 ##### II – Configurações de segurança
 
-\[i\]1. Remover o nome do administrador da tela de boas vindas.
+*1. Remover o nome do administrador da tela de boas vindas.
 
 *2. Remover os botões de desativar da tela de logon. Assim evita-se o risco de desligamentos não programados.*
 
@@ -86,11 +86,11 @@ Na **figura 3** chegamos à proteção de HD que pode ser realizada através de 
 
 ![](/wp-content/uploads/2010/08/Fig3.jpg "Fig3")
 
-*1. Remover todas as alterações ao reinício – Remove todas as mudanças feitas pelo usuário no próximo boot.*
+*2. Remover todas as alterações ao reinício – Remove todas as mudanças feitas pelo usuário no próximo boot.*
 
-*2. Reter mudanças temporariamente – Por um determinado período as mudanças são retidas no PC.*
+*3. Reter mudanças temporariamente – Por um determinado período as mudanças são retidas no PC.*
 
-*3. Reter as mudanças permanentemente – Tanto nesta opção quanto na segunda, o administrador poderá avaliar tudo que foi alterado pelo usuário.*
+*4. Reter as mudanças permanentemente – Tanto nesta opção quanto na segunda, o administrador poderá avaliar tudo que foi alterado pelo usuário.*
 
 Existe ainda um check box onde o administrador não é avisado da perda de mudanças a cada reinício da máquina. Simplesmente o computador volta ao seu estado original eleito pela própria equipe de TI.
 
