@@ -16,7 +16,7 @@ Depois [insira](/wp-content/uploads/2009/03/2.jpg) o nome ou ip da máquina que 
 
 Insira o nome de usuário e senha de administrador da máquina e ao dar OK, você estará no registro da máquina remota.
 
-Agora vá até a [chave](h/wp-content/uploads/2009/03/3.jpg) HKLMSYSTEMCurrentControlSetControlTerminal Server e mude o valor do Dword fDenyTSConnections para 0
+Agora vá até a [chave](h/wp-content/uploads/2009/03/3.jpg) HKLM/SYSTEM/CurrentControlSet/Control/Terminal Server e mude o valor do Dword fDenyTSConnections para 0
 
 Feche o registro e agora à partir do prompt reinicie a máquina remotamente para que as alterações tenham efeito: shutdown -m 192.168.1.10 –r –t 0
 
