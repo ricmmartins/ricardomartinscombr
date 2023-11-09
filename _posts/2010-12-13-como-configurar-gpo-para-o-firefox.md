@@ -32,13 +32,13 @@ Primeiro, você precisa baixar o arquivo compactado abaixo:
 Em seguida, crie uma nova GPO chamada Firefox. Nesta, configure um script de logon com o arquivo  
 firefox\_startup.vbs contido no anexo.
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/12/script-300x240.png "script")](http://www.ricardomartins.com.br/wp-content/uploads/2010/12/script.png)
+[![](/wp-content/uploads/2010/12/script-300x240.png "script")](/wp-content/uploads/2010/12/script.png)
 
 Depois, na mesma GPO, vá em “Configurações de Computador” e importe o modelo administrativo  
 “firefoxlock.adm” também contido no anexo.  
 Depois de importar o modelo administrativo, basta ir em Configurações do Computador &gt; Modelos  
 Administrativos &gt; Mozilla Firefox &gt; Security &gt; Disable Password Remembering e habilitar.
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/12/modeloadm-300x240.png "modeloadm")](http://www.ricardomartins.com.br/wp-content/uploads/2010/12/modeloadm.png)
+[![](/wp-content/uploads/2010/12/modeloadm-300x240.png "modeloadm")](/wp-content/uploads/2010/12/modeloadm.png)
 
 PS: Vocês poderão notar que no arquivo compactado, existe um arquivo PDF mostrando um overview sobre como fazer esta configuração. Porém eu resolví mostrar neste passo-a-passo como fazer.
