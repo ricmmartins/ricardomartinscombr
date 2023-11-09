@@ -28,9 +28,11 @@ A regra é: nunca devemos confiar em informações fornecidas por usuários que 
 
 Quando você erra uma senha, o SSH loga o seguinte (a segunda e a terceira linhas são escritas quando você utiliza um nome de usuário inválido):  
 
-`Jun 2 14:49:00 crazymom sshd[5862]: Failed password for root from 192.168.50.65 port 34780 ssh2
+```bash
+Jun 2 14:49:00 crazymom sshd[5862]: Failed password for root from 192.168.50.65 port 34780 ssh2
 Jun 2 14:49:42 crazymom sshd[5866]: Invalid user invuser from 192.168.50.65
-Jun 2 14:49:46 crazymom sshd[5866]: Failed password for invalid user invuser from 192.168.50.65 port 34786 ssh2`
+Jun 2 14:49:46 crazymom sshd[5866]: Failed password for invalid user invuser from 192.168.50.65 port 34786 ssh2
+```
 
 Note que os logs gerados pelo SSH fornecem o nome de usuário e o endereço IP relacionados áquela conexão. Porém, o nome de usuário é informado pelo usuário!
 
