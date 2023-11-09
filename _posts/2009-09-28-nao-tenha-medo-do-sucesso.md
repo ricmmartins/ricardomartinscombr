@@ -1,103 +1,13 @@
 ---
-id: 1737
 title: 'Não tenha medo do sucesso'
 date: '2009-09-28T02:35:14-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=1737'
-permalink: /nao-tenha-medo-do-sucesso/
-views:
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-    - '2072'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-    - '3391047847'
-categories:
-    - Uncategorized
 tags:
-    - '44'
-    - Carreira
-    - Uncategorized
+    - carreira
 ---
 
-![sucesso](http://www.ricardomartins.com.br/wp-content/uploads/2009/09/sucesso.jpg "sucesso")Pode parecer um absurdo, mas tem gente que parece ter medo do sucesso.
+![sucesso](/wp-content/uploads/2009/09/sucesso.jpg "sucesso")
+
+Pode parecer um absurdo, mas tem gente que parece ter medo do sucesso.
 
 São pessoas que têm tudo para vencer, serem notadas e prósperas, mas que ficam acuadas, com medo. Em vez de agirem proativamente, apenas reagem às circunstâncias, reclamando da má sorte e vendo, com desdém e uma ponta de inveja, os outros se darem bem.
 
