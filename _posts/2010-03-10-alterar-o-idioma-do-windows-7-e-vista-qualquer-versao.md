@@ -5,7 +5,9 @@ tags:
     - Windows
 ---
 
-[![](/wp-content/uploads/2010/03/windows7leak1-300x300.jpg "windows7leak1")](/wp-content/uploads/2010/03/windows7leak1.jpg)Se você está querendo saber como fazer para alterar o idioma do seu Windows 7 ou Vista, veio ao lugar correto. Aqui você vai ver que isto é possível pra qualquer versão, seja Starter Edition, Basic, Home, Professional, Ultimate, etc…
+[![](/wp-content/uploads/2010/03/windows7leak1-300x300.jpg "windows7leak1")](/wp-content/uploads/2010/03/windows7leak1.jpg)
+
+Se você está querendo saber como fazer para alterar o idioma do seu Windows 7 ou Vista, veio ao lugar correto. Aqui você vai ver que isto é possível pra qualquer versão, seja Starter Edition, Basic, Home, Professional, Ultimate, etc…
 
 Um cliente meu comprou um [laptop](http://sledge.boo-box.com/list/page/bGFwdG9wXyMjX2Jhcl8jI190YWdnaW5nLXRvb2wtd3BfIyNfMTUxMjY4OQ==-60) na França que veio com o Windows 7 Home Basic. Com isso o idioma do sistema era o Francês, e ele queria que eu instalasse uma versão pirata em português.
 
