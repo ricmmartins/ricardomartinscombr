@@ -5,7 +5,9 @@ tags:
     - windows
 ---
 
-![](/wp-content/uploads/2010/08/Windows-7-System-Recovery-Disc.png "Windows-7-System-Recovery-Disc")A maioria dos usuários estão impressionados com o mais recente sistema operacional Microsoft Windows 7 graças ao <span class="bbli">marketing</span> agressivo da Microsoft.
+![](/wp-content/uploads/2010/08/Windows-7-System-Recovery-Disc.png "Windows-7-System-Recovery-Disc")
+
+A maioria dos usuários estão impressionados com o mais recente sistema operacional Microsoft Windows 7 graças ao <span class="bbli">marketing</span> agressivo da Microsoft.
 
 Infelizmente, a maioria dos fabricantes de <span class="bbli">computadores</span> não fornecem o <span class="bbli">DVD</span> de instalação do Windows 7. Ao invés disto, eles disponibilizam o que eles chamam de “disco de recuperação”, que nada mais é que uma imagem da instalação padrão de fábrica.
 
