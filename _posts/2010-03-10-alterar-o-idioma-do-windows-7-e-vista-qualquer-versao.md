@@ -21,7 +21,7 @@ Nas demais versões, ao realizar o download e instalar, não acontece nada; e ao
 
 **Mas agora os seus problemas acabaram!**
 
-Eu começei a buscar pelo Google informações à respeito e descobrí uma ferramenta sensacional chamada **Vistalizator** (<http://www.froggie.sk/>). É um [software![[bb]](http://boo-box.com/bbli)](http://sledge.boo-box.com/list/page/c29mdHdhcmVfIyNfYmFyXyMjX3RhZ2dpbmctdG9vbC13cF8jI18xNTEyNzEz-60)permite que você faça a tradução dos sistemas Windows Vista e Windows 7 (32 ou 64 bits) em menos de 5 minutos com a vantagem de poder utilizar todos os 36 *language packs* oficiais da Microsoft.
+Eu começei a buscar pelo Google informações à respeito e descobrí uma ferramenta sensacional chamada **Vistalizator** (<http://www.froggie.sk/>). É um software que permite que você faça a tradução dos sistemas Windows Vista e Windows 7 (32 ou 64 bits) em menos de 5 minutos com a vantagem de poder utilizar todos os 36 *language packs* oficiais da Microsoft.
 
 O download pode ser feito em <http://www.froggie.sk/download/Vistalizator.exe>
 
