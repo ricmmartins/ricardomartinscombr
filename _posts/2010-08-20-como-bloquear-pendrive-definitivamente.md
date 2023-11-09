@@ -31,12 +31,42 @@ Você também poderá notar que eu configurei para mudar as permissões para os 
 
 **Abaixo o código do “Bloqueia.vbs”:**
 
-`<br></br>'Script para Bloquear Pendrive - Ricardo Macedo Martins<br></br>'Inicio do script<br></br>Set WshShell = WScript.CreateObject("WScript.Shell")<br></br>WshShell.RegWrite "HKLMSYSTEMCurrentControlSetServicesUSBSTORStart",4,"REG_DWORD"<br></br>WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P EVERYONE:N", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P TODOS:N", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P SYSTEM:N", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P EVERYONE:N", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P TODOS:N", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P SYSTEM:N", 0 , True<br></br>WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P EVERYONE:N", 0 , True<br></br>WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P TODOS:N", 0 , True<br></br>WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P SYSTEM:N", 0 , True<br></br>MsgBox "Pendrive Bloqueado!",0,"Informacao"<br></br>'Fim do script`
+```bash
+'Script para Bloquear Pendrive - Ricardo Macedo Martins'
+'Inicio do script'
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.RegWrite "HKLMSYSTEMCurrentControlSetServicesUSBSTORStart",4,"REG_DWORD"
+WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P EVERYONE:N", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P TODOS:N", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P SYSTEM:N", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P EVERYONE:N", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P TODOS:N", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P SYSTEM:N", 0 , True
+WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P EVERYONE:N", 0 , True
+WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P TODOS:N", 0 , True
+WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P SYSTEM:N", 0 , True
+MsgBox "Pendrive Bloqueado!",0,"Informacao"
+'Fim do script'
+```
 
 **Abaixo o código do “Desbloqueia.vbs”:**
 
-`<br></br>'Script para Bloquear Pendrive - Ricardo Macedo Martins<br></br>'Inicio do script<br></br>Set WshShell = WScript.CreateObject("WScript.Shell")<br></br>WshShell.RegWrite "HKLMSYSTEMCurrentControlSetServicesUSBSTORStart",3,"REG_DWORD"<br></br>WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P EVERYONE:F", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P TODOS:F", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P SYSTEM:F", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P EVERYONE:F", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P TODOS:F", 0 , True<br></br>WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P SYSTEM:F", 0 , True<br></br>WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P EVERYONE:F", 0 , True<br></br>WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P TODOS:F", 0 , True<br></br>WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P SYSTEM:F", 0 , True<br></br>MsgBox "Pendrive Desbloqueado!",0,"Informacao"<br></br>'Fim do script<br></br>`
-
-Se você preferir, eu coloquei os scripts disponíveis para download. Clique [aqui](http://www.ricardomartins.com.br/arquivos/script_pendrive.zip) para baixar.
+```bash
+'Script para Bloquear Pendrive - Ricardo Macedo Martins'
+'Inicio do script'
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.RegWrite "HKLMSYSTEMCurrentControlSetServicesUSBSTORStart",3,"REG_DWORD"
+WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P EVERYONE:F", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P TODOS:F", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.inf /E /P SYSTEM:F", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P EVERYONE:F", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P TODOS:F", 0 , True
+WshShell.Run "cacls c:windowsinfUsbstor.pnf /E /P SYSTEM:F", 0 , True
+WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P EVERYONE:F", 0 , True
+WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P TODOS:F", 0 , True
+WshShell.Run "cacls C:Windowssystem32driversusbstor.sys /E /P SYSTEM:F", 0 , True
+MsgBox "Pendrive Desbloqueado!",0,"Informacao"
+'Fim do script'
+```
 
 Até a próxima!
