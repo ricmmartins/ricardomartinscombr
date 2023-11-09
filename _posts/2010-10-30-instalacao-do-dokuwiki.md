@@ -7,7 +7,9 @@ tags:
     - linux
 ---
 
-[![](/wp-content/uploads/2010/10/dokuwiki-128.png "dokuwiki-128")](http://ricardomartins.com.br/2010/10/30/instalacao-do-dokuwiki/dokuwiki-128/)Recentemente aqui no trabalho tivemos a necessidade de montar um <span class="bbli">sistema</span> para centralizar nossa documentação. Algo no estilo Wiki, onde todos pudessem alterar o conteúdo sempre que fosse necessário, e também que tivesse uma interface simples.
+[![](/wp-content/uploads/2010/10/dokuwiki-128.png "dokuwiki-128")](http://ricardomartins.com.br/2010/10/30/instalacao-do-dokuwiki/dokuwiki-128/)
+
+Recentemente aqui no trabalho tivemos a necessidade de montar um <span class="bbli">sistema</span> para centralizar nossa documentação. Algo no estilo Wiki, onde todos pudessem alterar o conteúdo sempre que fosse necessário, e também que tivesse uma interface simples.
 
 Pesquisando na <span class="bbli">Internet</span>, encontrei o DokuWiki – http://www.dokuwiki.org/. É bem interessante e foi o que escolhemos. Abaixo um tutorial de instalação do mesmo no <span class="bbli">CentOS</span> 5.5 que eu criei.
 
