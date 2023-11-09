@@ -7,7 +7,7 @@ tags:
     - windows
 ---
 
-Recentemente, fiz um post aqui citando um programa para fazer o bloqueio/desbloqueio de pendrives. Este post você pode conferir aqui: <http://ricardomartins.com.br/2010/08/15/como-bloquear-pendrive/>
+Recentemente, fiz um post aqui citando um programa para fazer o bloqueio/desbloqueio de pendrives. Este post você pode conferir aqui: <http://ricardomartins.com.br/como-bloquear-pendrive/>
 
 Hoje descobri que este programa tem um problema que é o seguinte: Ele só funciona, fazendo o bloqueio do pendrive, caso o pendrive já tenha sido plugado na máquina antes. Caso seja um pendrive novo, ele não funciona.
 
@@ -17,7 +17,7 @@ O que ocorre é que ao clicar em “Lock” no software, ele altera o valor da s
 
 Isso porque ao conectar um pendrive, ele é detectado pelo arquivo C:Windowssystem32DRIVERSUSBSTOR.SYS e caso ele já “conheça” esse pendrive, ele mantém o valor da chave como está. Caso ele não conheça, ele altera o valor da chave no registro para 3, para poder instalar o driver do pendrive.
 
-Assim acaba desfazendo a modificação feita pelo software. Por esta razão, o ideal continuava sendo o método tradicional ( já postado aqui também – <http://ricardomartins.com.br/2009/04/10/bloqueando-pendrives-no-windows-facil-facil/>), que consiste em negar permissões nos arquivos usbstor.inf, usbstor.pnf e usbstor.sys e alterar a chave do registro citada acima.
+Assim acaba desfazendo a modificação feita pelo software. Por esta razão, o ideal continuava sendo o método tradicional ( já postado aqui também – <http://ricardomartins.com.br/bloqueando-pendrives-no-windows-facil-facil/>), que consiste em negar permissões nos arquivos usbstor.inf, usbstor.pnf e usbstor.sys e alterar a chave do registro citada acima.
 
 Para resolver este problema e facilitar a minha vida, hoje eu fiz um script em vbs, que muda o valor da chave do registro, e altera as permissões dos arquivos. Assim, ao invés de ter que ir em cada arquivo e mecher nas permissões, o script faz tudo pra mim.
 
