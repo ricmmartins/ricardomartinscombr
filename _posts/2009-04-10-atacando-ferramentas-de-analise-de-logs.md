@@ -1,119 +1,8 @@
 ---
-id: 823
 title: 'Atacando ferramentas de análise de logs'
 date: '2009-04-10T17:38:03-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=823'
-permalink: /atacando-ferramentas-de-analise-de-logs/
-views:
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-    - '3376'
-Thumbnail:
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/dica.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/dica.jpg'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-    - '3277902415'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - análise
-    - artigos
-    - logs
-    - Segurança
+    - segurança
 ---
 
 O texto a seguir é uma tradução do texto de Daniel Cid que achei muito interessante. O material original pode ser acessado por [aqui](http://www.ossec.net/en/attacking-loganalysis.html).
@@ -138,7 +27,10 @@ Todos sabemos que nunca devemos confiar em informações fornecidas por usuário
 A regra é: nunca devemos confiar em informações fornecidas por usuários que serão gravadas em um log. Porquê eu digo isso? Para começar, vamos analisar alguns logs do SSH.
 
 Quando você erra uma senha, o SSH loga o seguinte (a segunda e a terceira linhas são escritas quando você utiliza um nome de usuário inválido):  
-`<br></br>Jun 2 14:49:00 crazymom sshd[5862]: Failed password for root from 192.168.50.65 port 34780 ssh2<br></br>Jun 2 14:49:42 crazymom sshd[5866]: Invalid user invuser from 192.168.50.65<br></br>Jun 2 14:49:46 crazymom sshd[5866]: Failed password for invalid user invuser from 192.168.50.65 port 34786 ssh2<br></br>`
+
+`Jun 2 14:49:00 crazymom sshd[5862]: Failed password for root from 192.168.50.65 port 34780 ssh2
+Jun 2 14:49:42 crazymom sshd[5866]: Invalid user invuser from 192.168.50.65
+Jun 2 14:49:46 crazymom sshd[5866]: Failed password for invalid user invuser from 192.168.50.65 port 34786 ssh2`
 
 Note que os logs gerados pelo SSH fornecem o nome de usuário e o endereço IP relacionados áquela conexão. Porém, o nome de usuário é informado pelo usuário!
 
