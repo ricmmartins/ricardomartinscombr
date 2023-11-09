@@ -1,168 +1,13 @@
 ---
-id: 606
 title: 'Mas enfim, o que é um firewall ?'
 date: '2009-03-19T00:57:54-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=606'
-permalink: /mas-enfim-o-que-e-um-firewall/
-views:
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-    - '2619'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-    - '3536115851'
-categories:
-    - Uncategorized
 tags:
-    - '143'
     - firewall
-    - Segurança
-    - Uncategorized
+    - segurança
+    - networking
 ---
 
-[![Firewall](http://www.ricardomartins.com.br/wp-content/uploads/2009/03/18-03-2009-214642.jpg "Firewall")](http://www.ricardomartins.com.br/wp-content/uploads/2009/03/18-03-2009-214642.jpg)
+[![Firewall](/wp-content/uploads/2009/03/18-03-2009-214642.jpg "Firewall")](/wp-content/uploads/2009/03/18-03-2009-214642.jpg)
 
 Um Firewall é uma ‘passagem’ (“gateway”) que restringe e controla o fluxo do tráfego de dados entre redes, mais comumente entre uma rede empresarial interna e a Internet. Os Firewalls podem também estabelecer passagens seguras entre redes internas. Por exemplo, imagine uma instalação militar hipotética que tenha duas redes, uma para informações não confidenciais e a outra conectada a sistemas estratégicos de defesa. Um Firewall muito eficiente deve ser instalado para assegurar que apenas usuários autorizados tenham acesso a rede mais restrita.
 
@@ -174,7 +19,7 @@ Parte de um projeto confiável de uma rede conectada na Internet é a criação 
 
 A DMZ segue exatamente essa analogia. Os usuários de Internet podem entrar livremente na DMZ para acessar Servidores WEB Públicos (Sites comuns), enquanto que os roteadores de alerta localizados nos pontos de acesso filtram todo o tráfego não permitido, como por exemplo, inundações de pacotes de dados vindos de Hackers que tentam impedir o funcionamento do sistema por saturação (Ataques do tipo DoS – Deny of Service ou Negação de Serviço). Ao mesmo tempo a rede interna privada está protegida por Firewalls altamente seguros. Dentro dos muros do castelo existia a ‘torre principal’, que era uma estrutura altamente segura que proporcionava a última defesa contra os atacantes.
 
-[![18-03-2009-214703](http://www.ricardomartins.com.br/wp-content/uploads/2009/03/18-03-2009-214703.jpg "18-03-2009-214703")](http://www.ricardomartins.com.br/wp-content/uploads/2009/03/18-03-2009-214703.jpg)
+[![18-03-2009-214703](/wp-content/uploads/2009/03/18-03-2009-214703.jpg "18-03-2009-214703")](/wp-content/uploads/2009/03/18-03-2009-214703.jpg)
 
 Interessantemente, os castelos se mostraram estruturas altamente capazes de resistir aos ataques até a aparição dos canhões. No século 16, Essex e Cromwell derrotaram muitos castelos na Irlanda com pouca milícia. Eles simplesmente estouravam os parapeitos na parte superior dos castelos para que se tornassem indefensáveis e aí então escalavam suas paredes. Comparativamente, que tipos de armas nossas defesas das redes irão enfrentar? Os Firewalls se tornaram equipamentos bastante sofisticados com o passar dos anos, mas eles não constituem uma solução única e absoluta. Eles consistem apenas um dos diversos recursos necessários disponíveis para os administradores de segurança da rede.
 
@@ -186,13 +31,13 @@ No caso de um Firewall do tipo Proxy, o Firewall é o endereço de destino de to
 
 Os Firewalls podem fazer cumprir as políticas de segurança de uma organização através da filtragem de todo o tráfego que sai e entra na empresa, garantindo que o mesmo está dentro dos parâmetros de segurança pré-estabelecidos pelas políticas de uso da rede. Recursos sofisticados de auditoria, detecção de intrusos e metodologias de autenticação são hoje parte da maioria dos Firewalls comerciais.
 
-A RFC 2979, “O Comportamento e os Requisitos dos Firewalls de Internet ( Behavior of and Requirements for Internet Firewalls ) de Outubro de 2000 descreve outras características dos Firewalls.
+A RFC 2979, “O Comportamento e os Requisitos dos Firewalls de Internet (Behavior of and Requirements for Internet Firewalls) de Outubro de 2000 descreve outras características dos Firewalls.
 
 Os Hackers e os agressores estão crescendo constantemente em número, em agressividade e evoluindo em conhecimento. Em 2000, a China anunciou que não teria como se manter no nível dos EUA militarmente e que, portanto, ameaçou o financiamento de uma guerra de ‘tecnologia da informação’ contra os Estados Unidos. Os sistemas de computadores das instalações militares estão sob ataques constantes, sejam eles sofisticados ou ordinários. Quantos intrusos não detectados poderão existir nesses sistemas ?
 
 Por exemplo, um agressor pode planejar um ataque com antecedência usando técnicas de e-mails infectados com vírus para introduzir os chamados ‘programas zumbis’ em centenas ou milhares de computadores de usuários comuns (e inocentes dentro do contexto do ataque), muitos dentro de sua própria rede (usuários locais). Esses programas zumbis são programados para despertar num determinado momento e começar a promover ataques contra outros sistemas. O verdadeiro agressor não pode ser identificado porque os ataques são originados de computadores inocentes por toda a Internet. Toda a Internet pode se tornar uma grande arma apontada para a sua rede privada.
 
-[![18-03-2009-214713](http://www.ricardomartins.com.br/wp-content/uploads/2009/03/18-03-2009-214713.jpg "18-03-2009-214713")](http://www.ricardomartins.com.br/wp-content/uploads/2009/03/18-03-2009-214713.jpg)
+[![18-03-2009-214713](/wp-content/uploads/2009/03/18-03-2009-214713.jpg "18-03-2009-214713")](/wp-content/uploads/2009/03/18-03-2009-214713.jpg)
 
 Em função dessas ameaças, os Firewalls são necessários em praticamente todo computador conectado à Internet, especialmente os conectados constantemente como é o caso das conexões ADSL (ex. Speedy, Velox, BrTurbo, etc) e cabo (ex. Virtua / AJato, etc), para citar os mais comuns no Brasil. Uma instalação domiciliar comum interliga dois computadores (o dos pais e o das crianças) para que ambos possam usufruir de uma mesma conexão ADSL ou cabo. Considerando que essa conexão está constantemente ligada, ela possui um número de IP contínuo que é publicado / divulgado como se fosse uma bandeira na Internet. Os Hackers descobrem o IP mais cedo ou mais tarde e voltam constantemente para examinar e descobrir as brechas até serem capazes de danificar os sistemas. Os Firewalls são projetados para proteger esses ’sistemas’ (rede como um todo) ao mesmo tempo que minimizam a complexidade da configuração.
 
