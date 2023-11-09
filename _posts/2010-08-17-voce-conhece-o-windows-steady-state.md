@@ -1,150 +1,8 @@
 ---
-id: 2138
 title: 'Você conhece o Windows Steady State?'
 date: '2010-08-17T13:34:19-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2138'
-permalink: /voce-conhece-o-windows-steady-state/
-views:
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-    - '3658'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-bb-custom-tags:
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-    - windows
-dsq_thread_id:
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-    - '3277901517'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - ferramentas
-    - gpo
-    - Utilidades
+    - windows
 ---
 
 Vou compartilhar com vocês um utilitário gratuito da Microsoft, que é uma mão na roda para adminsitradortes de <span class="bbli">redes</span>. Estou falando do Windows Steady State, um utilitário para configurar restrições, similares à GPO’s de domínio, em estações clientes. Eu utilizo em vários clientes e recomendo.
@@ -161,7 +19,7 @@ Antes de instalar o produto deve-se desfragmentar o disco rígido para só entã
 
 Já na tela inicial encontramos os três vértices do produto que são as configurações de restrições ao computador, agendamento de atualizações de software e proteção de disco rígido.
 
-![](http://www.ricardomartins.com.br/wp-content/uploads/2010/08/telainicial1.jpg "telainicial")
+![](/wp-content/uploads/2010/08/telainicial1.jpg "telainicial")
 
 Através da criação de contas particulares de usuários através do próprio WSS, que é o primeiro passo a ser dado nesta ferramenta, chega-se à configuração de restrições ao usuário. Tais como remoção de opções de menus e também configurações de aplicações para o Windows XP. Há ainda como restringir acesso a websites e restringir o tempo de utilização da máquina.
 
@@ -177,7 +35,7 @@ Considerando que a TI decidiu instalar o WSS em todos os PCs da empresa, ou aind
 
 #### Configurando as restrições do computador
 
-![](http://www.ricardomartins.com.br/wp-content/uploads/2010/08/Fig11.jpg "Fig1")
+![](/wp-content/uploads/2010/08/Fig11.jpg "Fig1")
 
 De acordo com a **Figura 1** percebemos as seguintes opções:
 
@@ -222,11 +80,11 @@ Alguns exemplos de uso:
 
 Na **figura 2** encontramos o agendamento de atualizações a ser realizado pelo WSS. Esta característica está diretamente ligada à proteção de HD que veremos logo em seguida. Há ainda a possibilidade de implementação de scripts para a realização das atualizações.
 
-![](http://www.ricardomartins.com.br/wp-content/uploads/2010/08/Fig2.jpg "Fig2")
+![](/wp-content/uploads/2010/08/Fig2.jpg "Fig2")
 
 Na **figura 3** chegamos à proteção de HD que pode ser realizada através de três alternativas a partir do momento em que é habilitada.
 
-![](http://www.ricardomartins.com.br/wp-content/uploads/2010/08/Fig3.jpg "Fig3")
+![](/wp-content/uploads/2010/08/Fig3.jpg "Fig3")
 
 *1. Remover todas as alterações ao reinício – Remove todas as mudanças feitas pelo usuário no próximo boot.*
 
