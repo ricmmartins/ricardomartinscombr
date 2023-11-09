@@ -1,5 +1,5 @@
 ---
-title: 'Selo &quot;Olha que blog maneiro&quot;'
+title: 'Selo Olha que blog maneiro'
 date: '2009-02-25T20:16:38-05:00'
 tags:
     - aleatorios
