@@ -21,4 +21,4 @@ Abaixo alguns e-books disponibilizados gratuitamente pela Microsoft Press
 - [Free ebook: Moving to Microsoft Visual Studio 2010 (DRAFT Preview)](http://blogs.msdn.com/b/microsoft_press/archive/2010/03/26/free-ebook-moving-to-microsoft-visual-studio-2010-draft-preview.aspx)
 - [Free ebook: Moving to Microsoft Visual Studio 2010 (DRAFT Preview II)](http://blogs.msdn.com/b/microsoft_press/archive/2010/05/13/free-ebook-moving-to-microsoft-visual-studio-2010-draft-preview-ii.aspx)
 
-<div>Fonte: [Microsoft Press Blog](http://blogs.msdn.com/b/microsoft_press/)</div>
+Fonte: [Microsoft Press Blog](http://blogs.msdn.com/b/microsoft_press/)
