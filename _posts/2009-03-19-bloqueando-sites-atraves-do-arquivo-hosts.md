@@ -21,4 +21,4 @@ Mas vale lembrar que mesmo bloqueando um site no HOST ainda é possível acessá
 O programa é em inglês, mas apesar disso é super facil usá-lo.  
 Só pra complementar, [aqui](/wp-content/uploads/2009/03/img-8587-1155061545.jpg) vai uma screenshot do programa.
 
-> Leia também a continuação deste post em [<span id="sample-permalink">http://ricardomartins.com.br/2009/03/27/<span id="editable-post-name" title="Clique para editar essa parte do link permanente">bloqueando-sit…-hosts-parte-3</span><span id="editable-post-name-full">bloqueando-sites-atraves-do-arquivo-hosts-parte-3</span>/</span>](http://ricardomartins.com.br/2009/03/27/bloqueando-sit…-hosts-parte-3bloqueando-sites-atraves-do-arquivo-hosts-parte-3/)
+> Leia também a continuação deste post em [<span id="sample-permalink">http://ricardomartins.com.br/2009/03/27/<span id="editable-post-name" title="Clique para editar essa parte do link permanente">bloqueando-sit…-hosts-parte-3</span><span id="editable-post-name-full">bloqueando-sites-atraves-do-arquivo-hosts-parte-3</span>/</span>](https://ricardomartins.com.br/bloqueando-sites-atraves-do-arquivo-hosts-parte-3/)
