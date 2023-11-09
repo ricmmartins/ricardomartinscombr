@@ -13,6 +13,6 @@ Então pensei em por quê não explorar um pouco esta área?! É claro que eu n�
 
 Com essa nova categoria, pretendo dar mais uma vida ao site, explorando um pouco mais esta área. Sendo assim, espero também contar com a colaboração de todos, principalmente com os comentários!
 
-Para estrear a nova categoria, acabo de plubicar o artigo chamado “[Não tenha medo do sucesso](http://ricardomartins.com.br/2009/09/28/nao-tenha-medo-do-sucesso/)“. Espero que seja útil.
+Para estrear a nova categoria, acabo de plubicar o artigo chamado “[Não tenha medo do sucesso](http://ricardomartins.com.br/nao-tenha-medo-do-sucesso/)“. Espero que seja útil.
 
 Até breve!
