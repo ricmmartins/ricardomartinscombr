@@ -1,59 +1,10 @@
 ---
-id: 2161
 title: 'Como bloquear pendrive definitivamente'
 date: '2010-08-20T23:52:19-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2161'
-permalink: /como-bloquear-pendrive-definitivamente/
-views:
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-    - '6885'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-    - '3277903770'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - '172'
-    - ferramentas
     - pendrive
     - scripts
-    - Utilidades
+    - windows
 ---
 
 Recentemente, fiz um post aqui citando um programa para fazer o bloqueio/desbloqueio de pendrives. Este post você pode conferir aqui: <http://ricardomartins.com.br/2010/08/15/como-bloquear-pendrive/>
