@@ -1,70 +1,8 @@
 ---
-id: 2156
 title: 'VMLite: Alternativa para o Windows XP Mode do Windows 7'
 date: '2010-08-18T22:06:58-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2156'
-permalink: /vmlite-alternativa-para-o-windows-xp-mode-do-windows-7/
-views:
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-    - '2580'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-    - '3404565798'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - '172'
-    - Utilidades
-    - virtualização
-    - Windows
+    - windows
 ---
 
 O <span class="bbli">Windows</span> 7 tem muitas características novas, das quais um recurso muito interessante é o Windows XP Mode, que permite rodar o Windows XP em seu Windows 7. No entanto, para utilizar o Windows XP Mode você deve ter o Windows 7 Professional ou Ultimate e o computador deve ter suporte à virtualização à nível de hardware.
@@ -75,6 +13,6 @@ O VMLite XP Mode oferece funções similares ao Microsoft XP Mode, mas não obri
 
 VMLite XP Mode:
 
-![](http://www.ricardomartins.com.br/wp-content/uploads/2010/08/VMLite-XP-Mode.jpg "VMLite-XP-Mode")
+![](/wp-content/uploads/2010/08/VMLite-XP-Mode.jpg "VMLite-XP-Mode")
 
 [Download VMLite XP Mode – Windows 7](http://www.vmlite.com/index.php/download "Download VMLite")
