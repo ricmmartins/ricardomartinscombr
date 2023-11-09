@@ -1,86 +1,8 @@
 ---
-id: 2198
 title: 'Sem tempo pra frequentar faculdade? Conheça o CEDERJ'
 date: '2010-09-21T20:27:45-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2198'
-permalink: /sem-tempo-pra-frequentar-faculdade-conheca-o-cederj/
-views:
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-    - '1931'
-bb-custom-tags:
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-    - 'curso, faculdade, vestibular'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-    - '3407851917'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - Carreira
-    - dicas
-    - estudo
+    - carreira
 ---
 
 Na área de<span class="bbli">TI</span>, é comum encontrar profissionais com grande conhecimento e experiência no entanto sem um diploma. Infelizmente, isto acaba criando uma barreira para oportunidades em grandes empresas.
@@ -97,4 +19,4 @@ As inscrições para o vestibular estão abertas. Não se assuste. Embora seja u
 
 Tá esperando o quê?! Divulgue! Conte pra todo mundo!!! Clique na imagem abaixo e você poderá ter maiores informações sobre o que é o CEDERJ.
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/09/img08.jpg "Vestibular Cederj")](http://vestibular.cederj.edu.br/)
+[![](/wp-content/uploads/2010/09/img08.jpg "Vestibular Cederj")](http://vestibular.cederj.edu.br/)
