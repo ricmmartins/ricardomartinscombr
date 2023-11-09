@@ -1,86 +1,10 @@
 ---
-id: 2247
 title: 'Entenda as novas certificações Microsoft'
 date: '2010-11-02T04:22:52-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2247'
-permalink: /entenda-as-novas-certificacoes-microsoft/
-views:
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-    - '4182'
-bb-custom-tags:
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-    - 'certificação, microsoft, windows, simulado, carreira'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-    - '3382481476'
-categories:
-    - Uncategorized
 tags:
-    - '172'
-    - Carreira
+    - carreira
     - certificação
-    - estudo
+    - microsoft
 ---
 
 Muita gente ainda se confunde quando o assunto é as novas <span class="bbli">certificações</span> da <span class="bbli">Microsoft</span>. Fiz um resumo abaixo de como elas funcionam e espero que seja útil.
@@ -91,7 +15,7 @@ Você pode ler mais à respeito em <http://www.microsoft.com/learning/pt/br/cert
 
 Observe a figura abaixo, e você irá compreender melhor o que já foi explicado.
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/11/Microsoft-Certification-Training-Classes-vertical.png "Microsoft-Certification-Training-Classes-vertical")](http://www.ricardomartins.com.br/wp-content/uploads/2010/11/Microsoft-Certification-Training-Classes-vertical.png)
+[![](/wp-content/uploads/2010/11/Microsoft-Certification-Training-Classes-vertical.png "Microsoft-Certification-Training-Classes-vertical")](/wp-content/uploads/2010/11/Microsoft-Certification-Training-Classes-vertical.png)
 
 O foco aqui será detalhar as certificações Microsoft voltadas para a área de infraestrutura, e não comentarei sobre as certificações votladas para desenvolvedores. Então vamos lá…
 
