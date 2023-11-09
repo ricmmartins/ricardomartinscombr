@@ -1,65 +1,14 @@
 ---
-id: 2259
 title: 'Guia Essencial para a implantação do Windows 7'
 date: '2010-11-26T08:41:44-05:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=2259'
-permalink: /guia-essencial-para-a-implantacao-do-windows-7/
-views:
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-    - '1611'
-bb-custom-tags:
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-    - 'windows, certificação, training kit, carreira'
-dsq_thread_id:
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-    - '3361486042'
-categories:
-    - Uncategorized
 tags:
-    - '160'
-    - '172'
-    - Carreira
     - certificação
-    - estudo
-    - 'training kit'
-    - Windows
+    - windows
 ---
 
 Há um grande eBook que acaba de ser lançado no site da Microsoft que dá uma boa visão de muitas das tecnologias e conceitos que você precisa para considerar e se basear para quando você começar a trabalhar na implantação do Windows 7, e a melhor coisa é que o eBook é grátis!
 
-[![](http://www.ricardomartins.com.br/wp-content/uploads/2010/11/eBook_thumb.jpg "eBook_thumb")](http://www.ricardomartins.com.br/wp-content/uploads/2010/11/eBook_thumb.jpg)
+[![](/wp-content/uploads/2010/11/eBook_thumb.jpg "eBook_thumb")](http://www.ricardomartins.com.br/wp-content/uploads/2010/11/eBook_thumb.jpg)
 
 Ele abrange uma série de temas, incluindo alguns muito comuns que as pessoas costumam ter problemas, e como você pode ver na tabela abaixo, o escopo do livro é surpreendentemente amplo:
 
