@@ -22,7 +22,7 @@ Iremos mostrar 3 ataques 0-day de denial of service causadas por log injection n
 
 **Sou o autor do [OSSEC](http://www.ossec.net/), um HIDS (Host Based Intrusion Detection System), que, entre outras coisas, analisa logs e automatiza determinadas ações. Ele não é vulnerável a nenhuma das técnicas apresentadas neste texto, mas pode ser que você queira testá-lo.
 
-**2 – Log injection remoto**  
+## 2 – Log injection remoto
 Todos sabemos que nunca devemos confiar em informações fornecidas por usuários, especialmente quando falamos sobre desenvolvimento para web, mas parece que esquecemos disso quando lidamos com logs.
 
 A regra é: nunca devemos confiar em informações fornecidas por usuários que serão gravadas em um log. Porquê eu digo isso? Para começar, vamos analisar alguns logs do SSH.
@@ -91,7 +91,7 @@ Jun 2 21:27:37 slacker sshd[1457]: Bad protocol version identification ‘hi me�
 
 Você consegue encontrar a string fornecida pelo usuário no log acima? A questão é: como a sua ferramenta de análise de logs lida com estas alterações nos logs?
 
-**3 – DoS remoto no DenyHosts**  
+## 3 – DoS remoto no DenyHosts
 O [DenyHosts](http://denyhosts.sourceforge.net/) é uma ferramenta muito popular para a monitoração dos logs do SSH, com mais de 6 mil usuários, de acordo com o site oficial. Ele monitora os seus logs do SSH e automaticamente bloqueia o endereço IP de origem de uma conexão que produza muitas falhas de autenticação.
 
 O DenyHosts sofria com algumas vulnerabilidades no passado, quando ele era vulnerável a um log injection muito simples (como os exemplos mostrados acima).
@@ -136,7 +136,7 @@ Você acabou de bloquear todo mundo nessa máquina. Eu desenvolvi um [“exploit
 Nos logs do servidor:  
 `<br></br>[root@mb DenyHosts]# cat /etc/hosts.deny<br></br>#<br></br># hosts.deny This file describes the names of the hosts which are<br></br># *not* allowed to use the local INET services, as decided<br></br># by the ‘/usr/sbin/tcpd’ server.<br></br>sshd: all<br></br>`
 
-**4 – Outros programas vulneráveis**  
+## 4 – Outros programas vulneráveis
 Nós utilizamos o DenyHosts no nosso exemplo anterior por ser uma das ferramentas mais famosas, mas ela não é a única vulnerável.
 
 A última versão do [BlockHosts](http://www.aczoom.com/cms/blockhosts) (2.0.3) também é vulnerável a log injection em logs do SSH e do vsftpd. O motivo é o mesmo do DenyHosts: uma expressão regular muito abrangente.  
@@ -167,7 +167,7 @@ O log fica:
 
 \*\*Esta falha é similar à [CVE-2006-6302](http://nvd.nist.gov/nvd.cfm?cvename=CVE-2006-6302), porém utilizar um vetor diferente. Obrigado a Cyril Jaquier por chamar minha atenção para isso.
 
-**5 – Patches**  
+## 5 – Patches
 O autor do Fail2ban, Cyril Jaquier, desenvolveu um patch que corrige o problema:  
 `<br></br>— sshd.conf.orig 2007-06-05 22:00:24.000000000 +0200<br></br>+++ sshd.conf 2007-06-05 22:00:41.000000000 +0200<br></br>@@ -14,10 +14,10 @@<br></br># (?:::f{4,6}:)?(?PS+)<br></br># Values: TEXT<br></br>#<br></br>-failregex = Authentication failure for .* from<br></br>- Failed [-/w]+ for .* from<br></br>- ROOT LOGIN REFUSED .* FROM<br></br>- [iI](?:llegal|nvalid) user .* from<br></br>+failregex = Authentication failure for .* from $<br></br>+ Failed [-/w]+ for .* from $<br></br>+ ROOT LOGIN REFUSED .* FROM $<br></br>+ [iI](?:llegal|nvalid) user .* from $<br></br>`  
 `<br></br># Option: ignoreregex<br></br># Notes.: regex to ignore. If this regex matches, the line is ignored.<br></br>`
@@ -179,7 +179,7 @@ O autor do BlockHosts, Avinash Chopde, informou que modificar as expressões reg
 Nós conversamos com o autor do DenyHosts, Phil Schwartz, mas ainda não foi disponibilizado um patch oficial. Entretanto, modificando a regex FAILED\_ENTRY\_REGEX5 (no arquivo regex.py) para o seguinte, corrige o problema:  
 `<br></br>FAILED_ENTRY_REGEX5 = re.compile(r”"”User (?P.*) .*from (?P.*) not allowed because none of user’s groups are listed in AllowGroups$”"”)<br></br>`
 
-**6 – Conclusão**  
+## 6 – Conclusão
 O objetivo deste documento é mostrar alguns dos problemas mais comuns com log injections, sobre os quais devemos saber quando desenvolvemos programas que analisem mensagens de logs.
 
 Note também que existem outras ferramentas que “bloqueiam scans SSH”, mas algumas delas são tão vulneráveis que nem perdi meu tempo mencionando-as. Meu conselho é: não use ferramentas desenvolvidas em shell script ou que estejam há muito tempo sem ser atualizadas. Elas não só são vulneráveis a DoS remoto, mas também a execução de comandos via hosts.deny (sim, é possível configurá-lo para executar programas) e outros meios também.
