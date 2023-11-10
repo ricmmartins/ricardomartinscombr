@@ -1,151 +1,9 @@
 ---
-id: 844
 title: 'Ataques brute force utilizando o Hydra'
 date: '2009-04-10T17:51:57-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=844'
-permalink: /ataques-brute-force-utilizando-o-hydra/
-views:
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-    - '55312'
-Thumbnail:
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/internet_security.jpg'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-    - '3277903115'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '143'
     - hydra
-    - Segurança
-    - Uncategorized
+    - segurança
 ---
 
 Autor: Pedro Augusto de O. Pereira / <http://augusto.pedro.googlepages.com/>
@@ -180,15 +38,25 @@ Se você escolheu o pacote para Unix, você precisará instalar todas as bibliot
 
 Faça o download do pacote hydra-5.4-src.tar.gz e descompacte:
 
-`<br></br>tar xzvf hydra-5.4-src.tar.gz<br></br>`  
+```bash
+tar xzvf hydra-5.4-src.tar.gz
+```
+
 Acesse o diretório que acabou de ser criado e:
 
-`<br></br>cd hydra-5.4-src<br></br>./configure<br></br>`  
+```bash
+cd hydra-5.4-src
+./configure
+```
+
 Quando você executa o configure, algumas bibliotecas que são necessárias para alguns módulos como SSHv2 e PostgreSQL (libssh e libpq, respectivamente) são checadas e se não estiverem instaladas no sistema você deverá instalá-las na mão. A boa notícia é que o script já informa o site de onde você pode fazer o download e a maioria dessas bibliotecas já vem com instruções de como compilar. Vale a pena lembrar que, se você não quiser utilizar os módulos que precisam das bibliotecas, pode continuar a compilação normalmente: os outros protocolos irão funcionar sem problemas.
 
 Depois que o *./configure* terminar, só resta executar como root:
 
-`<br></br>make && make install<br></br>`  
+```bash
+make && make install
+```
+
 Pronto! O Hydra já está instalado e pronto para ser usado!
 
 **Wordlists**
@@ -201,17 +69,26 @@ Wordlists são, como o nome diz, listas gigantescas de palavras ou nomes de usu�
 
 Depois que você baixar as listas, junte todas em um único arquivo. No Hydra, você só pode especificar um único arquivo de wordlists para ser utilizado. Você pode usar o *cat*. Por exemplo:
 
-`<br></br>cat <em>substitua isso por todos os arquivos de wordlists que você tem</em> >> wordlist2.txt<br></br>`  
+```bash
+cat <substitua isso por todos os arquivos de wordlists que você tem> >> wordlist2.txt
+```
+
 É útil também remover entradas duplicadas da sua wordlist, para não perder tempo tentando mais de uma vez uma senha que já não deu certo:
 
-`<br></br>cat wordlist2.txt | sort | uniq > wordlistfinal.txt<br></br>`  
+```bash
+cat wordlist2.txt | sort | uniq > wordlistfinal.txt
+```
+
 Pronto, agora é só fazer o Hydra utilizar o arquivo wordlistfinal.txt como wordlist.
 
 **Utilizando o Hydra**
 
 O Hydra é bem fácil de ser utilizado. Você só precisa especificar o login (ou um arquivo com vários logins), a wordlist com senhas, o host e o protocolo. Se desejar pode fazer com que a saída do comando seja escrita em algum arquivo. Na linha a seguir, mostro o uso básico do Hydra:
 
-`<br></br>hydra -l root -P ~/wordlistfinal.txt -o bruteforce.txt ftp.foo.bar ftp<br></br>`  
+```bash
+hydra -l root -P ~/wordlistfinal.txt -o bruteforce.txt ftp.foo.bar ftp
+```
+
 A linha acima é bem simples. A opção -l diz que você quer fazer brute force em um usuário específico que você já sabe que existe (você poderia usar a opção -L para utilizar um arquivo com vários logins); a opção -P específica qual wordlist será usada para ler as senhas (você poderia usar -p se soubesse uma senha, mas não soubesse de qual usuário é); -o escreve a saída do comando no arquivo bruteforce.txt; ftp.foo.bar é o nome do host que iremos atacar e ftp é o protocolo que o Hydra deve usar.
 
 Se você por algum motivo precisar interromper a sessão do Hydra, pode começar de onde parou utilizando a opção -R no mesmo diretório em que você interrompeu a execução anterior.
