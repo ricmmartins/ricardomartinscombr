@@ -7,7 +7,7 @@ tags:
 
 O texto a seguir é uma tradução do texto de Daniel Cid que achei muito interessante. O material original pode ser acessado por [aqui](http://www.ossec.net/en/attacking-loganalysis.html).
 
-**1 – Introdução**  
+## 1 – Introdução
 
 Análise de logs utilizando uma ferramenta LIDS (Log Based Intrusion Detection System), pode ser uma técnica muito poderosa para complementar as funções de NIDS/HIDS e melhorar a segurança de uma rede. Já citei alguns de seus benefícios nos artigos: [Log analysis for  
 intrusion detection](http://www.ossec.net/en/loganalysis.html) e [Log analysis using OSSEC](http://www.ossec.net/ossec-docs/auscert-2007-dcid.pdf).
