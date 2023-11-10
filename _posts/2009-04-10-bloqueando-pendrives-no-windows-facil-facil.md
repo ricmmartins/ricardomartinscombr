@@ -8,7 +8,7 @@ tags:
 
 Esta dica é bem simples, e mostra como bloquear pendrives no seu windows.
 
-1\. Acesse a chave abaixo no registro:
+1. Acesse a chave abaixo no registro:
 
 <span style="font-family: Verdana; font-size: x-small;"><span lang="EN-US" style="font-size: 10pt; font-family: Verdana;">HKEY\_LOCAL\_MACHINESYSTEMCurrenControlSetServicesUSBSTORStart</span></span>
 
