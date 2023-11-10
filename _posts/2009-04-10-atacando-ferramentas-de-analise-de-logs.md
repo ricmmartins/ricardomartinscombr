@@ -8,6 +8,7 @@ tags:
 O texto a seguir é uma tradução do texto de Daniel Cid que achei muito interessante. O material original pode ser acessado por [aqui](http://www.ossec.net/en/attacking-loganalysis.html).
 
 **1 – Introdução**  
+
 Análise de logs utilizando uma ferramenta LIDS (Log Based Intrusion Detection System), pode ser uma técnica muito poderosa para complementar as funções de NIDS/HIDS e melhorar a segurança de uma rede. Já citei alguns de seus benefícios nos artigos: [Log analysis for  
 intrusion detection](http://www.ossec.net/en/loganalysis.html) e [Log analysis using OSSEC](http://www.ossec.net/ossec-docs/auscert-2007-dcid.pdf).
 
@@ -17,9 +18,9 @@ A finalidade deste artigo é apontar algumas vulnerabilidades que encontrei em f
 
 Iremos mostrar 3 ataques 0-day de denial of service causadas por log injection nas ferramentas BlockHosts, DenyHosts e fail2ban.
 
-\*Este paper discute o remote log injection, onde um atacante externo consegue modificar um log, baseado nas informações que ele fornece a alguma aplicação (no nosso caso OpenSSH e vsftpd). Modificando a maneira como a aplicação loga determinados eventos, somos capazes de atacar estas ferramentas de análise de logs. Não falaremos sobre modificações de logs localmente ou “syslog injection”.
+*Este paper discute o remote log injection, onde um atacante externo consegue modificar um log, baseado nas informações que ele fornece a alguma aplicação (no nosso caso OpenSSH e vsftpd). Modificando a maneira como a aplicação loga determinados eventos, somos capazes de atacar estas ferramentas de análise de logs. Não falaremos sobre modificações de logs localmente ou “syslog injection”.
 
-\*\*Sou o autor do [OSSEC](http://www.ossec.net/), um HIDS (Host Based Intrusion Detection System), que, entre outras coisas, analisa logs e automatiza determinadas ações. Ele não é vulnerável a nenhuma das técnicas apresentadas neste texto, mas pode ser que você queira testá-lo.
+**Sou o autor do [OSSEC](http://www.ossec.net/), um HIDS (Host Based Intrusion Detection System), que, entre outras coisas, analisa logs e automatiza determinadas ações. Ele não é vulnerável a nenhuma das técnicas apresentadas neste texto, mas pode ser que você queira testá-lo.
 
 **2 – Log injection remoto**  
 Todos sabemos que nunca devemos confiar em informações fornecidas por usuários, especialmente quando falamos sobre desenvolvimento para web, mas parece que esquecemos disso quando lidamos com logs.
