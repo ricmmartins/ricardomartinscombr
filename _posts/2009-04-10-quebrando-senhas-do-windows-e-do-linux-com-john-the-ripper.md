@@ -27,6 +27,7 @@ Tomando estas providências extremamente simples pode-se impedir que algum ataca
 Quando o atacante tem acesso diretamente ao arquivo que contém as senhas (como o arquivo shadow do Linux, onde ficam as senhas de todos os usuários do sistema) ele pode utilizar um software que consiga quebrar a criptografia e descobrir a senha. Um destes softwares e talvez o mais popular é o John The Ripper.
 
 **O John The Ripper**  
+
 O John The Ripper é um software livre que consegue identificar automaticamente qual é o algoritmo de criptografia que foi utilizado para cifrar as senhas presentes no arquivo que você indicou para ele. Ele também possui uma versão paga, porém a versão livre não deixa nada a desejar. Neste artigo focaremos na sua versão livre.
 
 Ele é multiplataforma, podendo ser executado em vários sistemas Unix-like, Windows, DOS, BeOS e OpenVMS. É desenvolvido pelo pessoal do projeto OpenWall, que além do JtR possuem vários outros ótimos softwares e até uma distribuição Linux, a OpenWall GNU/Linux (ou Owl). O site do projeto é [este](http://www.openwall.com/).
@@ -35,25 +36,43 @@ Possui vários módulos que aumentam sua funcionalidade, o que eu gostei mais fo
 
 **Baixando e instalando**  
 A instalação do JtR é extremamente fácil. Primeiro acesse o [site](http://www.openwall.com/john/) e faça o download da versão mais nova (1.7.0.2 no momento em que escrevo o texto). Após o download, descompacte o arquivo e acesse o diretório recém criado:  
- **tar xzvf john-1.7.0.2.tar.gz  
-cd john-1.7.0.2**
+
+ ```bash
+tar xzvf john-1.7.0.2.tar.gz  
+cd john-1.7.0.2
+```
 
 Neste diretório você irá encontrar o sub-diretório “src”, é nele que estão os fontes do software e é lá que você precisa ir para compilar o programa:  
- **cd src/**
+ 
+ ```bash
+cd src/
+```
 
 A compilação do JtR é feita baseada no processador que você usa na sua máquina para que ele seja mais bem otimizado e tenha um desempenho melhor enquanto tenta quebrar as senhas. Digite make e uma lista com todas as possibilidades será exibida para você. Escolha a mais adequada e:  
- **make clean linux-x86-mmx**
+ 
+ ```bash
+make clean linux-x86-mmx
+```
 
 Lembre-se de substituir o “linux-x86-mmx” pelo valor que mais se adequar ao seu hardware. Após digitar este comando terá início o processo de compilação, que deve levar menos de 5 minutos ![:)](http://adminonline.wordpress.com/wp-includes/images/smilies/icon_smile.gif)
 
 Todos os binários resultantes da compilação serão colocados no diretório run, vá para lá:  
- **cd ../run**
+ 
+ ```bash
+cd ../run
+```
 
 Para testar o binário que foi gerado e verificar se está tudo correto com ele, digite o comando:  
- **./john –test**
+ 
+ ```bash
+./john –test
+```
 
 Isso irá efetuar um teste de benchmarking com todos os algoritmos de criptografia que o JtR suporta. Se você quiser executar o benchmarking com um algoritmo em específico, faça o seguinte:  
- **./john –test –format=\[formato que você quer testar\]**
+ 
+ ```bash
+./john –test –format=\[formato que você quer testar\]
+```
 
 O parâmetro format pode ser utilizado também quando você estiver tentando quebrar uma senha e souber qual é o formato dela. As opções são DES, BSDI, MD5, BF, AFS e LM.
 
@@ -73,10 +92,14 @@ Se você observou direitinho o diretório run do pacote, você irá ver que vár
 É isso, agora que o John já está instalado, vamos configurá-lo!
 
 **Configurando o JtR**  
+
 Toda a configuração do John é feita em um arquivo texto chamado john.conf em sistemas Unix ou john.ini no Windows, por exemplo. Neste arquivo você consegue definir regras para a descoberta de senhas, wordlists, parâmetros para os modos e até definir um novo modo de descoberta de senhas.
 
 Este arquivo é dividido em várias seções. Todas as seções começam com uma linha com seu nome entre colchetes ( \[\] ). As opções destas seções são definidas em variáveis de modo bem simples, como em:  
- **variável = valor**
+
+ ```bash
+variável = valor
+```
 
 Os nomes de seções e variáveis são case-insensitive, ou seja, SECAO1 e secao1 são a mesma seção e VAR1 e var1 são a mesma variável. Os caracteres # e ; são completamente ignorados, assim como linhas em branco.
 
@@ -157,24 +180,37 @@ Nos exemplos que vou mostrar abaixo, vou considerar que você está utilizando o
 Ok, agora você já tem o arquivo com as senhas e usuários que você fez utilizando o unshadow vamos começar a brincar de cracker ![:)](http://adminonline.wordpress.com/wp-includes/images/smilies/icon_smile.gif)
 
 O modo mais simples de se usar o John é especificar o arquivo que tem as senhas e usuário e deixar ele fazer tudo automaticamente. Ele irá começar com o modo single crack, depois irá passar para o modo wordlist e finalmente irá passar para o modo incremental. A linha de comando fica assim:  
- **./john senhas.txt**
+
+```bash
+./john senhas.txt
+```
 
 Se você, ao analisar o arquivo, achar que alguns usuários possuem shell inválidas como o /bin/false, você pode fazer com que o John não perca tempo tentando quebrar a senha de tais contas assim:  
- **./john –show –shells=-/bin/false senhas.txt**
+ 
+```bash
+./john –show –shells=-/bin/false senhas.txt
+```
 
 Assim, todo usuário que o John encontrar e que possuir a(s) shell(s) listada será ignorado e ele passará para o próximo.
 
 Se você quiser quebrar a senha de vários arquivos ao mesmo tempo no modo single crack, por exemplo, utilize a seguinte linha de comando:  
- **./john –single senhas.txt senhas2.txt**
+
+ ```bash
+./john –single senhas.txt senhas2.txt
+```
 
 Na linha acima, de acordo com as opções explicadas anteriormente, –single poderia ser abreviado para –si pois assim não haveria nenhuma ambiguidade em relação a este comando.
 
 Se você quiser especificar o algoritmo a ser usado para quebrar as senhas:  
- **./john –show –format=DES –single senhas.txt**
+ 
+ ```bash
+./john –show –format=DES –single senhas.txt
+```
 
 Substitua o DES pelo formato correto das senhas presentes no arquivo.
 
 **Conclusão**  
+
 Manter uma política de senhas fortes pode lhe poupar muita dor de cabeça com ataques brute force. Uma auditoria nas senhas de todos os seus usuários deve ser feita para garantir que você continua seguro e não corre muitos riscos utilizando senhas simples demais.
 
 Tentei abranger o máximo possível das opções do John para que você tenha um bom entendimento do software e consiga utilizá-lo eficientemente para garantir a segurança de sua rede ou para melhorar o seu penetration testing. O que você vai fazer com o software é responsabilidade sua.
