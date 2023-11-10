@@ -1,132 +1,7 @@
 ---
-id: 866
 title: 'Limitando o uso de Storage Devices (PenDrives, Disquetes, Cd-Rom’s) no Windows'
 date: '2009-04-10T18:04:36-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=866'
-permalink: /limitando-o-uso-de-storage-devices-pendrives-disquetes-cd-roms-no-windows/
-views:
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-    - '3800'
-Thumbnail:
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/windows_xp_logo.jpg'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-    - '3391710140'
-categories:
-    - Uncategorized
 tags:
-    - '143'
-    - '172'
     - pendrive
     - Segurança
 ---
@@ -135,9 +10,71 @@ Este artigo mostra como realizar uma configuração no windows, de modo a bloque
 
 O Windows possui uma ferramenta chamada Group Policy Editor, que permite que se façam alterações nas permições e políticas de segurança da máquina. Essa ferramenta permite ainda a criação de novos templates de segurança com um pouco de programação em que na sua maioria já se encontra pronta ou semi-pronta.
 
-Primeiramente deve-se gerar um arquivo de template, que deve ser um arquivo do tipo Custom\_Usb\_ Policy\_Teste.adm, feito no bloco de notas e salvo neste formato com texto em UNICODE. O código dentro do arquivo é o que segue:
+Primeiramente deve-se gerar um arquivo de template, que deve ser um arquivo do tipo Custom_Usb_Policy_Teste.adm, feito no bloco de notas e salvo neste formato com texto em UNICODE. O código dentro do arquivo é o que segue:
 
-`CLASS MACHINE<br></br>CATEGORY !!category<br></br>CATEGORY !!categoryname<br></br>POLICY !!policynameusb<br></br>KEYNAME “SYSTEMCurrentControlSetServicesUSBSTOR”<br></br>EXPLAIN !!explaintextusb<br></br>PART !!labeltextusb DROPDOWNLIST REQUIRED``VALUENAME "Start"<br></br>ITEMLIST<br></br>NAME !!Disabled VALUE NUMERIC 3 DEFAULT<br></br>NAME !!Enabled VALUE NUMERIC 4<br></br>END ITEMLIST<br></br>END PART<br></br>END POLICY<br></br>POLICY !!policynamecd<br></br>KEYNAME “SYSTEMCurrentControlSetServicesCdrom”<br></br>EXPLAIN !!explaintextcd<br></br>PART !!labeltextcd DROPDOWNLIST REQUIRED``VALUENAME "Start"<br></br>ITEMLIST<br></br>NAME !!Disabled VALUE NUMERIC 1 DEFAULT<br></br>NAME !!Enabled VALUE NUMERIC 4<br></br>END ITEMLIST<br></br>END PART<br></br>END POLICY<br></br>POLICY !!policynameflpy<br></br>KEYNAME “SYSTEMCurrentControlSetServicesFlpydisk”<br></br>EXPLAIN !!explaintextflpy<br></br>PART !!labeltextflpy DROPDOWNLIST REQUIRED``VALUENAME "Start"<br></br>ITEMLIST<br></br>NAME !!Disabled VALUE NUMERIC 3 DEFAULT<br></br>NAME !!Enabled VALUE NUMERIC 4<br></br>END ITEMLIST<br></br>END PART<br></br>END POLICY<br></br>POLICY !!policynamels120<br></br>KEYNAME “SYSTEMCurrentControlSetServicesSfloppy”<br></br>EXPLAIN !!explaintextls120<br></br>PART !!labeltextls120 DROPDOWNLIST REQUIRED``VALUENAME "Start"<br></br>ITEMLIST<br></br>NAME !!Disabled VALUE NUMERIC 3 DEFAULT<br></br>NAME !!Enabled VALUE NUMERIC 4<br></br>END ITEMLIST<br></br>END PART<br></br>END POLICY<br></br>END CATEGORY<br></br>END CATEGORY``[strings]<br></br>category=”Custom Policy Settings”<br></br>categoryname=”Restrict Drives”<br></br>policynameusb=”Disable USB”<br></br>policynamecd=”Disable CD-ROM”<br></br>policynameflpy=”Disable Floppy”<br></br>policynamels120=”Disable High Capacity Floppy”<br></br>explaintextusb=”Disables the computers USB ports by disabling the usbstor.sys driver”<br></br>explaintextcd=”Disables the computers CD-ROM Drive by disabling the cdrom.sys driver”<br></br>explaintextflpy=”Disables the computers Floppy Drive by disabling the flpydisk.sys driver”<br></br>explaintextls120=”Disables the computers High Capacity Floppy Drive by disabling the sfloppy.sys driver”<br></br>labeltextusb=”Disable USB Ports”<br></br>labeltextcd=”Disable CD-ROM Drive”<br></br>labeltextflpy=”Disable Floppy Drive”<br></br>labeltextls120=”Disable High Capacity Floppy Drive”<br></br>Enabled=”Enabled”<br></br>Disabled=”Disabled”`
+```bash
+CLASS MACHINE
+CATEGORY !!category
+CATEGORY !!categoryname
+POLICY !!policynameusb
+KEYNAME “SYSTEMCurrentControlSetServicesUSBSTOR”
+EXPLAIN !!explaintextusb
+PART !!labeltextusb DROPDOWNLIST REQUIRED``VALUENAME "Start"
+ITEMLIST
+NAME !!Disabled VALUE NUMERIC 3 DEFAULT
+NAME !!Enabled VALUE NUMERIC 4
+END ITEMLIST
+END PART
+END POLICY
+POLICY !!policynamecd
+KEYNAME “SYSTEMCurrentControlSetServicesCdrom”
+EXPLAIN !!explaintextcd
+PART !!labeltextcd DROPDOWNLIST REQUIRED``VALUENAME "Start"
+ITEMLIST
+NAME !!Disabled VALUE NUMERIC 1 DEFAULT
+NAME !!Enabled VALUE NUMERIC 4
+END ITEMLIST
+END PART
+END POLICY
+POLICY !!policynameflpy
+KEYNAME “SYSTEMCurrentControlSetServicesFlpydisk”
+EXPLAIN !!explaintextflpy
+PART !!labeltextflpy DROPDOWNLIST REQUIRED``VALUENAME "Start"
+ITEMLIST
+NAME !!Disabled VALUE NUMERIC 3 DEFAULT
+NAME !!Enabled VALUE NUMERIC 4
+END ITEMLIST
+END PART
+END POLICY
+POLICY !!policynamels120
+KEYNAME “SYSTEMCurrentControlSetServicesSfloppy”
+EXPLAIN !!explaintextls120
+PART !!labeltextls120 DROPDOWNLIST REQUIRED``VALUENAME "Start"
+ITEMLIST
+NAME !!Disabled VALUE NUMERIC 3 DEFAULT
+NAME !!Enabled VALUE NUMERIC 4
+END ITEMLIST
+END PART
+END POLICY
+END CATEGORY
+END CATEGORY``[strings]
+category=”Custom Policy Settings”
+categoryname=”Restrict Drives”
+policynameusb=”Disable USB”
+policynamecd=”Disable CD-ROM”
+policynameflpy=”Disable Floppy”
+policynamels120=”Disable High Capacity Floppy”
+explaintextusb=”Disables the computers USB ports by disabling the usbstor.sys driver”
+explaintextcd=”Disables the computers CD-ROM Drive by disabling the cdrom.sys driver”
+explaintextflpy=”Disables the computers Floppy Drive by disabling the flpydisk.sys driver”
+explaintextls120=”Disables the computers High Capacity Floppy Drive by disabling the sfloppy.sys driver”
+labeltextusb=”Disable USB Ports”
+labeltextcd=”Disable CD-ROM Drive”
+labeltextflpy=”Disable Floppy Drive”
+labeltextls120=”Disable High Capacity Floppy Drive”
+Enabled=”Enabled”
+Disabled=”Disabled”
+```
 
 Feito isso, deve-se ir em START, RUN e digitar o seguinte comando : gpedit.msc  
 Com isso a seguinte tela deverá aparecer:
