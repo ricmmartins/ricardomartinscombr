@@ -1,151 +1,9 @@
 ---
-id: 830
 title: 'VPN com FreeS/WAN'
 date: '2009-04-10T17:42:43-04:00'
-author: rmmartins
-layout: post
-guid: 'http://ricardomartins.com.br/?p=830'
-permalink: /vpn-com-freeswan/
-views:
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-    - '2376'
-Thumbnail:
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://www.ricardomartins.com.br/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.ne/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-    - 'http://ricardomartinsblog.azurewebsites.net/wp-content/uploads/2009/04/network-jack.jpg'
-adman_disable:
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-    - 'on'
-dsq_thread_id:
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-    - '3277902473'
-categories:
-    - Uncategorized
 tags:
-    - '103'
-    - '143'
-    - artigos
-    - Uncategorized
     - vpn
+    - linux
 ---
 
 Autor: Pedro Augusto de O. Pereira / <http://augusto.pedro.googlepages.com/>
@@ -165,25 +23,31 @@ Para que você consiga usar o FreeS/WAN a partir dos RPM’s, você tem que nece
 
 Então, para instalar o FreeS/WAN a partir dos pacotes RPM, faça o seguinte:
 
-**\# rpm -ivh freeswan-userland-xxx.rpm  
-\# rpm -ivh freeswan-module-xxx.rpm**
+```bash
+# rpm -ivh freeswan-userland-xxx.rpm  
+# rpm -ivh freeswan-module-xxx.rpm
+```
 
 Depois de instalar os dois pacotes, serão criados (entre outros) dois arquivos no seu diretório /etc: o ipsec.conf e o ipsec.secrets. Veremos mais adiante para que cada um deles serve.
 
 **Gerando as chaves RSA – utilizando o arquivo ipsec.secrets**  
-Antes de começar a configurar o serviço propriamente dito, vamos gerar as chaves para a autenticação dos nossos gateways. Para isso é só usar o comando ipsec\_newhostkey. Por padrão, a chave gerada com este comando deve ir para o arquivo /etc/ipsec.secrets, porém você pode mudar o arquivo para qualquer um que você queira.
+
+Antes de começar a configurar o serviço propriamente dito, vamos gerar as chaves para a autenticação dos nossos gateways. Para isso é só usar o comando ipsec_newhostkey. Por padrão, a chave gerada com este comando deve ir para o arquivo /etc/ipsec.secrets, porém você pode mudar o arquivo para qualquer um que você queira.
 
 Então, vamos gerar a nossa chave:
 
-**\# ipsec\_newhostkey –output /etc/ipsec.secrets –bits 128 –hostname gateway\_1**
+```bash
+# ipsec_newhostkey –output /etc/ipsec.secrets –bits 128 –hostname gateway_1
+```
 
-Com o comando acima, nós geramos a chave de autenticação do host gateway\_1 de 128 bits e a guardamos no arquivo ipsec.secrets. Esse processo deve ser feito para o outro gateway que estabelecerá o túnel VPN com este gateway.
+Com o comando acima, nós geramos a chave de autenticação do host gateway_1 de 128 bits e a guardamos no arquivo ipsec.secrets. Esse processo deve ser feito para o outro gateway que estabelecerá o túnel VPN com este gateway.
 
 Tenha certeza absoluta de que o nome da máquina que você forneceu ao gerar a chave é o correto. Se este nome estiver errado, a chave será gerada de forma errônea e você não conseguirá estabelecer um túnel entre os gateways.
 
-Como você já deve ter percebido, no arquivo ipsec.secrets só deve haver a chave do gateway que você está configurando. Por exemplo, se eu estou configurando o gateway gateway\_1, no meu arquivo ipsec.secrets só deverá existir a chave deste host. Quando eu for configurar o gateway\_2, no ipsec.secrets deste só deverá haver a chave do gateway\_2.
+Como você já deve ter percebido, no arquivo ipsec.secrets só deve haver a chave do gateway que você está configurando. Por exemplo, se eu estou configurando o gateway gateway_1, no meu arquivo ipsec.secrets só deverá existir a chave deste host. Quando eu for configurar o gateway_2, no ipsec.secrets deste só deverá haver a chave do gateway_2.
 
 **Configurando o serviço IPSec – utilizando o arquivo ipsec.conf**  
+
 Depois que você gerou todas as chaves necessárias em todos os hosts, é hora de editar o arquivo ipsec.conf para configurar como será a nossa VPN.
 
 Vou tentar deixar claro para que servem todas as opções neste arquivo (que não são muitas).
@@ -239,13 +103,9 @@ Define como será encontrada a chave RSA. Os valores que podem ser usados são:
     - - tunnel = define uma conexão host a host, host a sub-rede ou sub-rede a sub-rede. Esta é a opção padrão;
         - passthrough = define que o IPSec não deve ser usado para estabelecer a conexão;
         - drop = define que todos os pacotes devem ser descartados;
-        - reject = define que os pacotes devem ser descartados.
-        
-        
+        - reject = define que os pacotes devem ser descartados. 
         - start = define que a conexão será iniciada assim que o serviço IPSec for iniciado;
-        - add = define que a conexão será feita manualmente. Para que se consiga estabelecer a conexão manualmente, deve- se usar o comando ipsec auto –up nome\_da\_conexão.
-        
-        
+        - add = define que a conexão será feita manualmente. Para que se consiga estabelecer a conexão manualmente, deve- se usar o comando ipsec auto –up nome_da_conexão.
         - Os arquivos ipsec.conf devem ser iguais nas duas pontas do túnel;
         - Os arquivos ipsec.secrets devem sempre ser diferentes, cada um com a chave de seu respectivo host;
         - Um gateway não pinga outro gateway;
@@ -293,23 +153,23 @@ Define como será encontrada a chave RSA. Os valores que podem ser usados são:
     
     Se você está tendo problemas ao iniciar o serviço IPSec, é bom que você entenda as etapas da negociação das conexões.
     
-    As negociações do IKE possuem duas fases: Main Mode, STATE\_MAIN.  
-    As negociações do IPSec também possuem duas fases: Quick Mode, STATE\_QUICK.
+    As negociações do IKE possuem duas fases: Main Mode, STATE_MAIN.  
+    As negociações do IPSec também possuem duas fases: Quick Mode, STATE_QUICK.
     
     Quando os passos anteriores são realizados com sucesso, serão mostradas as mensagens:
     
-    “nome\_da\_conexão” STATE\_MAIN\_I4 (ISAKMP SA established…)  
-    “nome\_da\_conexão” STATE\_QUICK\_I2 (sent QI2, IPSec SA established…)
+    “nome_da_conexão” STATE_MAIN_I4 (ISAKMP SA established…)  
+    “nome_da_conexão” STATE_QUICK_I2 (sent QI2, IPSec SA established…)
     
     Quando você não consegue estabelecer o túnel de forma correta, geralmente estes passos não são atingidos. Assim, o comando:
     
-    **\# ipsec auto –status**
+    **# ipsec auto –status**
     
     Será muito útil, pois ele te mostrará o último estado da negociação que foi alcançado, mas não informa o estado atual, porém você pode deduzir qual o estado atual verificando se o último passo mostrado pelo comando foi finalizado com sucesso.
     
     Para que o IPSec mostre mais mensagens de erro para facilitar o troubleshoot, você pode usar o comando:
     
-    **\# ipsec auto –verbose –up nome\_da\_conexão**
+    **# ipsec auto –verbose –up nome_da_conexão**
     
     Assim ele irá mostrar mensagens sobre todos os passos da negociação da conexão especificada.
     
@@ -317,16 +177,16 @@ Define como será encontrada a chave RSA. Os valores que podem ser usados são:
     
     Outro comando que também pode ajudar muito na hora de achar o erro de alguma conexão do FreeS/WAN é o barf. Ele imprime na tela várias informações relevantes sobre a encriptação e autenticação do IPSec. O uso dele é o seguinte:
     
-    **\# ipsec barf**
+    **# ipsec barf**
     
     Assim ele já imprime várias informações muito úteis. Porém, é melhor que se passe essas informações para um arquivo para que se possa observá-las com mais calma:
     
-    **\# ipsec barf &gt;&gt; conexão\_com\_problema.txt**
+    **# ipsec barf >> conexão_com_problema.txt**
     
     Bom, estas são algumas dicas básicas para que você consiga resolver os problemas que por ventura apareçam por aí.
     
     **Fontes e conclusão Site oficial, com uma documentação extremamente detalhada:\* [http://www.freeswan.org](http://www.freeswan.org/ "http://www.freeswan.org"). Tutorial muito bom sobre o assunto:**
     
-    \* [http://www.linuxman.pro.br/vpn](http://www.linuxman.pro.br/vpn "http://www.linuxman.pro.br/vpn")
+    * [http://www.linuxman.pro.br/vpn](http://www.linuxman.pro.br/vpn "http://www.linuxman.pro.br/vpn")
     
     Esta foi só uma olhada básica no serviço IPSec, que é extremamente útil em muitos casos. Espero que tenha sido de alguma ajuda para você.
