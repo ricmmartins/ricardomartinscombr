@@ -17,6 +17,8 @@ A dword “Start” possui valor default em 3. Mude para 4.
 2. Os arquivos listados abaixo, devem ter todas as suas permissões negadas para todos os usuários, inclusive o usuário “System”.
 
 C:Windowsinfusbstor.inf
+
 C:Windowsinfusbstor.pnf
+
 C:Windowssystem32driversusbstor.sys
 
