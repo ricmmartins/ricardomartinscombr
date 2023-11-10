@@ -22,6 +22,3 @@ Esta dica é bem simples, e mostra como bloquear pendrives no seu windows.
 
 <span style="font-family: Verdana; font-size: x-small;"><span lang="EN-US" style="font-size: 10pt; font-family: Verdana;">C:Windowssystem32driversusbstor.sys</span></span>
 
-<span style="font-family: Verdana; font-size: x-small;"><span lang="EN-US" style="font-size: 10pt; font-family: Verdana;">Maiores informações:</span></span>
-
-<span style="font-family: Verdana; font-size: x-small;"><span style="font-size: 10pt; font-family: Verdana;">[http://support.microsoft.com/default.aspx?scid=kb;en-us;823732](http://support.microsoft.com/default.aspx?scid=kb;en-us;823732 "http://support.microsoft.com/default.aspx?scid=kb;en-us;823732")</span></span>
