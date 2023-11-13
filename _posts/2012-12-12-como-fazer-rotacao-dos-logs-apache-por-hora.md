@@ -3,7 +3,7 @@ title: 'Como fazer rotação dos logs do Apache por hora?'
 date: '2012-12-12T11:27:12-05:00'
 tags:
     - apache
-    - logs
+    - linux
 ---
 
 Então você tem um servidor com Apache instalado gerando centenas de MB para lotar seu disco, certo? Vamos lá…
