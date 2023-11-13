@@ -2,11 +2,8 @@
 title: 'Instalando o WordPress sobre Nginx, PHP-FPM e Varnish no Centos'
 date: '2013-09-11T18:11:23-04:00'
 tags:
-    - centos
     - linux
     - nginx
-    - php-fpm
-    - varnish
     - wordpress
 ---
 
