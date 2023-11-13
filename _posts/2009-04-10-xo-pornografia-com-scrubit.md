@@ -2,7 +2,6 @@
 title: 'Xô pornografia, com ScrubIt'
 date: '2009-04-10T17:27:43-04:00'
 tags:
-    - internet
     - segurança
 ---
 
