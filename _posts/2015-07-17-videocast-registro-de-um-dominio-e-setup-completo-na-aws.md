@@ -5,9 +5,6 @@ tags:
     - apache
     - aws
     - cloud
-    - lamp
-    - php
-    - videocast
     - wordpress
     - mysql
 ---
