@@ -3,7 +3,6 @@ title: 'ElasticSearch: Adicionando plugins de gerenciamento'
 date: '2014-06-10T15:58:54-04:00'
 tags:
     - elasticsearch
-    - elk
     - monitoramento
 ---
 
