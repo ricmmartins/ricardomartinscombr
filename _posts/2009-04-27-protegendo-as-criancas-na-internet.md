@@ -2,7 +2,6 @@
 title: 'Protegendo as crianças na Internet'
 date: '2009-04-27T18:02:47-04:00'
 tags:
-    - internet
     - segurança
 ---
 
