@@ -2,9 +2,6 @@
 title: 'O que diferencia um bom currículo em TI?'
 date: '2011-03-16T22:56:48-04:00'
 tags:
-    - currículo
-    - empregos
-    - estágio
     - carreira
 ---
 
