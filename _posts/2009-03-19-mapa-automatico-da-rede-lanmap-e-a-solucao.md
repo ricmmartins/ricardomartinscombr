@@ -3,7 +3,7 @@ title: 'Mapa automático da rede? Lanmap é a solução.'
 date: '2009-03-19T00:40:31-04:00'
 tags:
     - networking
-    - utilit'arios
+    - utilitários
 ---
 
 Se você precisa de um mapa da sua rede, o lanmap pode ser a solução. Para instalar ele basta digitar na linha de comando:
