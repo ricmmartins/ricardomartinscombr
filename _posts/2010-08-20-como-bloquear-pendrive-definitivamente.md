@@ -2,7 +2,6 @@
 title: 'Como bloquear pendrive definitivamente'
 date: '2010-08-20T23:52:19-04:00'
 tags:
-    - pendrive
     - scripts
     - windows
 ---
