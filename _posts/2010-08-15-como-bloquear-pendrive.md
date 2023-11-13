@@ -2,7 +2,6 @@
 title: 'Como bloquear pendrive'
 date: '2010-08-15T21:18:38-04:00'
 tags:
-    - pendrive
     - windows
 ---
 
