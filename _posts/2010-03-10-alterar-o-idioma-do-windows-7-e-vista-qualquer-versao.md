@@ -2,7 +2,7 @@
 title: 'Alterar o idioma do Windows 7 e Vista (Qualquer versão)'
 date: '2010-03-10T23:44:39-05:00'
 tags:
-    - Windows
+    - windows
 ---
 
 [![](/wp-content/uploads/2010/03/windows7leak1-300x300.jpg "windows7leak1")](/wp-content/uploads/2010/03/windows7leak1.jpg)
