@@ -3,7 +3,6 @@ title: 'Azure CDN: Como realizar a implementação e validar o funcionamento'
 date: '2016-06-13T20:27:47-04:00'
 tags:
     - azure
-    - cdn
     - nginx
 ---
 
