@@ -2,7 +2,6 @@
 title: 'Como configurar GPO para o Firefox'
 date: '2010-12-13T14:42:59-05:00'
 tags:
-    - gpo
     - windows
 ---
 
