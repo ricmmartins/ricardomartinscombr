@@ -2,7 +2,6 @@
 title: 'Saiba mais sobre o Azure Container Instance'
 tags:
     - azure
-    - containers
 ---
 
 Nesta semana foi lançado o Azure Container Instance, que é uma excelente opção para rodar containers no Azure de forma simples e rápida, sem ter que se preocupar com provisionamento de máquina virtual e requisitos relacionados.
