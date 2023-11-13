@@ -4,7 +4,6 @@ date: '2018-08-03T17:33:14-04:00'
 tags:
     - azure
     - monitoramento
-    - dashboards
 ---
 
 Provavelmente você já sabe que o Portal do Azure é [totalmente customizável](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards.), permitindo que você explore ao máximo as opções criando dashboards para atender as suas necessidades de visualização, organização e monitoramento.
