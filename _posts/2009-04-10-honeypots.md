@@ -2,7 +2,6 @@
 title: Honeypots
 date: '2009-04-10T17:45:49-04:00'
 tags:
-    - honeypots
     - segurança
 ---
 
