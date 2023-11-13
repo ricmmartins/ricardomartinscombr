@@ -2,10 +2,7 @@
 title: 'IPPlan: Aprenda como instalar e configurar'
 date: '2012-06-20T14:05:32-04:00'
 tags:
-    - centos
-    - gerenciamento
-    - ip
-    - ipplan
+    - ferramentas
     - linux
     - networking
 ---
