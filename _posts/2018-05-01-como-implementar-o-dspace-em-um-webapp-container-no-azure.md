@@ -4,7 +4,6 @@ date: '2018-05-01T08:03:41-04:00'
 tags:
     - azure
     - webapps
-    - opensource    
 ---
 
 # O que é o DSpace?
