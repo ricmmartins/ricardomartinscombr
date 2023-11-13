@@ -3,7 +3,6 @@ title: 'Entendendo os Níveis de RAID (Redundant Array of Inexpensive Disks)'
 date: '2009-04-10T18:12:17-04:00'
 tags:
     - storage
-    - raid
 ---
 
 Autor: Danilo Montagna
