@@ -2,7 +2,6 @@
 title: 'Mas enfim, o que é um firewall ?'
 date: '2009-03-19T00:57:54-04:00'
 tags:
-    - firewall
     - segurança
     - networking
 ---
