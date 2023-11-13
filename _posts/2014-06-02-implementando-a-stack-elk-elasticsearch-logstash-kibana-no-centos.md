@@ -3,9 +3,7 @@ title: 'Implementando a stack ELK (ElasticSearch, Logstash e Kibana) no CentOS'
 date: '2014-06-02T17:47:12-04:00'
 tags:
     - elasticsearch
-    - elk
-    - kibana
-    - logstash
+    - linux
 ---
 
 ### O que é a stack ELK?
