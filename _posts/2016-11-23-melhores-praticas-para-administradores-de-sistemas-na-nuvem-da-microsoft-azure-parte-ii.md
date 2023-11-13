@@ -3,7 +3,6 @@ title: 'Melhores práticas para administradores de sistemas na nuvem da Microsof
 date: '2016-11-23T15:47:45-05:00'
 tags:
     - azure
-    - bestpractices
 ---
 
 ## Criando e organizando os recursos
