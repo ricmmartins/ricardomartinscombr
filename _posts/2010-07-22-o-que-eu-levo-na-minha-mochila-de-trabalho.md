@@ -2,7 +2,7 @@
 title: 'O que eu levo na minha mochila de trabalho'
 date: '2010-07-22T23:01:03-04:00'
 tags:
-    - pessoal
+    - aleatórios
 ---
 
 Pessoal,  
