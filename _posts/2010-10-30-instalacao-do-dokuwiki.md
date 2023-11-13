@@ -3,7 +3,6 @@ id: 2213
 title: 'Instalação do DokuWiki'
 date: '2010-10-30T09:56:06-04:00'
 tags:
-    - dokuwiki
     - linux
 ---
 
