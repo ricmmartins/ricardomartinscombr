@@ -2,8 +2,7 @@
 title: 'Windows XP Mode no Windows 7'
 date: '2010-09-14T23:07:56-04:00'
 tags:
-    - utilidades
-    - virtualização
+    - utilitários
     - windows
 ---
 
