@@ -3,6 +3,7 @@ title: 'Participação no FliSol 2014'
 date: '2014-04-24T12:16:59-04:00'
 tags:
     - cloud
+    - palestras
 ---
 
 No próximo dia 26/04 estará acontecendo em Niterói o FliSol 2014, no qual eu terei o prazer de palestrar sobre o assunto de Computação em Nuvem.
