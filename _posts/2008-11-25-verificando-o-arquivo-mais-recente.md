@@ -2,7 +2,6 @@
 title: 'Verificando o arquivo mais recente'
 date: '2008-11-25T19:49:24-05:00'
 tags:
-    - comandos
     - linux
     - shell
 ---
