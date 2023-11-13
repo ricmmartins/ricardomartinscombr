@@ -3,7 +3,6 @@ title: 'Tutorial Netcat'
 date: '2008-12-21T22:13:31-05:00'
 tags:
     - linux
-    - netcat
     - utilitários
 ---
 
