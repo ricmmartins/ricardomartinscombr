@@ -2,7 +2,6 @@
 title: 'Entendendo o IPV6'
 date: '2009-01-01T03:06:33-05:00'
 tags:
-    - ipv6
     - networking
 ---
 
