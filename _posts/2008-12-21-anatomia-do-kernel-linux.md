@@ -2,7 +2,6 @@
 title: 'Anatomia do Kernel Linux'
 date: '2008-12-21T22:28:01-05:00'
 tags:
-    - kernel
     - linux
 ---
 
