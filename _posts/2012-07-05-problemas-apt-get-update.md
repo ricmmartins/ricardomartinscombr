@@ -2,7 +2,7 @@
 title: 'Problemas no apt-get update'
 date: '2012-07-05T16:35:43-04:00'
 tags:
-    - apt
+    - linux
 ---
 
 Ok, então você acabou de instalar seu Ubuntu e na primeira execução do apt-get update, quando chega em 100% fica parado exibindo:
