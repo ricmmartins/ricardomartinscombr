@@ -2,7 +2,7 @@
 title: 'VPN com FreeS/WAN'
 date: '2009-04-10T17:42:43-04:00'
 tags:
-    - vpn
+    - networking
     - linux
 ---
 
