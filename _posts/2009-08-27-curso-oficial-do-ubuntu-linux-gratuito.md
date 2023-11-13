@@ -4,7 +4,7 @@ date: '2009-08-27T10:58:53-04:00'
 tags:
     - ubuntu
     - linux
-    - treinamento
+    - cursos
 ---
 
 Isso mesmo, agora não tem mais desculpa para não usar o Ubuntu.
