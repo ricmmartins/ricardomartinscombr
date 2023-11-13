@@ -2,7 +2,6 @@
 title: '10 dicas sobre shell que você ainda não conhece'
 date: '2008-12-21T22:16:55-05:00'
 tags:
-    - linux
     - shell
 ---
 
