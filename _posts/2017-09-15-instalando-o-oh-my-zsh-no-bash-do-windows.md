@@ -2,7 +2,6 @@
 title: 'Instalando o Oh My Zsh no Bash do Windows'
 date: '2017-09-15T14:51:54-04:00'
 tags:
-    - zsh
     - windows
 ---
 
