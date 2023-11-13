@@ -2,7 +2,6 @@
 title: 'Bloqueando sites  na unha - Parte 1'
 date: '2009-02-20T17:32:22-05:00'
 tags:
-    - internet
     - segurança
 ---
 
