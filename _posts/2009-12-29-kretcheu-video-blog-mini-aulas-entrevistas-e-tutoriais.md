@@ -2,7 +2,7 @@
 title: 'Kretcheu Vídeo Blog - mini-aulas, entrevistas e tutoriais'
 date: '2009-12-29T08:58:33-05:00'
 tags:
-    - aprendizado
+    - estudo
 ---
 
 Olá! Dica rápida encontrada no Dicas-L:
