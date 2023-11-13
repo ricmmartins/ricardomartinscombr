@@ -3,12 +3,9 @@
 title: 'Monit: Monitoramento de aplicações e serviços de forma inteligente'
 date: '2015-06-26T17:04:55-04:00'
 tags:
-    - linux
-    - monit
+    - linux    
     - monitoramento
-    - nginx
-    - php-fpm
-    - vagrant
+    - nginx       
 ---
 
 No post de hoje vou comentar um pouco sobre o [Monit](https://mmonit.com/monit/). Uma ferramenta extremamente útil e poderosa para monitoramento de aplicações e serviços.
