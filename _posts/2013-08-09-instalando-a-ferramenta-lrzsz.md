@@ -1,10 +1,8 @@
 ---
-id: 4581
 title: 'Instalando a ferramenta lrzsz do protocolo ZModem'
 date: '2013-08-09T18:21:07-04:00'
 tags:
     - linux
-    - zmodem
 ---
 
 O protocolo zmodem permite realizar de modo simples, downloads e uploads para um servidor linux pelo console. Abaixo vou mostrar como realizar a instalação da ferramenta.
