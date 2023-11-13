@@ -3,7 +3,6 @@ title: 'Coletando informações do Azure com Grafana'
 date: '2017-11-22T02:14:33-05:00'
 tags:
     - azure
-    - grafana
     - monitoramento
 ---
 
