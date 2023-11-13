@@ -2,9 +2,8 @@
 title: 'Como instalar o Nginx com PHP-FPM e WordPress no CentOS'
 date: '2013-04-05T13:00:57-04:00'
 tags:
-    - centos
+    - linux
     - nginx
-    - php-fpm
     - wordpress
 ---
 
