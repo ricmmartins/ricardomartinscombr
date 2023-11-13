@@ -2,7 +2,6 @@
 title: 'Ataques brute force utilizando o Hydra'
 date: '2009-04-10T17:51:57-04:00'
 tags:
-    - hydra
     - segurança
 ---
 
