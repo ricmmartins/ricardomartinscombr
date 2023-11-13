@@ -2,7 +2,7 @@
 title: 'Balanceamento de carga com HAProxy'
 date: '2014-04-02T13:34:43-04:00'
 tags:
-    - haproxy
+    - linux
 ---
 
 ![haproxy](/media/haproxy1.png)
