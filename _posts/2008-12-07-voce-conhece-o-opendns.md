@@ -3,7 +3,6 @@ title: 'Você conhece o OpenDNS ?'
 date: '2008-12-07T19:20:55-05:00'
 tags:
     - dns
-    - internet
     - segurança
 ---
 
