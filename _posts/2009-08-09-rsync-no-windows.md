@@ -4,7 +4,6 @@ date: '2009-08-09T23:33:54-04:00'
 tags:
     - backup
     - utilitários
-    - rsync
     - windows
 ---
 
