@@ -2,8 +2,6 @@
 title: 'Dicas de comandos do VI'
 date: '2008-11-25T19:51:29-05:00'
 tags:
-    - comandos
-    - linux
     - vi
 ---
 
