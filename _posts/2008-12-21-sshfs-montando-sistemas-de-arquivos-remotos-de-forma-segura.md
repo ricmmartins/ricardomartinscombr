@@ -4,7 +4,6 @@ date: '2008-12-21T22:16:01-05:00'
 tags:
     - linux
     - networking
-    - ssh
     - sshfs
 ---
 
