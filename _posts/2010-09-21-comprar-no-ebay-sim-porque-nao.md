@@ -2,7 +2,7 @@
 title: 'Comprar no Ebay? Sim, porque não?'
 date: '2010-09-21T22:40:12-04:00'
 tags:
-    - aleatorios
+    - aleatórios
 ---
 
 Como alguns já sabem, eu sou fã da <span class="bbli">Dell</span> e tenho um <span class="bbli">notebook</span> Inspiron 1525 há cerca de 2 anos.
