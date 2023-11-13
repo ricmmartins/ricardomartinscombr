@@ -3,7 +3,6 @@ title: 'Como monitorar seu servidor com o Monit'
 date: '2013-04-08T11:17:01-04:00'
 tags:
     - linux
-    - monit
     - monitoramento
 ---
 
