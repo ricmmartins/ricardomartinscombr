@@ -2,7 +2,6 @@
 title: 'Criando um Dual Boot entre Windows 7 e Windows 8 usando VHD'
 date: '2011-10-11T17:18:14-04:00'
 tags:
-    - vhd
     - windows
 ---
 
