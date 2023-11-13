@@ -3,7 +3,6 @@ title: 'Como criar um repositório interno do CentOS'
 date: '2013-07-22T15:20:37-04:00'
 author: rmmartins
 tags:
-    - centos
     - linux
 ---
 
