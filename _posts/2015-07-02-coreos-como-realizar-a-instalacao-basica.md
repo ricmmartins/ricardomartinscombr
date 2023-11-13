@@ -2,10 +2,7 @@
 title: 'CoreOS: Como realizar a instalação básica em cluster'
 date: '2015-07-02T15:30:56-04:00'
 tags:
-    - coreos
-    - devops
     - linux
-    - virtualbox
 ---
 
 [![coreos-logo](/wp-content/uploads/2015/05/coreos-logo-300x116.png)](/wp-content/uploads/2015/05/coreos-logo.png)
@@ -44,10 +41,10 @@ Durante o processo, você pode informar onde quer que os arquivos sejam salvos, 
 
 Depois de informar uma senha, serão gerados os dois arquivos abaixo dento do diretório /tmp:
 
-- **CoreOS\_rsa** (Chave Privada);
-- **CoreOS\_rsa.pub** (Chave Pública).
+- **CoreOS_rsa** (Chave Privada);
+- **CoreOS_rsa.pub** (Chave Pública).
 
-*O conteúdo do CoreOS\_rsa.pub será utilizado no nosso arquivo cloud-config.yaml.*
+*O conteúdo do CoreOS_rsa.pub será utilizado no nosso arquivo cloud-config.yaml.*
 
 No ambiente Live-CD do VirtualBox, vamos baixar do GitHub o script de instalação do CoreOS.
 
@@ -113,7 +110,7 @@ Você pode notar alguma mensagem de erro dizendo que um componente chamado coreo
 Ao término da instalação, basta fazer o restart da máquina virtual e acessar a máquina virtual com a chave SSH:
 
 ```bash
-# ssh -i /tmp/CoreOS\_rsa core@192.168.1.130  
+# ssh -i /tmp/CoreOS_rsa core@192.168.1.130  
 ```
 
 Finalizada a instalação do primeiro servidor, basta criar o segundo servidor lembrando dos seguintes detalhes:
