@@ -9,7 +9,7 @@ tags:
 
 Se você estiver desenvolvendo seus aplicativos nativos em nuvem, recomendo fortemente que você consulte este guia mesmo que não esteja usando Azure especificamente.
 
-![](/assets/images/arquitetura.png)
+![](/assets/images/arquitetura.png){ width=50% }
 
 ## Estilos de arquitetura
 
