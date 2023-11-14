@@ -20,9 +20,9 @@ Se você estiver desenvolvendo seus aplicativos nativos em nuvem, recomendo fort
 
 ## Escolhas tecnológicas
 
-- [Escolha um serviço de computação](https://learn.microsoft.com/pt-br/azure/architecture/guide/technology-choices/compute-decision-tree)
-- [Escolha um serviço de armazenamento de dados](https://learn.microsoft.com/pt-br/azure/architecture/guide/technology-choices/data-store-overview)
-- [Escolha um serviço de mensagens assíncronas](https://learn.microsoft.com/pt-br/azure/architecture/guide/technology-choices/messaging)
+- [Escolha do serviço de computação](https://learn.microsoft.com/pt-br/azure/architecture/guide/technology-choices/compute-decision-tree)
+- [Escolha do serviço de armazenamento de dados](https://learn.microsoft.com/pt-br/azure/architecture/guide/technology-choices/data-store-overview)
+- [Escolha do serviço de mensagens assíncronas](https://learn.microsoft.com/pt-br/azure/architecture/guide/technology-choices/messaging)
 
 ## Design da arquitetura
 
