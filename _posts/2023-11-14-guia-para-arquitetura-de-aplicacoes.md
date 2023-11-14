@@ -40,4 +40,4 @@ Se você estiver desenvolvendo seus aplicativos nativos em nuvem, recomendo fort
 
  - [Conceitos básicos de arquitetura de aplicações](https://learn.microsoft.com/pt-br/azure/architecture/guide/)
 
-<img src="/assets/images/arquitetura.png" alt="image" width="40%" height="auto">
+<img src="/assets/images/arquitetura.png" alt="image" width="50%" height="auto">
