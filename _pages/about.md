@@ -70,6 +70,9 @@ Tenho formação técnica em eletrônica pela [Escola Técnica Estadual Henrique
 
 ## Entrando em detalhes...
 
+<img src="/assets/images/ricardo-family.JPG" alt="image" width="40%" height="auto">
+
+
 Falar de si mesmo é complicado, ainda mais na internet onde ninguém é exatamente como se parece fora dela, pois escolhemos as melhores qualidades, as melhores fotos, todos temos amigos  etc.
 
 Sou mais um daqueles com que você cruza na rua e nem nota, que senta ao seu lado no ônibus e você nem lembra.
