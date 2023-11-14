@@ -9,6 +9,8 @@ tags:
 
 Se você estiver desenvolvendo seus aplicativos nativos em nuvem, recomendo fortemente que você consulte este guia mesmo que não esteja usando Azure especificamente.
 
+![](/assets/images/arquitetura.png)
+
 ## Estilos de arquitetura
 
 - [N-tier: divide um aplicativo em camadas lógicas e camadas físicas](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/n-tier)
