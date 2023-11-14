@@ -26,23 +26,16 @@ Se você estiver desenvolvendo seus aplicativos nativos em nuvem, recomendo fort
 
 ## Design da arquitetura
 
-- ✅ Reference architectures: Each reference architecture includes recommended practices, along with considerations for scalability, availability, security, resilience, and other aspects of the design.
-- 🔗 https://lnkd.in/gywkUtiW
-- ✅ Design principles: 10 high-level design principles that will make your application more scalable, resilient, and manageable.
-- 🔗 https://lnkd.in/gE-T_dVG
-- ✅ Design patterns: These design patterns are useful for building reliable, scalable, secure applications in the cloud.
-- 🔗https://lnkd.in/g9-uq8ZE
-- ✅ Best practices: cover various design considerations including API design, autoscaling, data partitioning, caching, and so forth.
-- 🔗 https://lnkd.in/g9Q-x35s
-- ✅ Security best practices: describe how to ensure that the confidentiality, integrity, and availability of your application aren't compromised by malicious actors.
-- 🔗 https://lnkd.in/gxyMNPrx
-
+- [Arquiteturas de referência: Cada arquitetura de referência inclui práticas recomendadas, juntamente com considerações sobre escalabilidade, disponibilidade, segurança, resiliência e outros aspectos do design](https://learn.microsoft.com/pt-br/azure/architecture/browse/)
+- [Princípios de design: 10 princípios de design de alto nível que tornarão seu aplicativo mais escalonável, resiliente e gerenciável](https://learn.microsoft.com/pt-br/azure/architecture/guide/design-principles/)
+- [Padrões de design: Esses padrões de design são úteis para construir aplicativos confiáveis, escaláveis e seguros na nuvem](https://learn.microsoft.com/pt-br/azure/architecture/patterns/)
+- [Práticas recomendadas: abrangem diversas considerações de design, incluindo design de API, escalonamento automático, particionamento de dados, armazenamento em cache e assim por diante.](https://learn.microsoft.com/pt-br/azure/architecture/best-practices/api-design)
+- [Melhores práticas de segurança: descreva como garantir que a confidencialidade, integridade e disponibilidade da sua aplicação não sejam comprometidas por agentes mal-intencionados.](https://learn.microsoft.com/pt-br/security/zero-trust/deploy/applications)
 
 ## Pilares de qualidade
 
- - ✅ Microsoft Azure Well-Architected Framework
- - 🔗 https://lnkd.in/guEgWZVC
-
+ - [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/pt-br/azure/well-architected/)
+  
  ## Mais detalhes
 
- https://learn.microsoft.com/en-us/azure/architecture/guide/?WT.mc_id=DT-MVP-5001664
+ - [Conceitos básicos de arquitetura de aplicações](https://learn.microsoft.com/pt-br/azure/architecture/guide/)
