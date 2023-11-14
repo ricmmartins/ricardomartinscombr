@@ -8,8 +8,7 @@ tags:
 ---
 
 Se você estiver desenvolvendo seus aplicativos nativos em nuvem, recomendo fortemente que você consulte este guia mesmo que não esteja usando Azure especificamente.
-
-![](/assets/images/arquitetura.png){ width=50% }
+<img src="/assets/images/arquitetura.png" alt="image" width="50%" height="auto">
 
 ## Estilos de arquitetura
 
