@@ -12,7 +12,7 @@ Inspirado no artigo [Do things, write about it](http://mdswanson.com/blog/2013/0
 
 **Quem é Ricardo**:  Nasci em Niterói (no último dia de 1984), sou reservadamente convencional, multitarefa monofoco, command line heavy-user, interneteiro curioso, [pai de três filhos incríveis](http://paisdetres.com.br) e um marido sortudo.
 
-Alguém perfeccionista, com um desejo de fazer as coisas de maneira certa. Capaz de trabalhar de modo constante, meticuloso e deliberado, possuo persistência para acompanhar uma tarefa até a sua conclusão. Sou  cocooperativo, cauteloso, detalhista e organizado.
+Alguém detalhista, com um desejo de fazer as coisas de maneira certa. Capaz de trabalhar de modo constante, meticuloso e deliberado, possuo persistência para acompanhar uma tarefa até a sua conclusão. Sou cooperativo, cauteloso e organizado. Não sou o melhor no que eu faço, mas tenho disciplina e consistência.
 
 **Como faz**: Sou multitarefa, porém monofoco. Cada coisa de uma vez, na sua vez. Não tenho receios sobre o que desconheço e gosto de desafios. Aliás, PRECISO deles, porque só o dinheiro não vale a dedicação de 1/3 do meu dia, tem que ter EMOÇÃO.
 
@@ -72,31 +72,29 @@ Tenho formação técnica em eletrônica pela [Escola Técnica Estadual Henrique
 
 Falar de si mesmo é complicado, ainda mais na internet onde ninguém é exatamente como se parece fora dela, pois escolhemos as melhores qualidades, as melhores fotos, todos temos amigos  etc.
 
-Sou mais um daqueles com que você cruza na rua e nem nota, que senta ao seu lado no ônibus e você nem lembra, mas sou alguém … quem?
+Sou mais um daqueles com que você cruza na rua e nem nota, que senta ao seu lado no ônibus e você nem lembra.
 
 Sou como você: Gosto de muitas coisas e não gosto de algumas, sei algumas coisas e não sei muitas, gosto de muitos e não gosto de alguns, tenho os pés no chão e a cabeça nas nuvens.
 
-Enfim, sou comum, mas sou eu, e sou único.
-
 Não fumo, não bebo, não jogo futebol, não falo de futebol, não sei dançar. Não vivo sem minha esposa, filhos e minha família. O resto eu corro atrás…
 
-Sou perfeccionista, persistente, concentrado, detalhista, organizado, simples, responsável, compreensivo, pacificador. Também sou esquecido e meio lerdo, desligado mesmo…
+Sou persistente, concentrado, detalhista, organizado, simples, responsável, compreensivo, pacificador. Também sou esquecido e lerdo.
 
 Sou do tipo de gente que é compulsiva por música, que canta mal, mas canta assim mesmo…
 
-Sou do tipo de gente que acha cinema mudo chato e que não acha graça de Charles Chaplin. Do tipo de gente enche o sorvete de calda, que detesta limão. Sou do tipo que entra no cinema pelo lado contrário, que senta lá no meio e leva o filme todo comendo pipoca, doce, pizza…
+Sou do tipo de gente que acha cinema mudo chato e que não acha graça de Charles Chaplin. Sou do tipo que entra no cinema pelo lado contrário, que senta lá no meio e leva o filme todo comendo pipoca, doce, pizza…
 
 Que manda carta, cartão, bilhete, recado, que diz “eu te amo”. Sou do tipo que aque tem alergia à poeira e que dispensa ladeiras. Que não tem paciência pra hipocrisia, que se irrita no trânsito e que critica fanatismo.
 
-Sou do tipo de gente desastrada, que tropeça nas coisas e que derruba suco na mesa. Tipo de gente bem humorada, grata e de bem com a vida, que sossega com o pôr-do-sol. Sou do tipo de gente exigente, detalhista.
+Sou do tipo de gente desastrada, que tropeça nas coisas e que derruba suco na mesa. Tipo de gente bem humorada, grata e de bem com a vida, que sossega com o pôr-do-sol. 
 
 Sou do tipo que não suporta ver ninguém triste, que adora nostalgia da infância, que topa qualquer coisa pra ver amigo sorrir. Que faz árvore genealógica da família, que corre de brigas e que só dorme de luz apagada.
 
 Mas também do mesmo tipo que acredita em Deus, que fica vendo a lua nascer, que adora trovões, e que também não vive sem o mar por perto pelo simples prazer de admirar as ondas indo e vindo e ficar tentanto entender como será que isso funciona.
 
-Sou do tipo de gente que sempre acha que as coisas podem melhorar e que adora um elogio sincero. Gente que quer reconhecimento, que detesta um lamento e que não sabe nada sobre ciências. Do tipo de gente que não liga pra moda e sim pro bem-estar. Daquele tipo que faz mil planos pra o futuro, que se preocupa mais em procurar gostar do que faz, do que fazer o que gosta, afinal, nem sempre podemos fazer tudo que queremos.
+Sou do tipo de gente que sempre acha que as coisas podem melhorar e que adora um elogio sincero. Gente que quer reconhecimento, que detesta um lamento e que não sabe nada sobre ciências. Do tipo de gente que não liga pra moda e sim pro bem-estar. Daquele tipo que faz mil planos pra o futuro, que se preocupa mais em procurar gostar do que faz, do que fazer o que gosta.
 
-Que administra sistemas, que digita sem olhar pro teclado, que checa e-mails o dia inteiro, que está sempre conectado se atualizando.
+Que administra sistemas, que digita sem olhar pro teclado, que está sempre conectado se atualizando e estudando alguma coisa.
 
 Aquele tipo de gente que não é o melhor no que faz, mas faz com disciplina e consistência. 
 
