@@ -13,7 +13,7 @@ Se você estiver desenvolvendo seus aplicativos nativos em nuvem, recomendo fort
 
 - [N-tier: divide um aplicativo em camadas lógicas e camadas físicas](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/n-tier)
 - [Web-queue-worker: frontend e backend dissociados por mensagens assíncronas](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/web-queue-worker)
-- [Microsserviços: serviços funcionalmente decompostos que chamam uns aos outros por meio de APIs](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices)
+- [Microserviços: serviços funcionalmente decompostos que chamam uns aos outros por meio de APIs](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/microservices)
 - [Arquitetura orientada a eventos: produtor/consumidor. Visão independente por subsistema](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/event-driven)
 - [Big data: divida um enorme conjunto de dados em pequenos pedaços. Processamento paralelo em datasets locais](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/big-data)
 - [Big compute: alocação de dados para milhares de núcleos](https://learn.microsoft.com/pt-br/azure/architecture/guide/architecture-styles/big-compute)
