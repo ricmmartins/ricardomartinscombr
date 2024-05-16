@@ -1,5 +1,5 @@
 ---
-title: "Maximizando a Eficiência de Custos no Azure: Desvendando Azure Reservations e o Azure Savings Plans"
+title: "Desvendando Azure Reservations e o Azure Savings Plans"
 date: 2024-05-15T10:00:00-00:00
 tags:
   - azure
