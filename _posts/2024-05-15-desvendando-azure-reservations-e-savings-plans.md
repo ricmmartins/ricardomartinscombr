@@ -48,7 +48,7 @@ Os Planos de Economia do Azure oferecem uma abordagem mais flexível para econom
 - **Compromisso Irrevogável**: Uma vez adquiridos, os Planos de Economia não podem ser cancelados, exigindo uma avaliação cuidadosa antes da aquisição.
 
 ### Casos de Uso Ideais:
-Os Planos de Economia do Azure são feitos sob medida para organizações com cargas de trabalho flutuantes, aproveitando famílias de instâncias variadas, serviços de computação ou abrangendo várias regiões de datacenter.
+Os Planos de Economia do Azure são feitos sob medida para organizações com cargas de trabalho dinâmicas, aproveitando famílias de instâncias variadas, serviços de computação ou abrangendo várias regiões de datacenter.
 
 ## Conclusão:
 
