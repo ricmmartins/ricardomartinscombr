@@ -45,7 +45,7 @@ Os Planos de Economia do Azure oferecem uma abordagem mais flexível para econom
 - **Compromisso Não Cancelável**: Ao contrário das reservas, as compras de Planos de Economia são finais, sem flexibilidade para cancelamento ou troca. ([Cancelamento de Planos de Economia do Azure](https://learn.microsoft.com/pt-br/azure/cost-management-billing/savings-plan/cancel-savings-plan))
 
 ### Penalidades:
-- **Compromisso Não Cancelável**: Uma vez adquiridos, os Planos de Economia não podem ser cancelados, exigindo uma avaliação cuidadosa antes da aquisição.
+- **Compromisso Irrevogável**: Uma vez adquiridos, os Planos de Economia não podem ser cancelados, exigindo uma avaliação cuidadosa antes da aquisição.
 
 ### Casos de Uso Ideais:
 Os Planos de Economia do Azure são feitos sob medida para organizações com cargas de trabalho flutuantes, aproveitando famílias de instâncias variadas, serviços de computação ou abrangendo várias regiões de datacenter.
